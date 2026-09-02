@@ -43,6 +43,15 @@ const certBadges = [
 ---
 
 <BaseLayout wide>
+  <nav class="category-pills" aria-label="Categories">
+    {categories.map((c) => (
+      <a href={c.href} class="category-pill">
+        <span class="pill-name">{c.name}</span>
+        <span class="pill-count">{c.count}</span>
+      </a>
+    ))}
+  </nav>
+
   <div class="home-layout">
     <aside class="sidebar-left">
       <span class="sidebar-title">ALL BLOG LISTS</span>
@@ -135,15 +144,6 @@ const certBadges = [
         <span class="section-badge">All Articles</span>
       </div>
 
-      <nav class="category-pills" aria-label="Categories">
-        {categories.map((c) => (
-          <a href={c.href} class="category-pill">
-            <span class="pill-name">{c.name}</span>
-            <span class="pill-count">{c.count}</span>
-          </a>
-        ))}
-      </nav>
-
       <div class="post-list-4">
         {
           rest.map((p) => (
@@ -177,7 +177,7 @@ const certBadges = [
     </aside>
   </div>
 
-  <!-- Complete Blog Archive Section (NetworkersHome style bottom section) -->
+  <!-- Complete Blog Archive Section -->
   <section class="archive-section">
     <div class="container">
       <h2 class="archive-title">Complete blog archive</h2>

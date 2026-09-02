@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import GithubSlugger from 'github-slugger';
 import BaseLayout from './BaseLayout.astro';
 import { SITE } from '../config';
-import { readingTime } from '../utils/posts';
+import { readingTime, getPublishedPosts } from '../utils/posts';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -12,6 +12,11 @@ const { post } = Astro.props;
 const { title, description, pubDate, updatedDate, author, tags, cover } = post.data;
 const minutes = readingTime(post.body);
 const canonical = new URL(`/blog/${post.slug}/`, Astro.site).href;
+
+// Recent posts for the sidebar (excluding the current post).
+const recentPosts = (await getPublishedPosts())
+  .filter((p) => p.slug !== post.slug)
+  .slice(0, 5);
 
 // Extract H2 headings from the markdown body for the table of contents.
 const slugger = new GithubSlugger();
@@ -42,6 +47,7 @@ const jsonLd = {
   title={title}
   description={description}
   image={cover}
+  wide
   article={{
     publishedTime: pubDate.toISOString(),
     modifiedTime: (updatedDate ?? pubDate).toISOString(),
@@ -62,26 +68,49 @@ const jsonLd = {
       {description && <p class="post-desc">{description}</p>}
     </header>
 
-    {
-      headings.length > 0 && (
-        <aside class="toc" aria-label="Table of contents">
-          <span class="toc-label">Table of Contents</span>
-          <nav class="toc-list">
-            {headings.map((h, i) => (
-              <a href={`#${h.slug}`}>
-                <span class="toc-num">{String(i + 1).padStart(2, '0')}</span>
-                <span class="toc-text">{h.text}</span>
-              </a>
-            ))}
-          </nav>
-        </aside>
-      )
-    }
+    <div class="post-body">
+      <div class="post-sidebar">
+        {
+          headings.length > 0 && (
+            <aside class="toc" aria-label="Table of contents">
+              <span class="toc-label">Table of Contents</span>
+              <nav class="toc-list">
+                {headings.map((h, i) => (
+                  <a href={`#${h.slug}`}>
+                    <span class="toc-num">{String(i + 1).padStart(2, '0')}</span>
+                    <span class="toc-text">{h.text}</span>
+                  </a>
+                ))}
+              </nav>
+            </aside>
+          )
+        }
 
-    <div class="post-content">
-      {cover && <img class="post-cover" src={cover} alt="" loading="lazy" />}
-      <div class="prose">
-        <slot />
+        {
+          recentPosts.length > 0 && (
+            <aside class="recent-posts" aria-label="Recent posts">
+              <span class="recent-posts-label">Recent Posts</span>
+              <table class="recent-posts-table">
+                <tbody>
+                  {recentPosts.map((p, i) => (
+                    <tr>
+                      <td class="recent-posts-num">{String(i + 1).padStart(2, '0')}</td>
+                      <td class="recent-posts-title">
+                        <a href={`/blog/${p.slug}/`}>{p.data.title}</a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </aside>
+          )
+        }
+      </div>
+
+      <div class="post-content">
+        <div class="prose">
+          <slot />
+        </div>
       </div>
     </div>
   </article>

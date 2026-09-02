@@ -105,11 +105,14 @@ function buildFinalTake(section) {
 }
 
 // "Complete Guide & Deep-Dive Analysis" wrapper around all default body sections.
-function buildCompleteGuide(defaultSections) {
+function buildCompleteGuide(defaultSections, pitfallsSection) {
   const heading = h('h2', { className: ['complete-guide-heading'] }, [text('Complete Guide & Deep-Dive Analysis')]);
   const wrapper = h('div', { className: ['complete-guide'] }, [heading]);
   for (const section of defaultSections) {
     wrapper.children.push(buildDefault(section));
+  }
+  if (pitfallsSection) {
+    wrapper.children.push(buildPitfalls(pitfallsSection));
   }
   return wrapper;
 }
@@ -173,8 +176,9 @@ export default function rehypeSections() {
     // Emit in the reference's fixed order.
     if (buckets.execBrief) out.push(buildExecBrief(buckets.execBrief));
     if (buckets.keyTakeaways) out.push(buildKeyTakeaways(buckets.keyTakeaways));
-    if (buckets.defaults.length > 0) out.push(buildCompleteGuide(buckets.defaults));
-    if (buckets.pitfalls) out.push(buildPitfalls(buckets.pitfalls));
+    if (buckets.defaults.length > 0 || buckets.pitfalls) {
+      out.push(buildCompleteGuide(buckets.defaults, buckets.pitfalls));
+    }
     if (buckets.faq) out.push(buildFaq(buckets.faq));
     if (buckets.finalTake) {
       out.push(buildFinalTake(buckets.finalTake));
