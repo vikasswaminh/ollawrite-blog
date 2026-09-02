@@ -4,33 +4,11 @@ const path = Astro.url.pathname;
 const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
 ---
 
-<div class="top-announcement-bar" aria-label="AI Programming announcement">
-  <div class="container announcement-inner">
-    500 Million Tokens Free for AI Projects for Placement Programs
-  </div>
-</div>
-
-<div class="top-utility-bar" aria-label="Quick contact and policies">
-  <div class="container utility-inner">
-    <div class="utility-left">
-      <span>HSR Sector 6 · Bangalore</span>
-      <a href="tel:+919611027980">· +91 96110 27980</a>
-      <span>· Mon–Sat · 09:30–20:30</span>
-    </div>
-    <div class="utility-right">
-      <a href="https://login.ollawrite.com">LMS Login</a>
-      <a href="https://login.ollawrite.com">· Rack Booking</a>
-      <a href="https://login.ollawrite.com">· Free Resume Maker</a>
-      <a href="https://ollawrite.com/contact">· ✦ Admissions Open →</a>
-    </div>
-  </div>
-</div>
-
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/">
-      <span class="brand-mark" aria-hidden="true"><span class="brand-dot"></span></span>
-      <span class="brand-name"><span class="brand-name-dark">Olla</span><span class="brand-name-accent">Write</span></span>
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">{SITE.brand}</span>
       <span class="brand-sub">Blog</span>
     </a>
     <nav class="nav" aria-label="Primary">
@@ -41,10 +19,7 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWit
           </a>
         ))
       }
+      <a class="nav-cta" href={SITE.marketingUrl}>{SITE.marketingLabel} ↗</a>
     </nav>
-    <div class="header-actions">
-      <a class="nav-signin" href="https://login.ollawrite.com">Sign in</a>
-      <a class="nav-cta" href="https://login.ollawrite.com">Start writing</a>
-    </div>
   </div>
 </header>

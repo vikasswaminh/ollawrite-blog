@@ -1,214 +1,47 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import PostCard from '../components/PostCard.astro';
 import { SITE } from '../config';
 import { getPublishedPosts, readingTime } from '../utils/posts';
 
 const posts = await getPublishedPosts();
 const featured = posts[0];
-const secondary = posts.slice(1, 4);
-const aiAuthorityPosts = posts.slice(4, 7);
-const rest = posts.slice(7);
-
-const categories = [
-  { name: 'All', count: posts.length, href: '/' },
-  { name: 'Humanizing AI', count: 1, href: '/tags/Humanizing AI/' },
-  { name: 'AI vs Human Writing', count: 1, href: '/tags/AI vs Human Writing/' },
-  { name: 'AI SEO Writing', count: 1, href: '/tags/AI SEO Writing/' },
-  { name: 'Content Generation', count: 1, href: '/tags/Content Generation/' },
-  { name: 'SEO Strategy', count: 1, href: '/tags/SEO Strategy/' },
-  { name: 'AI Writing', count: 1, href: '/tags/AI Writing/' },
-  { name: 'Tool Reviews', count: 1, href: '/tags/Tool Reviews/' },
-  { name: 'Site-First AI', count: 1, href: '/tags/Site-First AI/' },
-  { name: 'Multi-Agent AI', count: 1, href: '/tags/Multi-Agent AI/' },
-  { name: 'Editorial QA', count: 1, href: '/tags/Editorial QA/' },
-];
-
-const archiveCategories = [
-  { title: 'AI & Content Generation', count: posts.length, posts: posts.slice(0, 3) },
-  { title: 'SEO & Search Strategy', count: 4, posts: posts.slice(2, 5) },
-  { title: 'Editorial & QA Workflows', count: 3, posts: posts.slice(4, 7) },
-  { title: 'Site-First AI Systems', count: 3, posts: posts.slice(6, 9) },
-];
-
-const certBadges = [
-  'Site-First AI Writer',
-  'Canonical SEO Grounding',
-  'Multi-Agent Pipeline',
-  'Automated Editorial QA',
-  'SOC2 Type II Certified',
-  'Enterprise Sitemap Crawler',
-  'Real-Time Fact Verifier',
-];
+const rest = posts.slice(1);
 ---
 
-<BaseLayout wide>
-  <div class="home-layout">
-    <aside class="sidebar-left">
-      <span class="sidebar-title">ALL BLOG LISTS</span>
-      <ul class="sidebar-list">
-        {posts.map((p, i) => (
-          <li>
-            <span class="list-num">{i + 1}.</span>
-            <a href={`/blog/${p.slug}/`}>{p.data.title}</a>
-          </li>
-        ))}
-      </ul>
-    </aside>
-
-    <main class="main-content">
-      <section class="hero">
-        <h1 class="hero-title">
-          {SITE.brand} <span>Blog</span>
-        </h1>
-        <p class="hero-tagline">Guides, tips, and product updates from the {SITE.brand} team.</p>
-      </section>
-
-      <div class="section-header">
-        <span class="section-badge">Newest Articles</span>
-        <span class="section-desc">Latest from our experts</span>
-      </div>
-
-      {
-        featured && (
-          <a class="featured" href={`/blog/${featured.slug}/`}>
-            {featured.data.cover && (
-              <div class="featured-media">
-                <img src={featured.data.cover} alt="" class="featured-img" />
-              </div>
-            )}
-            <div class="featured-content">
-              {featured.data.tags && featured.data.tags.length > 0 && (
-                <span class="featured-tag">{featured.data.tags[0]}</span>
-              )}
-              <h2 class="featured-title">{featured.data.title}</h2>
-              <p class="featured-desc">{featured.data.description}</p>
-              <div class="featured-meta">
-                <FormattedDate date={featured.data.pubDate} />
-                <span aria-hidden="true">·</span>
-                <span>{readingTime(featured.body)} min read</span>
-                <span class="featured-more">Read article →</span>
-              </div>
-            </div>
-          </a>
-        )
-      }
-
-      {
-        secondary.length > 0 && (
-          <div class="secondary-grid-3">
-            {secondary.map((p) => (
-              <article class="post-card">
-                {p.data.tags && p.data.tags.length > 0 && (
-                  <span class="post-card-tag">{p.data.tags[0]}</span>
-                )}
-                <h2 class="post-card-title">
-                  <a href={`/blog/${p.slug}/`}>{p.data.title}</a>
-                </h2>
-                <p class="post-card-desc">{p.data.description}</p>
-              </article>
-            ))}
-          </div>
-        )
-      }
-
-      <div class="section-header mt-8">
-        <span class="section-badge purple">AI Authority Blogs</span>
-        <span class="section-desc">{posts.length} high-authority articles</span>
-      </div>
-
-      <div class="secondary-grid-3">
-        {aiAuthorityPosts.map((p) => (
-          <article class="post-card">
-            {p.data.tags && p.data.tags.length > 0 && (
-              <span class="post-card-tag">{p.data.tags[0]}</span>
-            )}
-            <h2 class="post-card-title">
-              <a href={`/blog/${p.slug}/`}>{p.data.title}</a>
-            </h2>
-            <p class="post-card-desc">{p.data.description}</p>
-          </article>
-        ))}
-      </div>
-
-      <div class="section-header mt-8">
-        <span class="section-badge">All Articles</span>
-      </div>
-
-      <nav class="category-pills" aria-label="Categories">
-        {categories.map((c) => (
-          <a href={c.href} class="category-pill">
-            <span class="pill-name">{c.name}</span>
-            <span class="pill-count">{c.count}</span>
-          </a>
-        ))}
-      </nav>
-
-      <div class="post-list-4">
-        {
-          rest.map((p) => (
-            <article class="post-card">
-              {p.data.tags && p.data.tags.length > 0 && (
-                <span class="post-card-tag">{p.data.tags[0]}</span>
-              )}
-              <h2 class="post-card-title">
-                <a href={`/blog/${p.slug}/`}>{p.data.title}</a>
-              </h2>
-              <p class="post-card-desc">{p.data.description}</p>
-            </article>
-          ))
-        }
-      </div>
-    </main>
-
-    <aside class="sidebar-right">
-      <span class="sidebar-title purple">OLLAWRITE LINKS</span>
-      <ul class="sidebar-list">
-        <li><a href={SITE.marketingUrl}>Return to the main {SITE.brand} homepage to see everything.</a></li>
-        <li><a href={`${SITE.marketingUrl}/#features`}>Explore the site-first AI writing platform.</a></li>
-        <li><a href={`${SITE.marketingUrl}/#seo`}>See how canonical SEO grounding works in action.</a></li>
-        <li><a href={`${SITE.marketingUrl}/#verify`}>Discover content verification and fact-checking.</a></li>
-        <li><a href={`${SITE.marketingUrl}/#workflow`}>Read our guides and educational resources.</a></li>
-        <li><a href="/">Follow the {SITE.brand} blog for the latest insights and news.</a></li>
-        <li><a href={`${SITE.marketingUrl}/pricing`}>View our flexible pricing plans designed for teams of all sizes.</a></li>
-        <li><a href={`${SITE.marketingUrl}/demo`}>Schedule a personalized demo to see how we can help you.</a></li>
-        <li><a href={SITE.marketingUrl} class="sidebar-cta">Start writing with {SITE.brand} today →</a></li>
-      </ul>
-    </aside>
-  </div>
-
-  <!-- Complete Blog Archive Section (NetworkersHome style bottom section) -->
-  <section class="archive-section">
-    <div class="container">
-      <h2 class="archive-title">Complete blog archive</h2>
-      <p class="archive-subtitle">Browse all {posts.length} articles by category.</p>
-
-      <div class="archive-grid">
-        {archiveCategories.map((cat) => (
-          <div class="archive-cat">
-            <h3 class="archive-cat-title">{cat.title} ({cat.count})</h3>
-            <ul class="archive-list">
-              {cat.posts.map((p) => (
-                <li>
-                  <a href={`/blog/${p.slug}/`}>{p.data.title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </div>
+<BaseLayout>
+  <section class="hero">
+    <h1 class="hero-title">{SITE.brand} <span>Blog</span></h1>
+    <p class="hero-tagline">{SITE.description}</p>
   </section>
 
-  <!-- Certifications / Capability Badges Section -->
-  <section class="certs-section">
-    <div class="container text-center">
-      <h4 class="certs-title">Capabilities & Standards We Uphold</h4>
-      <div class="certs-pills">
-        {certBadges.map((b) => (
-          <span class="cert-pill">{b}</span>
+  {posts.length === 0 && <p class="empty">No posts yet — check back soon.</p>}
+
+  {
+    featured && (
+      <a class="featured" href={`/blog/${featured.slug}/`}>
+        <span class="featured-label">Latest</span>
+        <h2 class="featured-title">{featured.data.title}</h2>
+        <p class="featured-desc">{featured.data.description}</p>
+        <span class="featured-more">Read article →</span>
+      </a>
+    )
+  }
+
+  {
+    rest.length > 0 && (
+      <div class="post-list">
+        {rest.map((p) => (
+          <PostCard
+            url={`/blog/${p.slug}/`}
+            title={p.data.title}
+            description={p.data.description}
+            pubDate={p.data.pubDate}
+            tags={p.data.tags}
+            minutes={readingTime(p.body)}
+          />
         ))}
       </div>
-    </div>
-  </section>
+    )
+  }
 </BaseLayout>
