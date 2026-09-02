@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://blogs.ollawrite.com/sitemap-index.xml
+Sitemap: https://blog.ollawrite.com/sitemap-index.xml

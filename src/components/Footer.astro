@@ -4,14 +4,62 @@ const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
-  <div class="container footer-inner">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="footer-logo" href={SITE.marketingUrl}>
+        <span class="brand-mark" aria-hidden="true"><span class="brand-dot"></span></span>
+        <span class="brand-name"><span class="brand-name-dark">Olla</span><span class="brand-name-accent">Write</span></span>
+      </a>
+      <p class="footer-desc">{SITE.tagline} {SITE.description}</p>
+      <div class="footer-badges">
+        <span class="footer-badge">All Systems Operational</span>
+        <span class="footer-badge">SOC2 Type II</span>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-heading">Product</h4>
+      <ul class="footer-list">
+        <li><a href={`${SITE.marketingUrl}/#features`}>Site-First AI Writing</a></li>
+        <li><a href={`${SITE.marketingUrl}/#seo`}>Canonical SEO Grounding</a></li>
+        <li><a href={`${SITE.marketingUrl}/#verify`}>Content Verification</a></li>
+        <li><a href={`${SITE.marketingUrl}/#workflow`}>Editorial Workflow</a></li>
+        <li><a href={`${SITE.marketingUrl}/#integrations`}>Integrations</a></li>
+        <li><a href={SITE.marketingUrl}>Product Overview →</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-heading">Solutions</h4>
+      <ul class="footer-list">
+        <li><a href={`${SITE.marketingUrl}/#content`}>Content Teams</a></li>
+        <li><a href={`${SITE.marketingUrl}/#marketing`}>Marketing</a></li>
+        <li><a href={`${SITE.marketingUrl}/#seo`}>SEO & Search</a></li>
+        <li><a href={`${SITE.marketingUrl}/#agencies`}>Agencies</a></li>
+        <li><a href={`${SITE.marketingUrl}/#enterprise`}>Enterprise</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-heading">Resources</h4>
+      <ul class="footer-list">
+        <li><a href="/">Blog & Insights</a></li>
+        <li><a href="/tags/">Browse by Topic</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href={`${SITE.marketingUrl}/pricing`}>Pricing & Plans</a></li>
+        <li><a href={`${SITE.marketingUrl}/demo`}>Book a Demo</a></li>
+        <li><a href="/rss.xml">RSS Feed</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
     <p>© {year} {SITE.brand}. All rights reserved.</p>
-    <p class="footer-links">
-      <a href={SITE.marketingUrl}>{SITE.marketingLabel}</a>
-      <span aria-hidden="true">·</span>
-      <a href="/rss.xml">RSS</a>
-      <span aria-hidden="true">·</span>
-      <a href="/tags/">Tags</a>
+    <p class="footer-legal">
+      <a href={`${SITE.marketingUrl}/privacy`}>Privacy Policy</a>
+      <a href={`${SITE.marketingUrl}/terms`}>Terms of Service</a>
+      <a href={`${SITE.marketingUrl}/security`}>Security & Trust</a>
+      <a href="/sitemap-index.xml">Sitemap</a>
     </p>
   </div>
 </footer>
