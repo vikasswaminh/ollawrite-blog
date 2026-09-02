@@ -9,6 +9,7 @@ interface Props {
   title?: string;
   description?: string;
   image?: string;
+  wide?: boolean;
   article?: {
     publishedTime?: string;
     modifiedTime?: string;
@@ -16,7 +17,7 @@ interface Props {
     tags?: string[];
   };
 }
-const { title = SITE.title, description, image, article } = Astro.props;
+const { title = SITE.title, description, image, wide = false, article } = Astro.props;
 ---
 
 <!doctype html>
@@ -26,7 +27,7 @@ const { title = SITE.title, description, image, article } = Astro.props;
   </head>
   <body>
     <Header />
-    <main class="container">
+    <main class={wide ? 'container container-wide' : 'container'}>
       <slot />
     </main>
     <Footer />
