@@ -66,7 +66,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#f87171] transition-all group active:border-[#f87171]"
+                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer transition-colors group"
               >
                 <h3 className="font-bold text-[15px] sm:text-base text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
@@ -85,7 +85,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#f87171] transition-all group active:border-[#f87171]"
+                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer transition-colors group"
               >
                 <h3 className="font-bold text-[15px] sm:text-base text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
