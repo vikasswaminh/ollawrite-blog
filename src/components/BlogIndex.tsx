@@ -66,7 +66,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-slate-50 border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#003db3]"
+                className="snap-start shrink-0 w-72 p-4 bg-slate-50 border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a] active:border-[#e8443a] focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/30 focus:outline-none"
               >
                 <h3 className="font-bold text-[15px] sm:text-base text-slate-900 line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
@@ -182,13 +182,13 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
             {heroNewest && (
               <div
                 onClick={() => onReadArticle(heroNewest)}
-                className="block mb-6 group cursor-pointer"
+                tabIndex={0} role="button" aria-label={heroNewest.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(heroNewest); }} className="block mb-6 group cursor-pointer focus:outline-none"
               >
                 {(() => {
                   const heroStyle = getCategoryStyle(heroNewest.category);
                   return (
                     <div 
-                      className="relative overflow-hidden rounded-xl border border-slate-200 hover:shadow-md transition-all flex flex-col md:flex-row bg-white"
+                      className="relative overflow-hidden rounded-xl border border-slate-200 hover:border-[#e8443a] hover:shadow-md transition-all flex flex-col md:flex-row bg-white active:border-[#e8443a] active:ring-2 active:ring-[#e8443a]/30 focus-within:border-[#e8443a] focus-within:ring-2 focus-within:ring-[#e8443a]/30"
                       onMouseEnter={(e) => (e.currentTarget.style.borderColor = heroStyle.dot)}
                       onMouseLeave={(e) => (e.currentTarget.style.borderColor = '')}
                     >
@@ -295,7 +295,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   <article
                     key={post.id}
                     onClick={() => onReadArticle(post)}
-                    className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:shadow-md cursor-pointer flex flex-col p-3.5"
+                    tabIndex={0} role="button" aria-label={post.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(post); }} className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:border-[#e8443a] hover:shadow-md cursor-pointer flex flex-col p-3.5 focus:outline-none focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/30 active:border-[#e8443a] active:ring-2 active:ring-[#e8443a]/40"
                     onMouseEnter={(e) => (e.currentTarget.style.borderColor = cardStyle.dot)}
                     onMouseLeave={(e) => (e.currentTarget.style.borderColor = '')}
                   >

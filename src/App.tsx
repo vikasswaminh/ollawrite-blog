@@ -85,7 +85,7 @@ export function App() {
 
   return (
     <ErrorBoundary>
-      <div className="min-h-screen bg-white text-slate-900 flex flex-col font-['Lato'] selection:bg-[#dbe7ff] selection:text-[#002d86]">
+      <div className="min-h-screen bg-white text-slate-900 flex flex-col font-['Lato'] selection:bg-[#e8443a] selection:text-white">
 
         {/* Technical Header with B&W Theme Switch */}
         <Header

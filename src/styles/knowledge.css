@@ -646,3 +646,95 @@ h1, h2, h3, h4, h5, h6 {
 [data-theme="dark"] .bringing-together-desc {
   color: #cbd5e1 !important;
 }
+
+
+/* ==========================================================================
+   Global Red Text & Sentence Selection Highlight
+   ========================================================================== */
+::selection {
+  background-color: #e8443a !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+::-moz-selection {
+  background-color: #e8443a !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+*::selection {
+  background-color: #e8443a !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+*::-moz-selection {
+  background-color: #e8443a !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* ==========================================================================
+   Global Box / Card Selection & Focus Highlight (Red Color)
+   ========================================================================== */
+article,
+.card-box,
+.tldr-box,
+.key-takeaway-card,
+.main-content-card,
+.faq-box details {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* When any article box / card is active, focused, clicked, or selected */
+article:focus,
+article:focus-visible,
+article:focus-within,
+article:active,
+article.is-selected {
+  border-color: #e8443a !important;
+  box-shadow: 0 0 0 2px rgba(232, 68, 58, 0.35), 0 4px 14px rgba(232, 68, 58, 0.15) !important;
+  outline: none !important;
+}
+
+/* Key takeaway boxes active / focus */
+.key-takeaway-card:active,
+.key-takeaway-card:focus,
+.key-takeaway-card:focus-within,
+.key-takeaway-card.is-selected {
+  border-color: #e8443a !important;
+  border-left-color: #e8443a !important;
+  box-shadow: 0 0 0 2px rgba(232, 68, 58, 0.35), 0 4px 14px rgba(232, 68, 58, 0.15) !important;
+}
+
+/* TL;DR box active / focus */
+.tldr-box:active,
+.tldr-box:focus,
+.tldr-box:focus-within,
+.tldr-box.is-selected {
+  border-color: #e8443a !important;
+  border-top-color: #e8443a !important;
+  box-shadow: 0 0 0 2px rgba(232, 68, 58, 0.35), 0 4px 14px rgba(232, 68, 58, 0.15) !important;
+}
+
+/* Main Content Card focus / active */
+.main-content-card:focus-within,
+.main-content-card:active {
+  border-color: #e8443a !important;
+  box-shadow: 0 0 0 2px rgba(232, 68, 58, 0.25) !important;
+}
+
+/* FAQ accordion active / focus */
+.faq-box details:active,
+.faq-box details:focus-within {
+  border-color: #e8443a !important;
+  box-shadow: 0 0 0 2px rgba(232, 68, 58, 0.35) !important;
+}
+
+/* Interactive button/link focus rings */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #e8443a !important;
+  outline-offset: 2px !important;
+}
