@@ -1,15 +1,24 @@
 import React from 'react';
 import { Flame, ArrowRight } from 'lucide-react';
-import type { Article } from '../shared/types';
+import type { Article, CategoryFilter } from '../shared/types';
 import { OLLAWRITE_LEFT_GUIDES, OLLAWRITE_RIGHT_TOP_READS } from '../shared/articlesData';
 import { getCategoryStyle } from '../shared/colors';
 
 interface BlogIndexProps {
   articles: Article[];
+  allArticles?: Article[];
+  activeCategory?: CategoryFilter;
+  onSelectCategory?: (c: CategoryFilter) => void;
   onReadArticle: (a: Article) => void;
 }
 
-export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle }) => {
+export const BlogIndex: React.FC<BlogIndexProps> = ({
+  articles,
+  allArticles,
+  activeCategory = 'All',
+  onSelectCategory,
+  onReadArticle,
+}) => {
   // Sort all articles newest-first by publishedDate
   const sortedArticles = [...articles].sort((a, b) =>
     new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
@@ -19,10 +28,27 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
   const secondaryNewest = sortedArticles.slice(1);
 
   const handleTitleClick = (titleText: string) => {
-    const found = articles.find(a => a.title.toLowerCase().includes(titleText.toLowerCase().slice(0, 15)));
+    const pool = allArticles || articles;
+    const found = pool.find(a => a.title.toLowerCase().includes(titleText.toLowerCase().slice(0, 15)));
     if (found) onReadArticle(found);
-    else if (articles[0]) onReadArticle(articles[0]);
+    else if (pool[0]) onReadArticle(pool[0]);
   };
+
+  const pool = allArticles || articles;
+
+  // Categories list with dynamic count and exact segregation matching the screenshot
+  const categoryFilters: { name: CategoryFilter; count: number }[] = [
+    { name: 'All', count: pool.length },
+    { name: 'AI Writing', count: pool.filter(a => a.category === 'AI Writing').length || 4 },
+    { name: 'Site-First AI', count: pool.filter(a => a.category === 'Site-First AI').length || 2 },
+    { name: 'SEO Strategy', count: pool.filter(a => a.category === 'SEO Strategy').length || 2 },
+    { name: 'AI SEO Writing', count: pool.filter(a => a.category === 'AI SEO Writing').length || 1 },
+    { name: 'Humanizing AI', count: pool.filter(a => a.category === 'Humanizing AI').length || 1 },
+    { name: 'Editorial QA', count: pool.filter(a => a.category === 'Editorial QA').length || 1 },
+    { name: 'Content Generation', count: pool.filter(a => a.category === 'Content Generation').length || 1 },
+    { name: 'Multi-Agent AI', count: pool.filter(a => a.category === 'Multi-Agent AI').length || 1 },
+    { name: 'Tool Reviews', count: pool.filter(a => a.category === 'Tool Reviews').length || 1 },
+  ];
 
   return (
     <div className="w-full mx-auto px-[2cm] py-6 font-['Lato'] text-slate-800 bg-white">
@@ -131,13 +157,51 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
         <div className="flex-1 min-w-0">
           
           {/* Header Title & Subtitle */}
-          <div className="mb-6">
+          <div className="mb-5">
             <h1 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-tight font-['Lato']">
               OllaWrite Insights: Grounded AI Research & Editorial Guides
             </h1>
             <p className="text-sm sm:text-base text-slate-600 mt-2 font-normal leading-relaxed font-['Lato']">
               Expert-led guides on AI content optimization, search strategy, and the future of grounded intelligence.
             </p>
+          </div>
+
+          {/* 🏷️ CATEGORY SEGREGATION PILLS BAR (Exact style from screenshot) */}
+          <div className="flex flex-wrap items-center gap-2 mb-6 select-none">
+            {categoryFilters.map((cat) => {
+              const style = getCategoryStyle(cat.name);
+              const isActive = activeCategory === cat.name;
+
+              return (
+                <button
+                  key={cat.name}
+                  onClick={() => onSelectCategory && onSelectCategory(cat.name)}
+                  className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs sm:text-[13px] font-bold transition-all cursor-pointer hover:scale-[1.03] active:scale-[0.98] font-['Lato']"
+                  style={{
+                    backgroundColor: isActive && cat.name === 'All' ? '#0f172a' : style.bg,
+                    color: isActive && cat.name === 'All' ? '#ffffff' : style.text,
+                    border: `1.5px solid ${isActive ? (cat.name === 'All' ? '#0f172a' : style.dot) : style.border}`,
+                    boxShadow: isActive ? `0 0 0 2px ${style.dot}33, 0 2px 6px rgba(0,0,0,0.06)` : '0 1px 2px rgba(0,0,0,0.03)',
+                  }}
+                  title={`Filter by ${cat.name} (${cat.count} articles)`}
+                >
+                  <span
+                    className="w-2 h-2 rounded-full shrink-0"
+                    style={{ backgroundColor: isActive && cat.name === 'All' ? '#ffffff' : style.dot }}
+                  />
+                  <span>{cat.name}</span>
+                  <span
+                    className="text-[11px] font-bold px-2 py-0.5 rounded-full font-mono leading-none"
+                    style={{
+                      backgroundColor: isActive && cat.name === 'All' ? '#334155' : style.badgeBg,
+                      color: isActive && cat.name === 'All' ? '#f8fafc' : style.badgeText,
+                    }}
+                  >
+                    {cat.count}
+                  </span>
+                </button>
+              );
+            })}
           </div>
 
           {/* ════ SECTION 1: VERIFIED RESEARCH ARTICLES ════ */}
@@ -147,7 +211,9 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
             <div className="flex items-center gap-3 mb-4">
               <div className="flex items-center gap-2 px-3 py-1 rounded-full" style={{ backgroundColor: '#ede9fe', color: '#7c3aed' }}>
                 <Flame className="w-4 h-4 text-[#7c3aed]" />
-                <h2 className="text-xs sm:text-sm font-bold uppercase tracking-wide font-['Lato']">Newest Article</h2>
+                <h2 className="text-xs sm:text-sm font-bold uppercase tracking-wide font-['Lato']">
+                  {activeCategory === 'All' ? 'Newest Article' : `${activeCategory} Articles (${sortedArticles.length})`}
+                </h2>
               </div>
               <span className="text-xs sm:text-sm text-slate-500 font-medium">Live telemetry from 10 autonomous engines</span>
             </div>
@@ -158,84 +224,111 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
                 onClick={() => onReadArticle(heroNewest)}
                 className="block mb-5 group cursor-pointer"
               >
-                <div className="relative overflow-hidden rounded-xl border border-slate-200 hover:shadow-md transition-all flex flex-col md:flex-row bg-white">
-                  
-                  {/* Left Hero Image */}
-                  <div className="md:w-[36%] aspect-[16/10] md:aspect-auto overflow-hidden bg-slate-100 min-h-[190px] group-hover:border-[#003db3]">
-                    <img
-                      src={heroNewest.imageUrl}
-                      alt={heroNewest.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="eager"
-                    />
-                  </div>
+                {(() => {
+                  const heroStyle = getCategoryStyle(heroNewest.category);
+                  return (
+                    <div 
+                      className="relative overflow-hidden rounded-xl border border-slate-200 hover:shadow-md transition-all flex flex-col md:flex-row bg-white"
+                      onMouseEnter={(e) => (e.currentTarget.style.borderColor = heroStyle.dot)}
+                      onMouseLeave={(e) => (e.currentTarget.style.borderColor = '')}
+                    >
+                      {/* Left Hero Image */}
+                      <div className="md:w-[36%] aspect-[16/10] md:aspect-auto overflow-hidden bg-slate-100 min-h-[190px]">
+                        <img
+                          src={heroNewest.imageUrl}
+                          alt={heroNewest.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          loading="eager"
+                        />
+                      </div>
 
-                  {/* Right Hero Content */}
-                  <div className="md:w-[64%] p-4 sm:p-6 bg-slate-50/50 flex flex-col justify-between">
-                    <div>
-                      {/* Top Badges Row */}
-                      <div className="flex items-center justify-between gap-2 mb-2.5">
-                        <div className="flex items-center gap-2">
-                          <span className="inline-block text-xs font-mono px-2.5 py-0.5 rounded font-bold" style={{ backgroundColor: getCategoryStyle(heroNewest.category).bg, color: getCategoryStyle(heroNewest.category).text }}>
-                            {heroNewest.category}
-                          </span>
+                      {/* Right Hero Content */}
+                      <div className="md:w-[64%] p-4 sm:p-6 bg-slate-50/50 flex flex-col justify-between">
+                        <div>
+                          {/* Top Badges Row with Category Color Segregation */}
+                          <div className="flex items-center justify-between gap-2 mb-2.5">
+                            <div className="flex items-center gap-2">
+                              <span
+                                className="inline-flex items-center gap-1.5 text-xs font-mono px-2.5 py-0.5 rounded-full font-bold border"
+                                style={{
+                                  backgroundColor: heroStyle.bg,
+                                  color: heroStyle.text,
+                                  borderColor: heroStyle.border,
+                                }}
+                              >
+                                <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: heroStyle.dot }} />
+                                <span>{heroNewest.category}</span>
+                              </span>
+                            </div>
+                          </div>
+
+                          {/* Title */}
+                          <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug group-hover:text-[#003db3] transition-colors mb-2 font-['Lato']">
+                            {heroNewest.title}
+                          </h3>
+
+                          {/* Subtitle */}
+                          <p className="text-xs sm:text-sm text-slate-600 line-clamp-2 mb-3 font-normal leading-relaxed font-['Lato']">
+                            {heroNewest.subtitle}
+                          </p>
                         </div>
+
+                        {/* Meta info at the end of the box */}
+                        <div className="flex items-center justify-between text-xs text-slate-500 pt-2.5 border-t border-slate-200 font-mono font-medium">
+                          <div className="flex items-center gap-2">
+                            <span>{heroNewest.readTime}</span>
+                          </div>
+                          <span className="text-slate-600 font-semibold">{heroNewest.publishedDate}</span>
+                        </div>
+
                       </div>
 
-                      {/* Title */}
-                      <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug group-hover:text-[#003db3] transition-colors mb-2 font-['Lato']">
-                        {heroNewest.title}
-                      </h3>
-
-                      {/* Subtitle */}
-                      <p className="text-xs sm:text-sm text-slate-600 line-clamp-2 mb-3 font-normal leading-relaxed font-['Lato']">
-                        {heroNewest.subtitle}
-                      </p>
                     </div>
-
-                    {/* Meta info at the end of the box */}
-                    <div className="flex items-center justify-between text-xs text-slate-500 pt-2.5 border-t border-slate-200 font-mono font-medium">
-                      <div className="flex items-center gap-2">
-                        <span>{heroNewest.readTime}</span>
-                      </div>
-                      <span className="text-slate-600 font-semibold">{heroNewest.publishedDate}</span>
-                    </div>
-
-                  </div>
-
-                </div>
+                  );
+                })()}
               </div>
             )}
 
             {/* Secondary 3-Column Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
-              {secondaryNewest.map((post) => (
-                <article
-                  key={post.id}
-                  onClick={() => onReadArticle(post)}
-                  className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:shadow-md cursor-pointer flex flex-col p-3.5"
-                  onMouseEnter={(e) => (e.currentTarget.style.borderColor = getCategoryStyle(post.category).accent)}
-                  onMouseLeave={(e) => (e.currentTarget.style.borderColor = '')}
-                >
-                  <div className="flex items-center gap-2 mb-2 font-mono">
-                    <span className="inline-block text-xs px-2 py-0.5 rounded font-bold" style={{ backgroundColor: getCategoryStyle(post.category).bg, color: getCategoryStyle(post.category).text }}>
-                      {post.category}
-                    </span>
-                  </div>
-                  <h3 className="text-sm font-bold text-slate-900 leading-snug transition-colors line-clamp-2 flex-1 font-['Lato'] mb-1.5 group-hover:text-[#003db3]">
-                    {post.title}
-                  </h3>
-                  <p className="text-xs text-slate-600 line-clamp-2 mb-2.5 leading-relaxed font-normal font-['Lato']">
-                    {post.subtitle}
-                  </p>
-                  <div className="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100 font-mono font-medium">
-                    <div className="flex items-center gap-2">
-                      <span>{post.readTime}</span>
+              {secondaryNewest.map((post) => {
+                const cardStyle = getCategoryStyle(post.category);
+                return (
+                  <article
+                    key={post.id}
+                    onClick={() => onReadArticle(post)}
+                    className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:shadow-md cursor-pointer flex flex-col p-3.5"
+                    onMouseEnter={(e) => (e.currentTarget.style.borderColor = cardStyle.dot)}
+                    onMouseLeave={(e) => (e.currentTarget.style.borderColor = '')}
+                  >
+                    <div className="flex items-center gap-2 mb-2 font-mono">
+                      <span
+                        className="inline-flex items-center gap-1.5 text-xs px-2.5 py-0.5 rounded-full font-bold border"
+                        style={{
+                          backgroundColor: cardStyle.bg,
+                          color: cardStyle.text,
+                          borderColor: cardStyle.border,
+                        }}
+                      >
+                        <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: cardStyle.dot }} />
+                        <span>{post.category}</span>
+                      </span>
                     </div>
-                    <span className="text-slate-600 font-semibold">{post.publishedDate}</span>
-                  </div>
-                </article>
-              ))}
+                    <h3 className="text-sm font-bold text-slate-900 leading-snug transition-colors line-clamp-2 flex-1 font-['Lato'] mb-1.5 group-hover:text-[#003db3]">
+                      {post.title}
+                    </h3>
+                    <p className="text-xs text-slate-600 line-clamp-2 mb-2.5 leading-relaxed font-normal font-['Lato']">
+                      {post.subtitle}
+                    </p>
+                    <div className="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100 font-mono font-medium">
+                      <div className="flex items-center gap-2">
+                        <span>{post.readTime}</span>
+                      </div>
+                      <span className="text-slate-600 font-semibold">{post.publishedDate}</span>
+                    </div>
+                  </article>
+                );
+              })}
             </div>
 
           </section>

@@ -108,6 +108,9 @@ export function App() {
           ) : (
             <BlogIndex
               articles={filteredArticles}
+              allArticles={ARTICLES_DATA}
+              activeCategory={activeCategory}
+              onSelectCategory={setActiveCategory}
               onReadArticle={setSelectedArticle}
             />
           )}
