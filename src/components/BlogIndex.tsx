@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flame, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Flame, ArrowRight } from 'lucide-react';
 import type { Article } from '../shared/types';
 import { OLLAWRITE_LEFT_GUIDES, OLLAWRITE_RIGHT_TOP_READS } from '../shared/articlesData';
 import { getCategoryStyle } from '../shared/colors';
@@ -27,7 +27,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
   return (
     <div className="w-full mx-auto px-[2cm] py-6 font-['Lato'] text-slate-800 bg-white">
       
-      {/* ── MOBILE: Horizontal scroll cards for both categories ── */}
+      {/* 📱 MOBILE: Horizontal scroll cards for both categories 📱 */}
       <div className="lg:hidden space-y-6 mb-8">
         <div>
           <div className="flex items-center gap-2 mb-3">
@@ -68,10 +68,10 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
         </div>
       </div>
 
-      {/* ── DESKTOP: 3-COLUMN LAYOUT WITH EXACT SIDEBARS ── */}
+      {/* 🖥️ DESKTOP: 3-COLUMN LAYOUT WITH EXACT SIDEBARS 🖥️ */}
       <div className="flex gap-6 xl:gap-8">
 
-        {/* ════ LEFT SIDEBAR: CORE INDEX (w-[240px]) ════ */}
+        {/* 📚 LEFT SIDEBAR: CORE INDEX (w-[240px]) 📚 */}
         <aside className="hidden lg:block w-[240px] shrink-0">
           <div className="sticky top-20 rounded-2xl border border-[#f1f5f9] bg-white/60 p-3.5">
             <div className="flex items-center gap-2 mb-3">
@@ -127,7 +127,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
           </div>
         </aside>
 
-        {/* ════ CENTER: MAIN BLOG INDEX CONTENT (flex-1 min-w-0) ════ */}
+        {/* 📰 CENTER: MAIN BLOG INDEX CONTENT (flex-1 min-w-0) 📰 */}
         <div className="flex-1 min-w-0">
           
           {/* Header Title & Subtitle */}
@@ -140,7 +140,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
             </p>
           </div>
 
-          {/* ── SECTION 1: VERIFIED RESEARCH ARTICLES ── */}
+          {/* ════ SECTION 1: VERIFIED RESEARCH ARTICLES ════ */}
           <section className="mb-10">
             
             {/* Pill Header */}
@@ -175,9 +175,11 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
                     <div>
                       {/* Top Badges Row */}
                       <div className="flex items-center justify-between gap-2 mb-2.5">
-                        <span className="inline-block text-xs font-mono px-2.5 py-0.5 rounded font-bold" style={{ backgroundColor: getCategoryStyle(heroNewest.category).bg, color: getCategoryStyle(heroNewest.category).text }}>
-                          {heroNewest.category}
-                        </span>
+                        <div className="flex items-center gap-2">
+                          <span className="inline-block text-xs font-mono px-2.5 py-0.5 rounded font-bold" style={{ backgroundColor: getCategoryStyle(heroNewest.category).bg, color: getCategoryStyle(heroNewest.category).text }}>
+                            {heroNewest.category}
+                          </span>
+                        </div>
                       </div>
 
                       {/* Title */}
@@ -191,9 +193,12 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
                       </p>
                     </div>
 
-                    {/* Meta info */}
-                    <div className="flex items-center gap-3 text-xs text-slate-500 pt-2.5 border-t border-slate-200 font-mono font-medium">
-                      <span>{heroNewest.readTime}</span>
+                    {/* Meta info at the end of the box */}
+                    <div className="flex items-center justify-between text-xs text-slate-500 pt-2.5 border-t border-slate-200 font-mono font-medium">
+                      <div className="flex items-center gap-2">
+                        <span>{heroNewest.readTime}</span>
+                      </div>
+                      <span className="text-slate-600 font-semibold">{heroNewest.publishedDate}</span>
                     </div>
 
                   </div>
@@ -204,7 +209,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
 
             {/* Secondary 3-Column Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
-              {secondaryNewest.map((post, i) => (
+              {secondaryNewest.map((post) => (
                 <article
                   key={post.id}
                   onClick={() => onReadArticle(post)}
@@ -224,7 +229,10 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
                     {post.subtitle}
                   </p>
                   <div className="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100 font-mono font-medium">
-                    <span>{post.readTime}</span>
+                    <div className="flex items-center gap-2">
+                      <span>{post.readTime}</span>
+                    </div>
+                    <span className="text-slate-600 font-semibold">{post.publishedDate}</span>
                   </div>
                 </article>
               ))}
@@ -234,7 +242,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({ articles, onReadArticle })
 
         </div>
 
-        {/* ════ RIGHT SIDEBAR: CITATION INDEX & CTAS (w-[240px]) ════ */}
+        {/* 🏷️ RIGHT SIDEBAR: CITATION INDEX & CTAS (w-[240px]) 🏷️ */}
         <aside className="hidden lg:block w-[240px] shrink-0">
           <div className="sticky top-20 rounded-2xl border border-[#f1f5f9] bg-white/60 p-3.5">
             <div className="flex items-center gap-2 mb-3">
