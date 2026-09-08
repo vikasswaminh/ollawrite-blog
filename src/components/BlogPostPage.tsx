@@ -191,7 +191,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={g.id}
                   onClick={() => onSelectArticle(g)}
-                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_16px_rgba(232,68,58,0.16)] text-slate-800 font-bold text-xs sm:text-sm transition cursor-pointer line-clamp-2 focus:outline-none focus:ring-2 focus:ring-[#e8443a]/30 active:border-[#e8443a]"
+                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_18px_rgba(232,68,58,0.18)] text-slate-800 font-bold text-xs sm:text-sm transition-all cursor-pointer line-clamp-2 focus:outline-none focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 active:border-[#e8443a] active:bg-[#fee2e2]"
                   
                 >
                   {g.title}
@@ -232,7 +232,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={w.id}
                   onClick={() => onSelectArticle(w)}
-                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_16px_rgba(232,68,58,0.16)] text-slate-800 font-bold text-xs sm:text-sm transition cursor-pointer line-clamp-2 focus:outline-none focus:ring-2 focus:ring-[#e8443a]/30 active:border-[#e8443a]"
+                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_18px_rgba(232,68,58,0.18)] text-slate-800 font-bold text-xs sm:text-sm transition-all cursor-pointer line-clamp-2 focus:outline-none focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 active:border-[#e8443a] active:bg-[#fee2e2]"
                   
                 >
                   {w.title}

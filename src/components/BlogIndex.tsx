@@ -66,7 +66,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-slate-50 border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a] active:border-[#e8443a] focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/30 focus:outline-none"
+                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_16px_rgba(232,68,58,0.16)] active:border-[#e8443a] active:bg-[#fee2e2] focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 focus:outline-none transition-all group"
               >
                 <h3 className="font-bold text-[15px] sm:text-base text-slate-900 line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
@@ -85,7 +85,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-slate-50 border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a]"
+                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_16px_rgba(232,68,58,0.16)] active:border-[#e8443a] active:bg-[#fee2e2] focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 focus:outline-none transition-all group"
               >
                 <h3 className="font-bold text-[15px] sm:text-base text-slate-900 line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
@@ -105,12 +105,13 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 Essential Guide
               </span>
             </div>
-            <nav className="space-y-1">
+            <nav className="space-y-2">
               {OLLAWRITE_LEFT_GUIDES.map((title, idx) => (
                 <button
                   key={idx}
                   onClick={() => handleTitleClick(title)}
-                  className="w-full text-left block px-2.5 py-1.5 text-[13px] font-bold text-slate-700 hover:text-[#e8443a] hover:bg-[#fff5f5] hover:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/30 active:bg-[#fee2e2] active:text-[#e8443a] rounded-lg transition-colors leading-snug cursor-pointer font-['Lato']"
+                  tabIndex={0}
+                  className="w-full text-left block p-2.5 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff5f5] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-[13px] font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
                 >
                   <span>{title}</span>
                 </button>
@@ -340,12 +341,13 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 Agent Workflow
               </span>
             </div>
-            <nav className="space-y-1">
+            <nav className="space-y-2">
               {OLLAWRITE_RIGHT_TOP_READS.map((title, idx) => (
                 <button
                   key={idx}
                   onClick={() => handleTitleClick(title)}
-                  className="w-full text-left block px-2.5 py-1.5 text-[13px] font-bold text-slate-700 hover:text-[#e8443a] hover:bg-[#fff5f5] hover:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/30 active:bg-[#fee2e2] active:text-[#e8443a] rounded-lg transition-colors leading-snug cursor-pointer font-['Lato']"
+                  tabIndex={0}
+                  className="w-full text-left block p-2.5 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff5f5] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-[13px] font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
                 >
                   <span>{title}</span>
                 </button>
