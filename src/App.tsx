@@ -3,7 +3,6 @@ import { Header } from './components/Header';
 import { BlogIndex } from './components/BlogIndex';
 import { BlogPostPage } from './components/BlogPostPage';
 import { SearchModal } from './components/SearchModal';
-import { Footer } from './components/Footer';
 import { ARTICLES_DATA } from './shared/articlesData';
 import type { Article, CategoryFilter } from './shared/types';
 import './styles/knowledge.css';
@@ -86,7 +85,7 @@ export function App() {
 
   return (
     <ErrorBoundary>
-      <div className="min-h-screen bg-white text-slate-900 flex flex-col font-['Lato'] selection:bg-blue-100 selection:text-blue-900">
+      <div className="min-h-screen bg-white text-slate-900 flex flex-col font-['Lato'] selection:bg-[#dbe7ff] selection:text-[#002d86]">
 
         {/* Technical Header with B&W Theme Switch */}
         <Header
@@ -113,9 +112,6 @@ export function App() {
             />
           )}
         </main>
-
-        {/* Knowledge Footer */}
-        <Footer onSelectCategory={(cat) => { setActiveCategory(cat); setSelectedArticle(null); }} />
 
         {/* Search Modal (Ctrl+K) */}
         <SearchModal

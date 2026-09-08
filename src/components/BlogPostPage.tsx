@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import type { Article } from '../shared/types';
 import { ArrowLeft, Check, Share2 } from 'lucide-react';
+import { getCategoryStyle, cycleAccent } from '../shared/colors';
 
 interface BlogPostPageProps {
   article: Article;
@@ -35,24 +36,24 @@ function parseArticleContentToHtml(content: string): string {
   // Process Headings
   html = html.replace(/^## (.*$)/gim, (m, g1) => {
     const cleanId = g1.replace(/<[^>]+>/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
-    return `<h2 id="${cleanId}" class="text-2xl sm:text-3xl font-bold text-slate-900 mt-10 mb-4 font-['Lato']">${g1}</h2>`;
+    return `<h2 id="${cleanId}" class="text-xl sm:text-2xl font-bold text-slate-900 mt-10 mb-4 font-['Lato']">${g1}</h2>`;
   });
   html = html.replace(/^### (.*$)/gim, (m, g1) => {
     const cleanId = g1.replace(/<[^>]+>/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
-    return `<h3 id="${cleanId}" class="text-xl sm:text-2xl font-bold text-slate-900 mt-8 mb-3 font-['Lato']">${g1}</h3>`;
+    return `<h3 id="${cleanId}" class="text-lg sm:text-xl font-bold text-slate-900 mt-8 mb-3 font-['Lato']">${g1}</h3>`;
   });
   html = html.replace(/^#### (.*$)/gim, (m, g1) => {
     const cleanId = g1.replace(/<[^>]+>/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
-    return `<h4 id="${cleanId}" class="text-lg font-bold text-blue-700 mt-5 mb-2 font-['Lato']">${g1}</h4>`;
+    return `<h4 id="${cleanId}" class="text-base font-bold text-[#003db3] mt-5 mb-2 font-['Lato']">${g1}</h4>`;
   });
 
   // Formatting
   html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
   html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
-  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800 font-semibold">$1</a>');
+  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-[#003db3] underline hover:text-[#002d86] font-medium">$1</a>');
 
   // Blockquotes & Lists
-  html = html.replace(/^> (.*$)/gim, '<blockquote class="pl-4 border-l-4 border-blue-500 my-5 italic text-slate-700 bg-blue-50/50 py-3 px-4 rounded-r">$1</blockquote>');
+  html = html.replace(/^> (.*$)/gim, '<blockquote class="pl-4 border-l-4 border-[#003db3] my-5 italic text-slate-700 bg-[#eef4ff]/60 py-3 px-4 rounded-r">$1</blockquote>');
   html = html.replace(/^-\s+(.*$)/gim, '<li class="ml-4 list-disc text-slate-800 my-1">$1</li>');
   html = html.replace(/^(\d+)\.\s+(.*$)/gim, '<li class="ml-4 list-decimal text-slate-800 my-1"><strong>$1.</strong> $2</li>');
 
@@ -81,8 +82,12 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [article]);
 
-  const essentialGuides = allArticles.filter(a => a.id !== article.id).slice(0, 4);
-  const agentWorkflows = allArticles.filter(a => a.id !== article.id).slice(4, 8);
+  // All other articles, newest-first by publishedDate
+  const others = allArticles
+    .filter(a => a.id !== article.id)
+    .sort((a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime());
+  const essentialGuides = others.slice(0, 4);
+  const agentWorkflows = others.slice(4, 8);
 
   const websiteBacklinks = [
     { title: 'OllaWrite AI Platform ↗', href: 'https://ollawrite.com' },
@@ -105,11 +110,11 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
         {/* Navigation & Breadcrumbs Bar */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-200">
           <nav className="flex items-center gap-2 text-sm text-slate-500 font-medium">
-            <button onClick={onBack} className="hover:text-blue-600 transition cursor-pointer font-bold text-blue-600 flex items-center gap-1">
+            <button onClick={onBack} className="hover:text-[#002d86] transition cursor-pointer font-bold text-[#003db3] flex items-center gap-1">
               <ArrowLeft size={16} /> Home
             </button>
             <span>/</span>
-            <button onClick={onBack} className="hover:text-blue-600 transition cursor-pointer">
+            <button onClick={onBack} className="hover:text-[#003db3] transition cursor-pointer">
               Blog
             </button>
             <span>/</span>
@@ -127,15 +132,15 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
 
         {/* Article Post Header */}
         <header className="post-header mb-10 pb-8 border-b border-slate-200">
-          <div className="post-meta-caption flex items-center gap-3 text-sm font-bold text-blue-600 uppercase mb-4">
-            <span className="bg-blue-600 text-white px-3 py-1 rounded text-xs tracking-wider">{primaryTag}</span>
+          <div className="post-meta-caption flex items-center gap-3 text-sm font-bold text-[#003db3] uppercase mb-4">
+            <span className="px-3 py-1 rounded text-xs tracking-wider" style={{ backgroundColor: getCategoryStyle(article.category).bg, color: getCategoryStyle(article.category).text }}>{primaryTag}</span>
             <span>•</span>
             <span className="text-slate-500 font-semibold">{article.publishedDate}</span>
             <span>•</span>
             <span className="text-slate-500 font-semibold">{article.readTime}</span>
           </div>
 
-          <h1 className="os-display-title text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-4 font-['Lato']">
+          <h1 className="os-display-title text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 leading-tight mb-4 font-['Lato']">
             {article.title}
           </h1>
 
@@ -148,7 +153,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
           {/* Author & Hashtags Bar */}
           <div className="author-hashtags-row flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-100">
             <div className="author-info-group flex items-center gap-3">
-              <div className="author-avatar-lightning w-10 h-10 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-lg">
+              <div className="author-avatar-lightning w-10 h-10 rounded-full bg-[#eef4ff] border border-[#c7d8f8] flex items-center justify-center text-lg">
                 ⚡
               </div>
               <div>
@@ -157,11 +162,11 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
               </div>
             </div>
 
-            <div className="hashtags-group flex flex-wrap gap-2 text-sm font-semibold text-blue-600">
-              <span>#{primaryTag.toLowerCase().replace(/[^a-z0-9]/g, '')}</span>
-              <span>#aiwriting</span>
-              <span>#agenticAI</span>
-              <span>#contentstrategy</span>
+            <div className="hashtags-group flex flex-wrap gap-2 text-sm font-semibold">
+              <span style={{ color: cycleAccent(0) }}>#{primaryTag.toLowerCase().replace(/[^a-z0-9]/g, '')}</span>
+              <span style={{ color: cycleAccent(1) }}>#aiwriting</span>
+              <span style={{ color: cycleAccent(2) }}>#agenticAI</span>
+              <span style={{ color: cycleAccent(3) }}>#contentstrategy</span>
             </div>
           </div>
         </header>
@@ -171,15 +176,17 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
           
           {/* Left Sidebar: Essential Guides */}
           <aside className="blog-sidebar sticky top-24 space-y-4">
-            <span className="sidebar-title blue block text-xs font-bold uppercase tracking-wider bg-blue-600 text-white px-3 py-1.5 rounded-full w-max mb-3">
+            <span className="sidebar-title blue block text-xs font-bold uppercase tracking-wider text-white px-3 py-1.5 rounded-full w-max mb-3" style={{ backgroundColor: '#003db3' }}>
               Essential Guides
             </span>
             <div className="sidebar-cards-stack flex flex-col gap-2.5">
-              {essentialGuides.map((g) => (
+              {essentialGuides.map((g, i) => (
                 <button
                   key={g.id}
                   onClick={() => onSelectArticle(g)}
-                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-blue-500 hover:bg-blue-50/50 text-slate-800 font-medium text-xs sm:text-sm transition cursor-pointer line-clamp-2"
+                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:bg-[#eef4ff]/60 text-slate-800 font-medium text-xs sm:text-sm transition cursor-pointer line-clamp-2"
+                  onMouseEnter={(e) => (e.currentTarget.style.borderColor = cycleAccent(i % 4))}
+                  onMouseLeave={(e) => (e.currentTarget.style.borderColor = '')}
                 >
                   {g.title}
                 </button>
@@ -192,7 +199,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="os-toc-link block p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-blue-500 text-blue-600 font-bold text-xs sm:text-sm transition"
+                    className="os-toc-link block p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-[#003db3] text-[#003db3] font-bold text-xs sm:text-sm transition"
                   >
                     {link.title}
                   </a>
@@ -207,39 +214,21 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
               className="prose text-slate-800 space-y-6 text-base sm:text-lg font-['Lato']"
               dangerouslySetInnerHTML={{ __html: parseArticleContentToHtml(article.content) }}
             />
-
-            {/* Bringing It All Together Highlight Box */}
-            <section className="bringing-together-card mt-12 p-8 sm:p-10 bg-blue-50/70 border border-blue-200 border-t-4 border-t-blue-600 rounded-xl text-center shadow-xs">
-              <h2 id="bringing-it-all-together" className="bringing-together-title text-2xl sm:text-3xl font-extrabold text-blue-900 mb-3">
-                Bringing It All Together
-              </h2>
-              <p className="bringing-together-desc text-base sm:text-lg text-slate-700 max-w-xl mx-auto mb-6 leading-relaxed">
-                OllaWrite offers robust, grounded deployment for autonomous AI content systems with built-in audit logging and human approval gates.
-              </p>
-              <div className="cta-button-wrapper flex justify-center">
-                <a
-                  href="https://ollawrite.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="os-btn-primary bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg shadow-md transition transform hover:-translate-y-0.5 inline-block"
-                >
-                  Get Started Today →
-                </a>
-              </div>
-            </section>
           </main>
 
           {/* Right Sidebar: Agent Workflows */}
           <aside className="blog-sidebar sticky top-24 space-y-4">
-            <span className="sidebar-title purple block text-xs font-bold uppercase tracking-wider bg-blue-600 text-white px-3 py-1.5 rounded-full w-max mb-3">
+            <span className="sidebar-title purple block text-xs font-bold uppercase tracking-wider text-white px-3 py-1.5 rounded-full w-max mb-3" style={{ backgroundColor: '#e8443a' }}>
               Agent Workflows
             </span>
             <div className="sidebar-cards-stack flex flex-col gap-2.5">
-              {agentWorkflows.map((w) => (
+              {agentWorkflows.map((w, i) => (
                 <button
                   key={w.id}
                   onClick={() => onSelectArticle(w)}
-                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-blue-500 hover:bg-blue-50/50 text-slate-800 font-medium text-xs sm:text-sm transition cursor-pointer line-clamp-2"
+                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:bg-[#fdeceb]/60 text-slate-800 font-medium text-xs sm:text-sm transition cursor-pointer line-clamp-2"
+                  onMouseEnter={(e) => (e.currentTarget.style.borderColor = cycleAccent((i + 2) % 4))}
+                  onMouseLeave={(e) => (e.currentTarget.style.borderColor = '')}
                 >
                   {w.title}
                 </button>

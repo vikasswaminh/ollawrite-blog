@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { X, ArrowRight, Terminal, Database } from 'lucide-react';
 import type { Article } from '../shared/types';
 import { POPULAR_SEARCH_TOPICS } from '../shared/articlesData';
+import { cycleAccent, getCategoryStyle } from '../shared/colors';
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -50,7 +51,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         
         {/* Search Input */}
         <div className="p-4 border-b border-slate-200 flex items-center gap-3 bg-slate-50">
-          <Terminal className="w-5 h-5 text-blue-600 shrink-0" />
+          <Terminal className="w-5 h-5 text-[#003db3] shrink-0" />
           <input
             ref={inputRef}
             type="text"
@@ -71,19 +72,31 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         {query.trim() === '' && (
           <div className="p-5">
             <div className="text-xs font-mono text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-2 font-bold">
-              <Database size={14} className="text-blue-600" />
+              <Database size={14} className="text-[#003db3]" />
               <span>INDEXED_TOPIC_VECTORS</span>
             </div>
             <div className="flex flex-wrap gap-2">
-              {POPULAR_SEARCH_TOPICS.map((topic) => (
-                <button
-                  key={topic}
-                  onClick={() => setQuery(topic)}
-                  className="px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 text-xs font-mono font-semibold text-slate-700 transition cursor-pointer"
-                >
-                  &gt; {topic}
-                </button>
-              ))}
+              {POPULAR_SEARCH_TOPICS.map((topic, i) => {
+                const accent = cycleAccent(i);
+                return (
+                  <button
+                    key={topic}
+                    onClick={() => setQuery(topic)}
+                    className="px-3 py-1.5 rounded-lg border bg-slate-50 text-xs font-mono font-semibold text-slate-700 transition cursor-pointer"
+                    style={{ borderColor: `${accent}55`, color: accent }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = `${accent}18`;
+                      e.currentTarget.style.borderColor = accent;
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = '';
+                      e.currentTarget.style.borderColor = `${accent}55`;
+                    }}
+                  >
+                    &gt; {topic}
+                  </button>
+                );
+              })}
             </div>
           </div>
         )}
@@ -103,18 +116,16 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                 >
                   <div className="pr-3">
                     <div className="flex items-center gap-2 text-xs font-mono mb-1">
-                      <span className="text-blue-600 font-bold uppercase">[{art.category}]</span>
-                      <span className="text-slate-300">·</span>
-                      <span className="text-emerald-600 font-bold">{art.sourceCount} SOURCES</span>
+                      <span className="font-bold uppercase" style={{ color: getCategoryStyle(art.category).accent }}>[{art.category}]</span>
                     </div>
-                    <div className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-blue-600 transition font-['Lato']">
+                    <div className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#003db3] transition font-['Lato']">
                       {art.title}
                     </div>
                     <div className="text-xs text-slate-500 line-clamp-1 mt-1 font-['Lato'] font-normal">
                       {art.subtitle}
                     </div>
                   </div>
-                  <ArrowRight size={16} className="text-slate-400 group-hover:text-blue-600 group-hover:translate-x-0.5 transition shrink-0" />
+                  <ArrowRight size={16} className="text-slate-400 group-hover:text-[#003db3] group-hover:translate-x-0.5 transition shrink-0" />
                 </button>
               ))
             ) : (

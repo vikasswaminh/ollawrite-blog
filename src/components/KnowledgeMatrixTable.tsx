@@ -51,7 +51,7 @@ export const KnowledgeMatrixTable: React.FC = () => {
       {/* Header Info */}
       <div className="mb-4">
         <div className="flex flex-wrap items-center justify-between gap-2 mb-2 font-mono text-xs sm:text-sm">
-          <span className="text-blue-600 font-bold flex items-center gap-1.5">
+          <span className="text-[#003db3] font-bold flex items-center gap-1.5">
             <Terminal size={16} />
             <span>BENCHMARK_TELEMETRY // GROUNDING_MATRIX</span>
           </span>
@@ -93,26 +93,30 @@ export const KnowledgeMatrixTable: React.FC = () => {
                 >
                   <td className="py-3 px-4 font-bold text-slate-900">
                     <div className="flex items-center gap-2">
-                      {isWinner && <ShieldCheck size={16} className="text-emerald-600 shrink-0" />}
+                      {isWinner && <ShieldCheck size={16} className="text-green-600 shrink-0" />}
                       <span>{row.modelPipeline}</span>
                     </div>
                   </td>
                   <td className="py-3 px-4 text-slate-600 font-medium">{row.knowledgeSource}</td>
-                  <td className={`py-3 px-4 font-mono font-bold ${isWinner ? 'text-emerald-600' : 'text-slate-800'}`}>
+                  <td className={`py-3 px-4 font-mono font-bold ${
+                    isWinner ? 'text-green-600' : row.shipVerdict === 'WARN_FLAG' ? 'text-yellow-600' : 'text-red-600'
+                  }`}>
                     {row.hallucinationRate}
                   </td>
                   <td className="py-3 px-4 font-mono text-slate-700">{row.citationVerification}</td>
-                  <td className={`py-3 px-4 font-mono font-bold ${isWinner ? 'text-blue-600' : 'text-slate-600'}`}>
+                  <td className={`py-3 px-4 font-mono font-bold ${
+                    isWinner ? 'text-green-600' : row.shipVerdict === 'WARN_FLAG' ? 'text-yellow-600' : 'text-red-600'
+                  }`}>
                     {row.informationGainDelta}
                   </td>
                   <td className="py-3 px-4 text-right font-mono font-bold">
                     <span
                       className={`inline-block px-2.5 py-1 rounded text-xs uppercase tracking-wider ${
                         isWinner
-                          ? 'bg-emerald-100 text-emerald-800 border border-emerald-300'
+                          ? 'bg-green-100 text-green-800 border border-green-300'
                           : row.shipVerdict === 'WARN_FLAG'
-                          ? 'bg-amber-100 text-amber-800 border border-amber-300'
-                          : 'bg-rose-100 text-rose-800 border border-rose-300'
+                          ? 'bg-yellow-100 text-yellow-800 border border-yellow-300'
+                          : 'bg-red-100 text-red-800 border border-red-300'
                       }`}
                     >
                       {row.shipVerdict}
