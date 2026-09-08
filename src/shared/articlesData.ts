@@ -1,6 +1,7 @@
 import type { Article } from './types';
 
 export const OLLAWRITE_LEFT_GUIDES = [
+  "What Is AI Search Optimization? The Complete 2026 Guide",
   "AI Content Optimization: How to Improve AI-Generated Content",
   "Does AI Content Rank on Google? The Real Answer for 2026",
   "AI Copywriting: Complete Guide",
