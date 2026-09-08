@@ -647,92 +647,101 @@ h1, h2, h3, h4, h5, h6 {
   color: #cbd5e1 !important;
 }
 
-
 /* ==========================================================================
-   Global Red Text & Sentence Selection Highlight
+   GLOBAL RED HIGHLIGHT FOR CURSOR SENTENCE & BOX SELECTION
    ========================================================================== */
-::selection {
+
+/* 1. Complete Universal Text / Sentence Selection (Vibrant Red + White Text) */
+::selection, *::selection {
+  background-color: #e8443a !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+::-moz-selection, *::-moz-selection {
   background-color: #e8443a !important;
   color: #ffffff !important;
   text-shadow: none !important;
 }
 
-::-moz-selection {
-  background-color: #e8443a !important;
-  color: #ffffff !important;
-  text-shadow: none !important;
-}
-
-*::selection {
-  background-color: #e8443a !important;
-  color: #ffffff !important;
-  text-shadow: none !important;
-}
-
-*::-moz-selection {
-  background-color: #e8443a !important;
-  color: #ffffff !important;
-  text-shadow: none !important;
-}
-
-/* ==========================================================================
-   Global Box / Card Selection & Focus Highlight (Red Color)
-   ========================================================================== */
+/* 2. All Box & Card Cursor Hover / Focus / Active / Selected State -> Red Border & Glow */
 article,
 .card-box,
 .tldr-box,
+.key-takeaways-box,
 .key-takeaway-card,
 .main-content-card,
-.faq-box details {
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+.faq-box details,
+.bringing-together-card,
+.os-toc-link,
+button[class*="snap-start"] {
+  transition: border-color 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.15s ease !important;
 }
 
-/* When any article box / card is active, focused, clicked, or selected */
+/* Cursor hovering over ANY box highlights it in red */
+article:hover,
+.card-box:hover,
+.tldr-box:hover,
+.key-takeaway-card:hover,
+.faq-box details:hover,
+.bringing-together-card:hover,
+.os-toc-link:hover,
+button[class*="snap-start"]:hover {
+  border-color: #e8443a !important;
+  box-shadow: 0 0 0 1.5px #e8443a, 0 6px 20px rgba(232, 68, 58, 0.16) !important;
+}
+
+/* When any box is clicked, focused, active, or selected */
 article:focus,
 article:focus-visible,
 article:focus-within,
 article:active,
-article.is-selected {
-  border-color: #e8443a !important;
-  box-shadow: 0 0 0 2px rgba(232, 68, 58, 0.35), 0 4px 14px rgba(232, 68, 58, 0.15) !important;
-  outline: none !important;
-}
-
-/* Key takeaway boxes active / focus */
-.key-takeaway-card:active,
+article.is-selected,
+.card-box:focus,
+.card-box:active,
+.card-box.is-selected,
 .key-takeaway-card:focus,
 .key-takeaway-card:focus-within,
-.key-takeaway-card.is-selected {
-  border-color: #e8443a !important;
-  border-left-color: #e8443a !important;
-  box-shadow: 0 0 0 2px rgba(232, 68, 58, 0.35), 0 4px 14px rgba(232, 68, 58, 0.15) !important;
-}
-
-/* TL;DR box active / focus */
-.tldr-box:active,
+.key-takeaway-card:active,
+.key-takeaway-card.is-selected,
 .tldr-box:focus,
 .tldr-box:focus-within,
-.tldr-box.is-selected {
-  border-color: #e8443a !important;
-  border-top-color: #e8443a !important;
-  box-shadow: 0 0 0 2px rgba(232, 68, 58, 0.35), 0 4px 14px rgba(232, 68, 58, 0.15) !important;
-}
-
-/* Main Content Card focus / active */
+.tldr-box:active,
+.tldr-box.is-selected,
+.faq-box details[open],
+.faq-box details:focus-within,
+.faq-box details:active,
 .main-content-card:focus-within,
 .main-content-card:active {
   border-color: #e8443a !important;
-  box-shadow: 0 0 0 2px rgba(232, 68, 58, 0.25) !important;
+  box-shadow: 0 0 0 2.5px rgba(232, 68, 58, 0.4), 0 8px 24px rgba(232, 68, 58, 0.2) !important;
+  outline: none !important;
 }
 
-/* FAQ accordion active / focus */
-.faq-box details:active,
-.faq-box details:focus-within {
-  border-color: #e8443a !important;
-  box-shadow: 0 0 0 2px rgba(232, 68, 58, 0.35) !important;
+.key-takeaway-card:hover,
+.key-takeaway-card:focus,
+.key-takeaway-card:active,
+.key-takeaway-card.is-selected {
+  border-left-color: #e8443a !important;
 }
 
-/* Interactive button/link focus rings */
+.tldr-box:hover,
+.tldr-box:focus,
+.tldr-box:active,
+.tldr-box.is-selected {
+  border-top-color: #e8443a !important;
+}
+
+.bringing-together-card:hover,
+.bringing-together-card:focus,
+.bringing-together-card:active {
+  border-top-color: #e8443a !important;
+}
+
+/* Interactive focus indicators */
 button:focus-visible,
 a:focus-visible {
   outline: 2px solid #e8443a !important;

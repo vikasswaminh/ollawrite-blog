@@ -188,9 +188,8 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   const heroStyle = getCategoryStyle(heroNewest.category);
                   return (
                     <div 
-                      className="relative overflow-hidden rounded-xl border border-slate-200 hover:border-[#e8443a] hover:shadow-md transition-all flex flex-col md:flex-row bg-white active:border-[#e8443a] active:ring-2 active:ring-[#e8443a]/30 focus-within:border-[#e8443a] focus-within:ring-2 focus-within:ring-[#e8443a]/30"
-                      onMouseEnter={(e) => (e.currentTarget.style.borderColor = heroStyle.dot)}
-                      onMouseLeave={(e) => (e.currentTarget.style.borderColor = '')}
+                      className="relative overflow-hidden rounded-xl border border-slate-200 hover:border-[#e8443a] hover:shadow-[0_4px_24px_rgba(232,68,58,0.18)] transition-all flex flex-col md:flex-row bg-white active:border-[#e8443a] active:ring-2 active:ring-[#e8443a]/40 focus-within:border-[#e8443a] focus-within:ring-2 focus-within:ring-[#e8443a]/40"
+                      
                     >
                       {/* Left Hero Image */}
                       <div className="md:w-[36%] aspect-[16/10] md:aspect-auto overflow-hidden bg-slate-100 min-h-[190px]">
@@ -223,7 +222,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                           </div>
 
                           {/* Title */}
-                          <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug group-hover:text-[#003db3] transition-colors mb-2 font-['Lato']">
+                          <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug group-hover:text-[#e8443a] transition-colors mb-2 font-['Lato']">
                             {heroNewest.title}
                           </h3>
 
@@ -295,9 +294,9 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   <article
                     key={post.id}
                     onClick={() => onReadArticle(post)}
-                    tabIndex={0} role="button" aria-label={post.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(post); }} className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:border-[#e8443a] hover:shadow-md cursor-pointer flex flex-col p-3.5 focus:outline-none focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/30 active:border-[#e8443a] active:ring-2 active:ring-[#e8443a]/40"
-                    onMouseEnter={(e) => (e.currentTarget.style.borderColor = cardStyle.dot)}
-                    onMouseLeave={(e) => (e.currentTarget.style.borderColor = '')}
+                    tabIndex={0} role="button" aria-label={post.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(post); }} className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:border-[#e8443a] hover:shadow-[0_4px_20px_rgba(232,68,58,0.16)] cursor-pointer flex flex-col p-3.5 focus:outline-none focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/40 active:border-[#e8443a] active:ring-2 active:ring-[#e8443a]/50"
+                    
+                    
                   >
                     <div className="flex items-center gap-2 mb-2 font-mono">
                       <span
@@ -312,7 +311,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                         <span>{post.category}</span>
                       </span>
                     </div>
-                    <h3 className="text-sm font-bold text-slate-900 leading-snug transition-colors line-clamp-2 flex-1 font-['Lato'] mb-1.5 group-hover:text-[#003db3]">
+                    <h3 className="text-sm font-bold text-slate-900 leading-snug transition-colors line-clamp-2 flex-1 font-['Lato'] mb-1.5 group-hover:text-[#e8443a]">
                       {post.title}
                     </h3>
                     <p className="text-xs text-slate-600 line-clamp-2 mb-2.5 leading-relaxed font-normal font-['Lato']">

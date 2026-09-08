@@ -191,9 +191,8 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={g.id}
                   onClick={() => onSelectArticle(g)}
-                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:bg-[#eef4ff]/60 text-slate-800 font-medium text-xs sm:text-sm transition cursor-pointer line-clamp-2"
-                  onMouseEnter={(e) => (e.currentTarget.style.borderColor = cycleAccent(i % 4))}
-                  onMouseLeave={(e) => (e.currentTarget.style.borderColor = '')}
+                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_16px_rgba(232,68,58,0.12)] text-slate-800 font-medium text-xs sm:text-sm transition cursor-pointer line-clamp-2"
+                  
                 >
                   {g.title}
                 </button>
@@ -233,9 +232,8 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={w.id}
                   onClick={() => onSelectArticle(w)}
-                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:bg-[#fdeceb]/60 text-slate-800 font-medium text-xs sm:text-sm transition cursor-pointer line-clamp-2"
-                  onMouseEnter={(e) => (e.currentTarget.style.borderColor = cycleAccent((i + 2) % 4))}
-                  onMouseLeave={(e) => (e.currentTarget.style.borderColor = '')}
+                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_16px_rgba(232,68,58,0.12)] text-slate-800 font-medium text-xs sm:text-sm transition cursor-pointer line-clamp-2"
+                  
                 >
                   {w.title}
                 </button>
