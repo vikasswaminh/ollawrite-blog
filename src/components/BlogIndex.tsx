@@ -66,7 +66,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a] hover:bg-[#fff1f0] hover:shadow-[0_4px_16px_rgba(232,68,58,0.16)] active:border-[#e8443a] active:bg-[#fee2e2] focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 focus:outline-none transition-all group"
+                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a] active:border-[#e8443a] focus:border-[#e8443a] focus:outline-none transition-all group"
               >
                 <h3 className="font-bold text-[15px] sm:text-base text-slate-900 line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
@@ -85,7 +85,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a] hover:bg-[#fff1f0] hover:shadow-[0_4px_16px_rgba(232,68,58,0.16)] active:border-[#e8443a] active:bg-[#fee2e2] focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 focus:outline-none transition-all group"
+                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a] active:border-[#e8443a] focus:border-[#e8443a] focus:outline-none transition-all group"
               >
                 <h3 className="font-bold text-[15px] sm:text-base text-slate-900 line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
@@ -189,7 +189,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   const heroStyle = getCategoryStyle(heroNewest.category);
                   return (
                     <div 
-                      className="relative overflow-hidden rounded-xl border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:shadow-[0_4px_24px_rgba(232,68,58,0.18)] transition-all flex flex-col md:flex-row bg-white active:border-[#e8443a] active:bg-[#fee2e2] active:ring-2 active:ring-[#e8443a]/40 focus-within:border-[#e8443a] focus-within:bg-[#fff1f0] focus-within:ring-2 focus-within:ring-[#e8443a]/40"
+                      className="relative overflow-hidden rounded-xl border border-slate-200 hover:border-[#e8443a] hover:shadow-md transition-all flex flex-col md:flex-row bg-white active:border-[#e8443a] focus-within:border-[#e8443a]"
                       
                     >
                       {/* Left Hero Image */}
@@ -203,7 +203,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                       </div>
 
                       {/* Right Hero Content */}
-                      <div className="md:w-[64%] p-4 sm:p-6 bg-slate-50/50 group-hover:bg-[#fff1f0] flex flex-col justify-between transition-colors">
+                      <div className="md:w-[64%] p-4 sm:p-6 bg-slate-50/50 flex flex-col justify-between">
                         <div>
                           {/* Top Badges Row with Category Color Segregation */}
                           <div className="flex items-center justify-between gap-2 mb-2.5">
@@ -295,7 +295,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   <article
                     key={post.id}
                     onClick={() => onReadArticle(post)}
-                    tabIndex={0} role="button" aria-label={post.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(post); }} className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:border-[#e8443a] hover:bg-[#fff1f0] hover:shadow-[0_4px_20px_rgba(232,68,58,0.16)] cursor-pointer flex flex-col p-3.5 focus:outline-none focus:border-[#e8443a] focus:bg-[#fff1f0] focus:ring-2 focus:ring-[#e8443a]/40 active:border-[#e8443a] active:bg-[#fee2e2] active:ring-2 active:ring-[#e8443a]/50"
+                    tabIndex={0} role="button" aria-label={post.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(post); }} className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:border-[#e8443a] hover:shadow-sm cursor-pointer flex flex-col p-3.5 focus:outline-none focus:border-[#e8443a] active:border-[#e8443a]"
                     
                     
                   >
