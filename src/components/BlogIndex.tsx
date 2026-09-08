@@ -234,7 +234,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                         </div>
 
                         {/* Meta info at the end of the box */}
-                        <div className="flex items-center justify-between text-xs text-slate-500 pt-2.5 border-t border-slate-200 font-mono font-medium">
+                        <div className="flex items-center justify-between text-xs text-slate-500 pt-2.5 border-t border-slate-200 group-hover:border-[#f87171] transition-colors font-mono font-medium">
                           <div className="flex items-center gap-2">
                             <span>{heroNewest.readTime}</span>
                           </div>
@@ -318,7 +318,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                     <p className="text-xs text-slate-600 hover:text-[#e8443a] line-clamp-2 mb-2.5 leading-relaxed font-normal font-['Lato'] transition-colors">
                       {post.subtitle}
                     </p>
-                    <div className="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100 font-mono font-medium">
+                    <div className="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100 group-hover:border-[#f87171] transition-colors font-mono font-medium">
                       <div className="flex items-center gap-2">
                         <span>{post.readTime}</span>
                       </div>

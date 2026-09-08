@@ -735,3 +735,33 @@ aside nav button:active {
   border-color: #f87171 !important;
   box-shadow: 0 0 0 1px #f87171 !important;
 }
+
+
+/* ==========================================================================
+   NEWEST & OLD ARTICLES LINE HIGHLIGHTING (PERIMETER & DIVIDER LINES)
+   ========================================================================== */
+
+/* Newest Article & Old Article Cards: Perimeter line & divider line highlight in light red */
+article,
+.hero-newest-card {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+article:hover,
+article:focus,
+article:active {
+  border-color: #f87171 !important;
+  box-shadow: 0 0 0 1px #f87171 !important;
+}
+
+article:hover .border-t,
+.group:hover .border-t {
+  border-color: #f87171 !important;
+}
+
+/* Titles and headings on newest and old articles */
+article:hover h3,
+article:hover h2,
+.group:hover h3 {
+  color: #e8443a !important;
+}
