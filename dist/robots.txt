@@ -1,5 +1,0 @@
-# Blogs are meant to be found — allow everyone, including answer engines.
-User-agent: *
-Allow: /
-
-Sitemap: https://blog.ollawrite.com/sitemap-index.xml
