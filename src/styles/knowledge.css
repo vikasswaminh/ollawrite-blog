@@ -643,7 +643,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   BLOG POST CONTENT: NO HOVER HIGHLIGHT ON TL;DR, KEY TAKEAWAYS & TABLES
+   BLOG POST CONTENT: NO HOVER HIGHLIGHT & CLEAN BOX STYLING
    ========================================================================== */
 
 /* 1. Universal Sentence & Word Drag Selection */
@@ -672,17 +672,31 @@ article:hover h2 {
   transition: color 0.15s ease;
 }
 
-/* 3. STRICTLY NO HOVER HIGHLIGHT on TL;DR, Key Takeaways, Main Content Cards, and Tables */
+/* 3. STRICTLY NO HOVER HIGHLIGHT & NO UNINTENDED INNER BORDERS ON TL;DR, KEY TAKEAWAYS, TABLES */
 .tldr-box,
 .tldr-box:hover,
 .tldr-box:focus,
-.tldr-box:active,
-.tldr-box *,
-.tldr-box *:hover {
+.tldr-box:active {
   background: #eef4ff !important;
-  border-color: #c7d8f8 !important;
+  border: 1px solid #c7d8f8 !important;
   border-top: 6px solid #003db3 !important;
   box-shadow: 0 4px 12px rgba(0, 61, 179, 0.06) !important;
+  transform: none !important;
+  cursor: default !important;
+}
+
+/* Ensure children inside TL;DR box NEVER have any borders/lines */
+.tldr-box *,
+.tldr-box *:hover,
+.tldr-box *:focus,
+.tldr-box *:active {
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  outline: none !important;
+  box-shadow: none !important;
   transform: none !important;
   cursor: default !important;
 }
@@ -690,26 +704,60 @@ article:hover h2 {
 .tldr-box h3,
 .tldr-box h3:hover {
   color: #002d86 !important;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.75rem !important;
+  padding-bottom: 0 !important;
+  display: inline-block !important;
 }
 
 .tldr-box p,
 .tldr-box p:hover {
   color: #1e293b !important;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
 }
 
+/* Key Takeaways Container & Cards */
 .key-takeaways-box,
-.key-takeaways-box:hover,
-.key-takeaways-box *,
-.key-takeaways-box *:hover,
+.key-takeaways-box:hover {
+  transform: none !important;
+  cursor: default !important;
+}
+
+.key-takeaways-box * {
+  transform: none !important;
+  cursor: default !important;
+}
+
 .key-takeaway-card,
 .key-takeaway-card:hover,
 .key-takeaway-card:focus,
-.key-takeaway-card:active,
-.key-takeaway-card *,
-.key-takeaway-card *:hover {
+.key-takeaway-card:active {
+  background: #eef4ff !important;
+  border: 1px solid #c7d8f8 !important;
+  border-left: 5px solid #003db3 !important;
+  border-top: 1px solid #c7d8f8 !important;
+  border-right: 1px solid #c7d8f8 !important;
+  border-bottom: 1px solid #c7d8f8 !important;
   transform: none !important;
   box-shadow: 0 2px 6px rgba(0, 61, 179, 0.04) !important;
   cursor: default !important;
+}
+
+.key-takeaway-card * {
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 .key-takeaways-box > h3,
@@ -728,31 +776,10 @@ article:hover h2 {
   color: #334155 !important;
 }
 
-.key-takeaway-card,
-.key-takeaway-card:hover {
-  background: #eef4ff !important;
-  border: 1px solid #c7d8f8 !important;
-  border-left: 5px solid #003db3 !important;
-}
-
 /* Complete content card & Comparison Table: strictly NO hover highlight */
 .main-content-card,
-.main-content-card:hover,
-.main-content-card *,
-.main-content-card *:hover,
-table,
-table:hover,
-table.prose-table,
-table.prose-table:hover,
-table.prose-table *,
-table.prose-table *:hover,
-table th,
-table th:hover,
-table td,
-table td:hover,
-table tr,
-table tr:hover {
-  border-color: #e2e8f0 !important;
+.main-content-card:hover {
+  border: 1px solid #e2e8f0 !important;
   transform: none !important;
   cursor: default !important;
 }
@@ -774,19 +801,38 @@ table tr:hover {
   color: #1e293b !important;
 }
 
-table th,
-table th:hover {
+table.prose-table,
+table.prose-table:hover,
+.main-content-card table,
+.main-content-card table:hover {
+  border: 1px solid #e2e8f0 !important;
+  transform: none !important;
+  cursor: default !important;
+}
+
+table.prose-table th,
+table.prose-table th:hover,
+.main-content-card th,
+.main-content-card th:hover {
   background: #f1f5f9 !important;
   color: #0f172a !important;
+  border: 1px solid #e2e8f0 !important;
+  transform: none !important;
 }
 
-table td,
-table td:hover {
+table.prose-table td,
+table.prose-table td:hover,
+.main-content-card td,
+.main-content-card td:hover {
   color: #334155 !important;
+  border: 1px solid #e2e8f0 !important;
+  transform: none !important;
 }
 
-table tr:nth-child(even) td,
-table tr:nth-child(even) td:hover {
+table.prose-table tr:nth-child(even) td,
+table.prose-table tr:nth-child(even) td:hover,
+.main-content-card tr:nth-child(even) td,
+.main-content-card tr:nth-child(even) td:hover {
   background: #f8fafc !important;
 }
 
@@ -840,6 +886,13 @@ article:hover .border-t,
   border-color: #1e293b !important;
   border-top: 6px solid #6d9bff !important;
 }
+[data-theme="dark"] .tldr-box * {
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
 [data-theme="dark"] .tldr-box h3,
 [data-theme="dark"] .tldr-box h3:hover {
   color: #93b4ff !important;
@@ -854,6 +907,13 @@ article:hover .border-t,
   background: #111827 !important;
   border-color: #1e293b !important;
   border-left: 5px solid #6d9bff !important;
+}
+[data-theme="dark"] .key-takeaway-card * {
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
 }
 [data-theme="dark"] .key-takeaways-box > h3,
 [data-theme="dark"] .key-takeaways-box > h3:hover,
