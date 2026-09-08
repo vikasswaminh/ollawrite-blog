@@ -224,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
 .key-takeaways-box > h3 {
   font-size: 1.38rem !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #000000 !important;
   margin-top: 0 !important;
   margin-bottom: 1.25rem !important;
   display: flex !important;
@@ -248,8 +248,8 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 12px rgba(0, 61, 179, 0.08) !important;
 }
 
-.key-takeaway-card h4 {
-  color: #003db3 !important;
+.key-takeaway-card h4, .key-takeaway-card h2, .key-takeaway-card h3, .key-takeaway-card h5, .key-takeaway-card h6, .key-takeaways-box h4 {
+  color: #000000 !important;
   font-size: 1.08rem !important;
   font-weight: 700 !important;
   margin-top: 0 !important;
