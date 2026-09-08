@@ -66,7 +66,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_16px_rgba(232,68,58,0.16)] active:border-[#e8443a] active:bg-[#fee2e2] focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 focus:outline-none transition-all group"
+                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a] hover:bg-[#fff1f0] hover:shadow-[0_4px_16px_rgba(232,68,58,0.16)] active:border-[#e8443a] active:bg-[#fee2e2] focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 focus:outline-none transition-all group"
               >
                 <h3 className="font-bold text-[15px] sm:text-base text-slate-900 line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
@@ -85,7 +85,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_16px_rgba(232,68,58,0.16)] active:border-[#e8443a] active:bg-[#fee2e2] focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 focus:outline-none transition-all group"
+                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#e8443a] hover:bg-[#fff1f0] hover:shadow-[0_4px_16px_rgba(232,68,58,0.16)] active:border-[#e8443a] active:bg-[#fee2e2] focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 focus:outline-none transition-all group"
               >
                 <h3 className="font-bold text-[15px] sm:text-base text-slate-900 line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
@@ -111,7 +111,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   key={idx}
                   onClick={() => handleTitleClick(title)}
                   tabIndex={0}
-                  className="w-full text-left block p-2.5 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff5f5] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-[13px] font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
+                  className="w-full text-left block p-2.5 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-[13px] font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
                 >
                   <span>{title}</span>
                 </button>
@@ -123,7 +123,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 href="https://ollawrite.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff5f5] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
+                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
               >
                 OllaWrite AI Platform ↗
               </a>
@@ -131,7 +131,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 href="https://ollawrite.com/#features"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff5f5] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
+                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
               >
                 Site-First Writing Engine ↗
               </a>
@@ -139,7 +139,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 href="https://ollawrite.com/#pricing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff5f5] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
+                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
               >
                 Plans & Pricing Overview ↗
               </a>
@@ -189,7 +189,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   const heroStyle = getCategoryStyle(heroNewest.category);
                   return (
                     <div 
-                      className="relative overflow-hidden rounded-xl border border-slate-200 hover:border-[#e8443a] hover:shadow-[0_4px_24px_rgba(232,68,58,0.18)] transition-all flex flex-col md:flex-row bg-white active:border-[#e8443a] active:ring-2 active:ring-[#e8443a]/40 focus-within:border-[#e8443a] focus-within:ring-2 focus-within:ring-[#e8443a]/40"
+                      className="relative overflow-hidden rounded-xl border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:shadow-[0_4px_24px_rgba(232,68,58,0.18)] transition-all flex flex-col md:flex-row bg-white active:border-[#e8443a] active:bg-[#fee2e2] active:ring-2 active:ring-[#e8443a]/40 focus-within:border-[#e8443a] focus-within:bg-[#fff1f0] focus-within:ring-2 focus-within:ring-[#e8443a]/40"
                       
                     >
                       {/* Left Hero Image */}
@@ -203,7 +203,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                       </div>
 
                       {/* Right Hero Content */}
-                      <div className="md:w-[64%] p-4 sm:p-6 bg-slate-50/50 flex flex-col justify-between">
+                      <div className="md:w-[64%] p-4 sm:p-6 bg-slate-50/50 group-hover:bg-[#fff1f0] flex flex-col justify-between transition-colors">
                         <div>
                           {/* Top Badges Row with Category Color Segregation */}
                           <div className="flex items-center justify-between gap-2 mb-2.5">
@@ -295,7 +295,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   <article
                     key={post.id}
                     onClick={() => onReadArticle(post)}
-                    tabIndex={0} role="button" aria-label={post.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(post); }} className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:border-[#e8443a] hover:shadow-[0_4px_20px_rgba(232,68,58,0.16)] cursor-pointer flex flex-col p-3.5 focus:outline-none focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/40 active:border-[#e8443a] active:ring-2 active:ring-[#e8443a]/50"
+                    tabIndex={0} role="button" aria-label={post.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(post); }} className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:border-[#e8443a] hover:bg-[#fff1f0] hover:shadow-[0_4px_20px_rgba(232,68,58,0.16)] cursor-pointer flex flex-col p-3.5 focus:outline-none focus:border-[#e8443a] focus:bg-[#fff1f0] focus:ring-2 focus:ring-[#e8443a]/40 active:border-[#e8443a] active:bg-[#fee2e2] active:ring-2 active:ring-[#e8443a]/50"
                     
                     
                   >
@@ -347,7 +347,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   key={idx}
                   onClick={() => handleTitleClick(title)}
                   tabIndex={0}
-                  className="w-full text-left block p-2.5 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff5f5] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-[13px] font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
+                  className="w-full text-left block p-2.5 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-[13px] font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
                 >
                   <span>{title}</span>
                 </button>

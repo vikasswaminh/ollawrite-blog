@@ -191,7 +191,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={g.id}
                   onClick={() => onSelectArticle(g)}
-                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_18px_rgba(232,68,58,0.18)] text-slate-800 font-bold text-xs sm:text-sm transition-all cursor-pointer line-clamp-2 focus:outline-none focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 active:border-[#e8443a] active:bg-[#fee2e2]"
+                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff1f0] hover:shadow-[0_4px_18px_rgba(232,68,58,0.18)] text-slate-800 font-bold text-xs sm:text-sm transition-all cursor-pointer line-clamp-2 focus:outline-none focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 active:border-[#e8443a] active:bg-[#fee2e2]"
                   
                 >
                   {g.title}
@@ -205,7 +205,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="os-toc-link block p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff5f5] text-slate-800 font-bold text-xs sm:text-sm transition"
+                    className="os-toc-link block p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff1f0] text-slate-800 font-bold text-xs sm:text-sm transition"
                   >
                     {link.title}
                   </a>
@@ -232,7 +232,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={w.id}
                   onClick={() => onSelectArticle(w)}
-                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_18px_rgba(232,68,58,0.18)] text-slate-800 font-bold text-xs sm:text-sm transition-all cursor-pointer line-clamp-2 focus:outline-none focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 active:border-[#e8443a] active:bg-[#fee2e2]"
+                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff1f0] hover:shadow-[0_4px_18px_rgba(232,68,58,0.18)] text-slate-800 font-bold text-xs sm:text-sm transition-all cursor-pointer line-clamp-2 focus:outline-none focus:border-[#e8443a] focus:ring-2 focus:ring-[#e8443a]/35 active:border-[#e8443a] active:bg-[#fee2e2]"
                   
                 >
                   {w.title}

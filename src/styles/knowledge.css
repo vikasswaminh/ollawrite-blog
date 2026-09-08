@@ -761,7 +761,7 @@ aside a:hover,
 .os-toc-link:hover {
   border-color: #e8443a !important;
   color: #e8443a !important;
-  background-color: #fff5f5 !important;
+  background-color: #fff1f0 !important;
   box-shadow: 0 0 0 1.5px #e8443a, 0 4px 14px rgba(232, 68, 58, 0.14) !important;
 }
 
@@ -814,7 +814,7 @@ aside nav a:hover,
 button[class*="snap-start"]:hover {
   border-color: #e8443a !important;
   color: #e8443a !important;
-  background-color: #fff5f5 !important;
+  background-color: #fff1f0 !important;
   box-shadow: 0 0 0 1.5px #e8443a, 0 4px 16px rgba(232, 68, 58, 0.16) !important;
   transform: translateY(-1px) !important;
 }
@@ -847,4 +847,70 @@ button[class*="snap-start"] *::selection {
   background-color: #e8443a !important;
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
+}
+
+
+/* ==========================================================================
+   LIGHT RED BOX SELECTION & SOLID RED SENTENCE SELECTION
+   ========================================================================== */
+
+/* 1. Sentence & Text Highlight: Solid Vibrant Red */
+::selection, *::selection {
+  background-color: #e8443a !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+::-moz-selection, *::-moz-selection {
+  background-color: #e8443a !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* 2. Any Box / Card Hover & Cursor Selection: Light Red Background (#fff1f0) + Red Border */
+article:hover,
+.card-box:hover,
+.tldr-box:hover,
+.key-takeaways-box:hover,
+.key-takeaway-card:hover,
+.faq-box details:hover,
+.bringing-together-card:hover,
+.os-toc-link:hover,
+aside nav button:hover,
+aside .sidebar-cards-stack button:hover,
+aside .sidebar-cards-stack a:hover,
+.blog-sidebar button:hover,
+.blog-sidebar a:hover,
+button[class*="snap-start"]:hover {
+  background-color: #fff1f0 !important;
+  border-color: #e8443a !important;
+  box-shadow: 0 0 0 1.5px #e8443a, 0 6px 20px rgba(232, 68, 58, 0.16) !important;
+}
+
+/* 3. Any Box / Card Active / Focus / Selected: Richer Light Red Background (#fee2e2) + Red Ring */
+article:focus,
+article:focus-visible,
+article:focus-within,
+article:active,
+article.is-selected,
+.key-takeaway-card:focus,
+.key-takeaway-card:active,
+.tldr-box:focus,
+.tldr-box:active,
+.faq-box details[open],
+.faq-box details:focus-within,
+.faq-box details:active,
+aside nav button:focus,
+aside nav button:active,
+aside .sidebar-cards-stack button:focus,
+aside .sidebar-cards-stack button:active,
+.blog-sidebar button:focus,
+.blog-sidebar button:active,
+button[class*="snap-start"]:focus,
+button[class*="snap-start"]:active {
+  background-color: #fee2e2 !important;
+  border-color: #e8443a !important;
+  box-shadow: 0 0 0 2.5px rgba(232, 68, 58, 0.4), 0 8px 24px rgba(232, 68, 58, 0.2) !important;
+  outline: none !important;
 }
