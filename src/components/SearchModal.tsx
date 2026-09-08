@@ -51,7 +51,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         
         {/* Search Input */}
         <div className="p-4 border-b border-slate-200 flex items-center gap-3 bg-slate-50">
-          <Terminal className="w-5 h-5 text-[#003db3] shrink-0" />
+          <Terminal className="w-5 h-5 text-[#e8443a] shrink-0" />
           <input
             ref={inputRef}
             type="text"
@@ -72,7 +72,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         {query.trim() === '' && (
           <div className="p-5">
             <div className="text-xs font-mono text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-2 font-bold">
-              <Database size={14} className="text-[#003db3]" />
+              <Database size={14} className="text-[#e8443a]" />
               <span>INDEXED_TOPIC_VECTORS</span>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -118,14 +118,14 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                     <div className="flex items-center gap-2 text-xs font-mono mb-1">
                       <span className="font-bold uppercase" style={{ color: getCategoryStyle(art.category).accent }}>[{art.category}]</span>
                     </div>
-                    <div className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#003db3] transition font-['Lato']">
+                    <div className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#e8443a] transition font-['Lato']">
                       {art.title}
                     </div>
                     <div className="text-xs text-slate-500 line-clamp-1 mt-1 font-['Lato'] font-normal">
                       {art.subtitle}
                     </div>
                   </div>
-                  <ArrowRight size={16} className="text-slate-400 group-hover:text-[#003db3] group-hover:translate-x-0.5 transition shrink-0" />
+                  <ArrowRight size={16} className="text-slate-400 group-hover:text-[#e8443a] group-hover:translate-x-0.5 transition shrink-0" />
                 </button>
               ))
             ) : (

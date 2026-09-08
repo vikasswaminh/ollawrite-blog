@@ -117,11 +117,11 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
         {/* Navigation & Breadcrumbs Bar */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-200">
           <nav className="flex items-center gap-2 text-sm text-slate-500 font-medium">
-            <button onClick={onBack} className="hover:text-[#002d86] transition cursor-pointer font-bold text-[#003db3] flex items-center gap-1">
+            <button onClick={onBack} className="hover:text-[#e8443a] transition cursor-pointer font-bold text-[#e8443a] flex items-center gap-1">
               <ArrowLeft size={16} /> Home
             </button>
             <span>/</span>
-            <button onClick={onBack} className="hover:text-[#003db3] transition cursor-pointer">
+            <button onClick={onBack} className="hover:text-[#e8443a] transition cursor-pointer">
               Blog
             </button>
             <span>/</span>
@@ -191,7 +191,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={g.id}
                   onClick={() => onSelectArticle(g)}
-                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_16px_rgba(232,68,58,0.12)] text-slate-800 font-medium text-xs sm:text-sm transition cursor-pointer line-clamp-2"
+                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_16px_rgba(232,68,58,0.16)] text-slate-800 font-bold text-xs sm:text-sm transition cursor-pointer line-clamp-2 focus:outline-none focus:ring-2 focus:ring-[#e8443a]/30 active:border-[#e8443a]"
                   
                 >
                   {g.title}
@@ -205,7 +205,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="os-toc-link block p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-[#003db3] text-[#003db3] font-bold text-xs sm:text-sm transition"
+                    className="os-toc-link block p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff5f5] text-slate-800 font-bold text-xs sm:text-sm transition"
                   >
                     {link.title}
                   </a>
@@ -232,7 +232,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={w.id}
                   onClick={() => onSelectArticle(w)}
-                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_16px_rgba(232,68,58,0.12)] text-slate-800 font-medium text-xs sm:text-sm transition cursor-pointer line-clamp-2"
+                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] hover:bg-[#fff5f5] hover:shadow-[0_4px_16px_rgba(232,68,58,0.16)] text-slate-800 font-bold text-xs sm:text-sm transition cursor-pointer line-clamp-2 focus:outline-none focus:ring-2 focus:ring-[#e8443a]/30 active:border-[#e8443a]"
                   
                 >
                   {w.title}

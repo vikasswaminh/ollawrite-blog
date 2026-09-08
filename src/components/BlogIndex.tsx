@@ -110,7 +110,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 <button
                   key={idx}
                   onClick={() => handleTitleClick(title)}
-                  className="w-full text-left block px-2.5 py-1.5 text-[13px] font-bold text-slate-700 hover:text-[#003db3] hover:bg-[#eef4ff] rounded-lg transition-colors leading-snug cursor-pointer font-['Lato']"
+                  className="w-full text-left block px-2.5 py-1.5 text-[13px] font-bold text-slate-700 hover:text-[#e8443a] hover:bg-[#fff5f5] hover:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/30 active:bg-[#fee2e2] active:text-[#e8443a] rounded-lg transition-colors leading-snug cursor-pointer font-['Lato']"
                 >
                   <span>{title}</span>
                 </button>
@@ -122,7 +122,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 href="https://ollawrite.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-[#003db3] hover:bg-[#eef4ff] rounded-lg transition-colors leading-snug"
+                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff5f5] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
               >
                 OllaWrite AI Platform ↗
               </a>
@@ -130,7 +130,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 href="https://ollawrite.com/#features"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-[#003db3] hover:bg-[#eef4ff] rounded-lg transition-colors leading-snug"
+                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff5f5] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
               >
                 Site-First Writing Engine ↗
               </a>
@@ -138,14 +138,14 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 href="https://ollawrite.com/#pricing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-[#003db3] hover:bg-[#eef4ff] rounded-lg transition-colors leading-snug"
+                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff5f5] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
               >
                 Plans & Pricing Overview ↗
               </a>
             </div>
             <button
               onClick={() => handleTitleClick("Humanize")}
-              className="og-readmore inline-flex items-center mt-3 px-2 text-xs font-mono cursor-pointer gap-1.5 hover:underline"
+              className="inline-flex items-center mt-3 px-2 text-xs font-mono font-bold text-slate-700 hover:text-[#e8443a] cursor-pointer gap-1.5 hover:underline"
             >
               <span>EXPLORE_FULL_INDEX</span>
               <ArrowRight size={14} />
@@ -345,7 +345,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 <button
                   key={idx}
                   onClick={() => handleTitleClick(title)}
-                  className="w-full text-left block px-2.5 py-1.5 text-[13px] font-bold text-slate-700 hover:text-[#7c3aed] hover:bg-[#ede9fe] rounded-lg transition-colors leading-snug cursor-pointer font-['Lato']"
+                  className="w-full text-left block px-2.5 py-1.5 text-[13px] font-bold text-slate-700 hover:text-[#e8443a] hover:bg-[#fff5f5] hover:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/30 active:bg-[#fee2e2] active:text-[#e8443a] rounded-lg transition-colors leading-snug cursor-pointer font-['Lato']"
                 >
                   <span>{title}</span>
                 </button>
@@ -354,7 +354,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
             <button
               onClick={() => handleTitleClick("Site-First")}
               className="inline-flex items-center mt-3 px-2 text-xs font-mono font-bold hover:underline cursor-pointer gap-1.5"
-              style={{ color: '#7c3aed' }}
+              style={{ color: '#e8443a' }}
             >
               <span>EXPLORE_CITATION_INDEX</span>
               <ArrowRight size={14} />

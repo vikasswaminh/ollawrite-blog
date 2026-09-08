@@ -747,3 +747,42 @@ a:focus-visible {
   outline: 2px solid #e8443a !important;
   outline-offset: 2px !important;
 }
+
+
+/* ==========================================================================
+   ESSENTIAL GUIDES & AGENT WORKFLOW COMPREHENSIVE RED HIGHLIGHTS
+   ========================================================================== */
+
+/* Sidebar boxes, links, and buttons in Essential Guide & Agent Workflow */
+aside button:hover,
+aside a:hover,
+.sidebar-cards-stack button:hover,
+.sidebar-cards-stack a:hover,
+.os-toc-link:hover {
+  border-color: #e8443a !important;
+  color: #e8443a !important;
+  background-color: #fff5f5 !important;
+  box-shadow: 0 0 0 1.5px #e8443a, 0 4px 14px rgba(232, 68, 58, 0.14) !important;
+}
+
+aside button:focus,
+aside a:focus,
+aside button:active,
+aside a:active {
+  border-color: #e8443a !important;
+  color: #e8443a !important;
+  background-color: #fee2e2 !important;
+  box-shadow: 0 0 0 2px rgba(232, 68, 58, 0.4) !important;
+  outline: none !important;
+}
+
+[data-theme="dark"] aside button:hover,
+[data-theme="dark"] aside a:hover,
+[data-theme="dark"] .sidebar-cards-stack button:hover,
+[data-theme="dark"] .sidebar-cards-stack a:hover,
+[data-theme="dark"] .os-toc-link:hover {
+  border-color: #f87171 !important;
+  color: #f87171 !important;
+  background-color: rgba(232, 68, 58, 0.15) !important;
+  box-shadow: 0 0 0 1.5px #f87171, 0 4px 14px rgba(248, 113, 113, 0.25) !important;
+}
