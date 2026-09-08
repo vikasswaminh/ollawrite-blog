@@ -96,15 +96,21 @@ export const Header: React.FC<HeaderProps> = ({
             </a>
 
             <a 
-              href="https://blogs.ollawrite.com"
-              onClick={() => onSelectCategory('All')}
+              href="https://www.ollawrite.com/blog"
+              onClick={(e) => {
+                if (window.location.hostname.includes('blogs.ollawrite.com')) {
+                  e.preventDefault();
+                  onSelectCategory('All');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
               className="text-[14px] font-bold cursor-pointer transition-colors whitespace-nowrap text-[#e8443a] hover:text-[#c7372e]"
             >
               Blog
             </a>
 
             <a 
-              href="https://www.ollawrite.com/contact/"
+              href="https://www.ollawrite.com/contact"
               className="text-[14px] font-bold cursor-pointer transition-colors whitespace-nowrap text-slate-700 hover:text-[#e8443a]"
             >
               Contact
@@ -210,10 +216,21 @@ export const Header: React.FC<HeaderProps> = ({
           <a href="https://www.ollawrite.com/#faq" className="block w-full text-left py-2 text-slate-900 hover:text-[#e8443a]">
             FAQ
           </a>
-          <a href="https://blogs.ollawrite.com" onClick={() => { onSelectCategory('All'); setOpen(false); }} className="block w-full text-left py-2 text-[#e8443a]">
+          <a 
+            href="https://www.ollawrite.com/blog" 
+            onClick={(e) => {
+              if (window.location.hostname.includes('blogs.ollawrite.com')) {
+                e.preventDefault();
+                onSelectCategory('All');
+                setOpen(false);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+            }} 
+            className="block w-full text-left py-2 text-[#e8443a]"
+          >
             Blog
           </a>
-          <a href="https://www.ollawrite.com/contact/" className="block w-full text-left py-2 text-slate-900 hover:text-[#e8443a]">
+          <a href="https://www.ollawrite.com/contact" className="block w-full text-left py-2 text-slate-900 hover:text-[#e8443a]">
             Contact
           </a>
         </div>
