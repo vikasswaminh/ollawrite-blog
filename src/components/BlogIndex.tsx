@@ -166,44 +166,6 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
             </p>
           </div>
 
-          {/* 🏷️ CATEGORY SEGREGATION PILLS BAR (Exact style from screenshot) */}
-          <div className="flex flex-wrap items-center gap-2 mb-6 select-none">
-            {categoryFilters.map((cat) => {
-              const style = getCategoryStyle(cat.name);
-              const isActive = activeCategory === cat.name;
-
-              return (
-                <button
-                  key={cat.name}
-                  onClick={() => onSelectCategory && onSelectCategory(cat.name)}
-                  className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs sm:text-[13px] font-bold transition-all cursor-pointer hover:scale-[1.03] active:scale-[0.98] font-['Lato']"
-                  style={{
-                    backgroundColor: isActive && cat.name === 'All' ? '#0f172a' : style.bg,
-                    color: isActive && cat.name === 'All' ? '#ffffff' : style.text,
-                    border: `1.5px solid ${isActive ? (cat.name === 'All' ? '#0f172a' : style.dot) : style.border}`,
-                    boxShadow: isActive ? `0 0 0 2px ${style.dot}33, 0 2px 6px rgba(0,0,0,0.06)` : '0 1px 2px rgba(0,0,0,0.03)',
-                  }}
-                  title={`Filter by ${cat.name} (${cat.count} articles)`}
-                >
-                  <span
-                    className="w-2 h-2 rounded-full shrink-0"
-                    style={{ backgroundColor: isActive && cat.name === 'All' ? '#ffffff' : style.dot }}
-                  />
-                  <span>{cat.name}</span>
-                  <span
-                    className="text-[11px] font-bold px-2 py-0.5 rounded-full font-mono leading-none"
-                    style={{
-                      backgroundColor: isActive && cat.name === 'All' ? '#334155' : style.badgeBg,
-                      color: isActive && cat.name === 'All' ? '#f8fafc' : style.badgeText,
-                    }}
-                  >
-                    {cat.count}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-
           {/* ════ SECTION 1: VERIFIED RESEARCH ARTICLES ════ */}
           <section className="mb-10">
             
@@ -211,18 +173,16 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
             <div className="flex items-center gap-3 mb-4">
               <div className="flex items-center gap-2 px-3 py-1 rounded-full" style={{ backgroundColor: '#ede9fe', color: '#7c3aed' }}>
                 <Flame className="w-4 h-4 text-[#7c3aed]" />
-                <h2 className="text-xs sm:text-sm font-bold uppercase tracking-wide font-['Lato']">
-                  {activeCategory === 'All' ? 'Newest Article' : `${activeCategory} Articles (${sortedArticles.length})`}
-                </h2>
+                <h2 className="text-xs sm:text-sm font-bold uppercase tracking-wide font-['Lato']">Newest Article</h2>
               </div>
               <span className="text-xs sm:text-sm text-slate-500 font-medium">Live telemetry from 10 autonomous engines</span>
             </div>
 
-            {/* Featured Hero Card */}
+            {/* Featured Hero Card (Newest Article) */}
             {heroNewest && (
               <div
                 onClick={() => onReadArticle(heroNewest)}
-                className="block mb-5 group cursor-pointer"
+                className="block mb-6 group cursor-pointer"
               >
                 {(() => {
                   const heroStyle = getCategoryStyle(heroNewest.category);
@@ -288,6 +248,44 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 })()}
               </div>
             )}
+
+            {/* 🏷️ CATEGORY SEGREGATION PILLS BAR (Placed directly below Newest Article) */}
+            <div className="flex flex-wrap items-center gap-2 mb-6 select-none">
+              {categoryFilters.map((cat) => {
+                const style = getCategoryStyle(cat.name);
+                const isActive = activeCategory === cat.name;
+
+                return (
+                  <button
+                    key={cat.name}
+                    onClick={() => onSelectCategory && onSelectCategory(cat.name)}
+                    className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs sm:text-[13px] font-bold transition-all cursor-pointer hover:scale-[1.03] active:scale-[0.98] font-['Lato']"
+                    style={{
+                      backgroundColor: isActive && cat.name === 'All' ? '#0f172a' : style.bg,
+                      color: isActive && cat.name === 'All' ? '#ffffff' : style.text,
+                      border: `1.5px solid ${isActive ? (cat.name === 'All' ? '#0f172a' : style.dot) : style.border}`,
+                      boxShadow: isActive ? `0 0 0 2px ${style.dot}33, 0 2px 6px rgba(0,0,0,0.06)` : '0 1px 2px rgba(0,0,0,0.03)',
+                    }}
+                    title={`Filter by ${cat.name} (${cat.count} articles)`}
+                  >
+                    <span
+                      className="w-2 h-2 rounded-full shrink-0"
+                      style={{ backgroundColor: isActive && cat.name === 'All' ? '#ffffff' : style.dot }}
+                    />
+                    <span>{cat.name}</span>
+                    <span
+                      className="text-[11px] font-bold px-2 py-0.5 rounded-full font-mono leading-none"
+                      style={{
+                        backgroundColor: isActive && cat.name === 'All' ? '#334155' : style.badgeBg,
+                        color: isActive && cat.name === 'All' ? '#f8fafc' : style.badgeText,
+                      }}
+                    >
+                      {cat.count}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
 
             {/* Secondary 3-Column Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
