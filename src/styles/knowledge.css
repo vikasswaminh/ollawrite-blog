@@ -648,10 +648,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   RED HIGHLIGHTING ONLY FOR LINES & WORDS (NO FULL BOX HIGHLIGHT)
+   BOX BORDER LINES: LIGHT RED ON HOVER / SELECTION (ONLY LINES, NO BG FILL)
    ========================================================================== */
 
-/* 1. Sentence, Word & Text Selection: Solid Vibrant Red */
+/* 1. Sentence, Line & Word Text Selection: Solid Vibrant Red */
 ::selection, *::selection {
   background-color: #e8443a !important;
   color: #ffffff !important;
@@ -665,7 +665,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: none !important;
 }
 
-/* 2. When cursor is placed over words, lines, headings, or links -> Turn text red */
+/* 2. Text lines, headings, and titles turn red on hover */
 a:hover,
 button:hover span,
 button:hover h3,
@@ -678,12 +678,14 @@ h3:hover,
 h4:hover,
 h5:hover,
 h6:hover,
-p:hover {
+p:hover,
+article:hover h3,
+article:hover h2 {
   color: #e8443a !important;
   transition: color 0.15s ease;
 }
 
-/* 3. Keep all boxes, cards, and containers neutral without full box highlighting */
+/* 3. Box lines (borders) highlight in Light Red (#f87171) on cursor hover/selection */
 article,
 .card-box,
 .tldr-box,
@@ -693,25 +695,43 @@ aside nav button,
 aside .sidebar-cards-stack button,
 aside .sidebar-cards-stack a,
 button[class*="snap-start"] {
-  background-color: #ffffff !important;
-  border-color: #e2e8f0 !important;
-  box-shadow: none !important;
+  transition: border-color 0.2s ease, color 0.15s ease, box-shadow 0.2s ease;
 }
 
-.tldr-box {
-  background: #eef4ff !important;
-  border-top-color: #003db3 !important;
+/* On hover / focus / active / selected -> Only the box outline line highlights in light red */
+article:hover,
+.card-box:hover,
+.tldr-box:hover,
+.key-takeaway-card:hover,
+.faq-box details:hover,
+aside nav button:hover,
+aside .sidebar-cards-stack button:hover,
+aside .sidebar-cards-stack a:hover,
+button[class*="snap-start"]:hover,
+article:focus,
+article:active,
+aside nav button:focus,
+aside nav button:active {
+  border-color: #f87171 !important;
+  box-shadow: 0 0 0 1px #f87171 !important;
 }
 
-.key-takeaway-card {
-  background: #eef4ff !important;
-  border-left-color: #003db3 !important;
+.key-takeaway-card:hover,
+.key-takeaway-card:focus,
+.key-takeaway-card:active {
+  border-left-color: #f87171 !important;
 }
 
-[data-theme="dark"] article,
-[data-theme="dark"] .card-box,
-[data-theme="dark"] aside nav button,
-[data-theme="dark"] aside .sidebar-cards-stack button {
-  background-color: #0f172a !important;
-  border-color: #1e293b !important;
+.tldr-box:hover,
+.tldr-box:focus,
+.tldr-box:active {
+  border-top-color: #f87171 !important;
+}
+
+[data-theme="dark"] article:hover,
+[data-theme="dark"] .card-box:hover,
+[data-theme="dark"] aside nav button:hover,
+[data-theme="dark"] aside .sidebar-cards-stack button:hover {
+  border-color: #f87171 !important;
+  box-shadow: 0 0 0 1px #f87171 !important;
 }

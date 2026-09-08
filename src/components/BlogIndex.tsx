@@ -66,7 +66,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer transition-all group"
+                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#f87171] transition-all group active:border-[#f87171]"
               >
                 <h3 className="font-bold text-[15px] sm:text-base text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
@@ -85,7 +85,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer transition-all group"
+                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer hover:border-[#f87171] transition-all group active:border-[#f87171]"
               >
                 <h3 className="font-bold text-[15px] sm:text-base text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
@@ -189,7 +189,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   const heroStyle = getCategoryStyle(heroNewest.category);
                   return (
                     <div 
-                      className="relative overflow-hidden rounded-xl border border-slate-200 transition-all flex flex-col md:flex-row bg-white"
+                      className="relative overflow-hidden rounded-xl border border-slate-200 hover:border-[#f87171] hover:shadow-xs transition-all flex flex-col md:flex-row bg-white active:border-[#f87171]"
                       
                     >
                       {/* Left Hero Image */}
@@ -295,7 +295,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   <article
                     key={post.id}
                     onClick={() => onReadArticle(post)}
-                    tabIndex={0} role="button" aria-label={post.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(post); }} className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden cursor-pointer flex flex-col p-3.5"
+                    tabIndex={0} role="button" aria-label={post.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(post); }} className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:border-[#f87171] hover:shadow-xs cursor-pointer flex flex-col p-3.5 active:border-[#f87171]"
                     
                     
                   >
