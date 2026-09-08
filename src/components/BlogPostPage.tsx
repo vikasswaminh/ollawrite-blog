@@ -80,13 +80,6 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    // Make all takeaway cards and content boxes focusable so clicking selects them with red highlight
-    const cards = document.querySelectorAll('.key-takeaway-card, .tldr-box, .main-content-card, .faq-box details, blockquote');
-    cards.forEach(card => {
-      if (!card.getAttribute('tabindex')) {
-        card.setAttribute('tabindex', '0');
-      }
-    });
   }, [article]);
 
   // All other articles, newest-first by publishedDate

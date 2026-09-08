@@ -240,12 +240,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.25rem 1.5rem !important;
   margin-bottom: 1rem !important;
   box-shadow: 0 2px 6px rgba(0, 61, 179, 0.04) !important;
-  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
-}
-
-.key-takeaway-card:hover {
-  transform: translateX(3px) !important;
-  box-shadow: 0 4px 12px rgba(0, 61, 179, 0.08) !important;
+  transition: none !important;
 }
 
 .key-takeaway-card h4, .key-takeaway-card h2, .key-takeaway-card h3, .key-takeaway-card h5, .key-takeaway-card h6, .key-takeaways-box h4 {
@@ -648,13 +643,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   PRECISION STYLING:
-   - Essential Guide & Agent Workflow: ONLY WORDS HIGHLIGHT IN RED (No box or line change)
-   - Newest & Old Articles: Light red border lines & red text
-   - Sentence Selection: Solid vibrant red
+   BLOG POST CONTENT: NO HOVER HIGHLIGHT ON TL;DR, KEY TAKEAWAYS & TABLES
    ========================================================================== */
 
-/* 1. Sentence, Word & Text Drag Selection */
+/* 1. Universal Sentence & Word Drag Selection */
 ::selection, *::selection {
   background-color: #e8443a !important;
   color: #ffffff !important;
@@ -668,26 +660,137 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: none !important;
 }
 
-/* 2. Text words, links, and titles turn red on hover */
+/* 2. Interactive Navigation & Card Links on Hover (Only actual links/buttons) */
 a:hover,
 button:hover span,
 button:hover h3,
 .os-toc-link:hover,
 .os-toc-link:hover span,
-h1:hover,
-h2:hover,
-h3:hover,
-h4:hover,
-h5:hover,
-h6:hover,
-p:hover,
 article:hover h3,
 article:hover h2 {
   color: #e8443a !important;
   transition: color 0.15s ease;
 }
 
-/* 3. Essential Guide & Agent Workflow: Static neutral border, no box glow, ONLY words highlight */
+/* 3. STRICTLY NO HOVER HIGHLIGHT on TL;DR, Key Takeaways, Main Content Cards, and Tables */
+.tldr-box,
+.tldr-box:hover,
+.tldr-box:focus,
+.tldr-box:active,
+.tldr-box *,
+.tldr-box *:hover {
+  background: #eef4ff !important;
+  border-color: #c7d8f8 !important;
+  border-top: 6px solid #003db3 !important;
+  box-shadow: 0 4px 12px rgba(0, 61, 179, 0.06) !important;
+  transform: none !important;
+  cursor: default !important;
+}
+
+.tldr-box h3,
+.tldr-box h3:hover {
+  color: #002d86 !important;
+}
+
+.tldr-box p,
+.tldr-box p:hover {
+  color: #1e293b !important;
+}
+
+.key-takeaways-box,
+.key-takeaways-box:hover,
+.key-takeaways-box *,
+.key-takeaways-box *:hover,
+.key-takeaway-card,
+.key-takeaway-card:hover,
+.key-takeaway-card:focus,
+.key-takeaway-card:active,
+.key-takeaway-card *,
+.key-takeaway-card *:hover {
+  transform: none !important;
+  box-shadow: 0 2px 6px rgba(0, 61, 179, 0.04) !important;
+  cursor: default !important;
+}
+
+.key-takeaways-box > h3,
+.key-takeaways-box > h3:hover,
+.key-takeaway-card h4,
+.key-takeaway-card h4:hover,
+.key-takeaway-card h2,
+.key-takeaway-card h3,
+.key-takeaway-card h5,
+.key-takeaway-card h6 {
+  color: #000000 !important;
+}
+
+.key-takeaway-card p,
+.key-takeaway-card p:hover {
+  color: #334155 !important;
+}
+
+.key-takeaway-card,
+.key-takeaway-card:hover {
+  background: #eef4ff !important;
+  border: 1px solid #c7d8f8 !important;
+  border-left: 5px solid #003db3 !important;
+}
+
+/* Complete content card & Comparison Table: strictly NO hover highlight */
+.main-content-card,
+.main-content-card:hover,
+.main-content-card *,
+.main-content-card *:hover,
+table,
+table:hover,
+table.prose-table,
+table.prose-table:hover,
+table.prose-table *,
+table.prose-table *:hover,
+table th,
+table th:hover,
+table td,
+table td:hover,
+table tr,
+table tr:hover {
+  border-color: #e2e8f0 !important;
+  transform: none !important;
+  cursor: default !important;
+}
+
+.main-content-card h2,
+.main-content-card h2:hover,
+.main-content-card h3,
+.main-content-card h3:hover {
+  color: #0f172a !important;
+}
+
+.main-content-card h4,
+.main-content-card h4:hover {
+  color: #003db3 !important;
+}
+
+.main-content-card p,
+.main-content-card p:hover {
+  color: #1e293b !important;
+}
+
+table th,
+table th:hover {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+table td,
+table td:hover {
+  color: #334155 !important;
+}
+
+table tr:nth-child(even) td,
+table tr:nth-child(even) td:hover {
+  background: #f8fafc !important;
+}
+
+/* 4. Essential Guide & Agent Workflow Sidebars: only word hover highlight, neutral boxes */
 aside nav button,
 aside .sidebar-cards-stack button,
 aside .sidebar-cards-stack a,
@@ -705,16 +808,14 @@ aside .sidebar-cards-stack button:hover,
 aside .sidebar-cards-stack a:hover,
 .blog-sidebar button:hover,
 .blog-sidebar a:hover,
-button[class*="snap-start"]:hover,
-aside nav button:focus,
-aside nav button:active {
+button[class*="snap-start"]:hover {
   border-color: #e2e8f0 !important;
   background-color: #ffffff !important;
   box-shadow: none !important;
   color: #e8443a !important;
 }
 
-/* 4. Newest Articles & Old Articles: Light red border lines on hover */
+/* 5. Homepage Newest Article & Old Article Cards: Light red perimeter lines & title hover */
 article,
 .hero-newest-card {
   transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
@@ -732,14 +833,49 @@ article:hover .border-t,
   border-color: #f87171 !important;
 }
 
-[data-theme="dark"] aside nav button,
-[data-theme="dark"] aside .sidebar-cards-stack button {
-  background-color: #0f172a !important;
+/* Dark mode overrides */
+[data-theme="dark"] .tldr-box,
+[data-theme="dark"] .tldr-box:hover {
+  background: #111827 !important;
   border-color: #1e293b !important;
+  border-top: 6px solid #6d9bff !important;
+}
+[data-theme="dark"] .tldr-box h3,
+[data-theme="dark"] .tldr-box h3:hover {
+  color: #93b4ff !important;
+}
+[data-theme="dark"] .tldr-box p,
+[data-theme="dark"] .tldr-box p:hover {
+  color: #cbd5e1 !important;
 }
 
-[data-theme="dark"] aside nav button:hover,
-[data-theme="dark"] aside .sidebar-cards-stack button:hover {
+[data-theme="dark"] .key-takeaway-card,
+[data-theme="dark"] .key-takeaway-card:hover {
+  background: #111827 !important;
   border-color: #1e293b !important;
-  color: #f87171 !important;
+  border-left: 5px solid #6d9bff !important;
+}
+[data-theme="dark"] .key-takeaways-box > h3,
+[data-theme="dark"] .key-takeaways-box > h3:hover,
+[data-theme="dark"] .key-takeaway-card h4,
+[data-theme="dark"] .key-takeaway-card h4:hover {
+  color: #f8fafc !important;
+}
+[data-theme="dark"] .key-takeaway-card p,
+[data-theme="dark"] .key-takeaway-card p:hover {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="dark"] .main-content-card,
+[data-theme="dark"] .main-content-card:hover,
+[data-theme="dark"] table.prose-table,
+[data-theme="dark"] table.prose-table:hover {
+  background: #0f172a !important;
+  border-color: #1e293b !important;
+}
+[data-theme="dark"] .main-content-card p,
+[data-theme="dark"] .main-content-card p:hover,
+[data-theme="dark"] table.prose-table td,
+[data-theme="dark"] table.prose-table td:hover {
+  color: #cbd5e1 !important;
 }
