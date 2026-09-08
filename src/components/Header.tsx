@@ -68,48 +68,46 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Navigation Links */}
           <nav className="hidden lg:flex items-center gap-6 xl:gap-8 font-['Lato']">
             <a 
-              href="https://ollawrite.com/#product"
-              className="flex items-center gap-1 text-[14px] font-bold transition-colors cursor-pointer whitespace-nowrap text-slate-700 hover:text-[#e8443a]"
+              href="https://www.ollawrite.com/#features"
+              className="text-[14px] font-bold cursor-pointer transition-colors whitespace-nowrap text-slate-700 hover:text-[#e8443a]"
             >
-              <span>Product</span>
-              <ChevronDown size={14} className="text-slate-400 stroke-[2.5]" />
+              Features
+            </a>
+
+            <a 
+              href="https://www.ollawrite.com/#how"
+              className="text-[14px] font-bold cursor-pointer transition-colors whitespace-nowrap text-slate-700 hover:text-[#e8443a]"
+            >
+              How it works
+            </a>
+
+            <a 
+              href="https://www.ollawrite.com/#pricing"
+              className="text-[14px] font-bold cursor-pointer transition-colors whitespace-nowrap text-slate-700 hover:text-[#e8443a]"
+            >
+              Pricing
+            </a>
+
+            <a 
+              href="https://www.ollawrite.com/#faq"
+              className="text-[14px] font-bold cursor-pointer transition-colors whitespace-nowrap text-slate-700 hover:text-[#e8443a]"
+            >
+              FAQ
             </a>
 
             <a 
               href="https://blogs.ollawrite.com"
+              onClick={() => onSelectCategory('All')}
               className="text-[14px] font-bold cursor-pointer transition-colors whitespace-nowrap text-[#e8443a] hover:text-[#c7372e]"
             >
               Blog
             </a>
 
             <a 
-              href="https://ollawrite.com/#use-cases"
-              className="flex items-center gap-1 text-[14px] font-bold transition-colors cursor-pointer whitespace-nowrap text-slate-700 hover:text-[#e8443a]"
-            >
-              <span>Use cases</span>
-              <ChevronDown size={14} className="text-slate-400 stroke-[2.5]" />
-            </a>
-
-            <a 
-              href="https://ollawrite.com/#email-api"
+              href="https://www.ollawrite.com/contact/"
               className="text-[14px] font-bold cursor-pointer transition-colors whitespace-nowrap text-slate-700 hover:text-[#e8443a]"
             >
-              Email API
-            </a>
-
-            <a 
-              href="https://ollawrite.com/docs"
-              className="flex items-center gap-1 text-[14px] font-bold transition-colors cursor-pointer whitespace-nowrap text-slate-700 hover:text-[#e8443a]"
-            >
-              <span>Docs</span>
-              <ChevronDown size={14} className="text-slate-400 stroke-[2.5]" />
-            </a>
-
-            <a 
-              href="https://ollawrite.com/#pricing"
-              className="text-[14px] font-bold cursor-pointer transition-colors whitespace-nowrap text-slate-700 hover:text-[#e8443a]"
-            >
-              Pricing
+              Contact
             </a>
           </nav>
 
@@ -200,23 +198,23 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Mobile Drawer */}
       {open && (
         <div className="lg:hidden bg-white border-b border-slate-200 px-6 py-5 space-y-4 text-lg font-black font-['Lato'] shadow-md">
-          <a href="https://ollawrite.com/#product" className="block w-full text-left py-2 text-slate-900">
-            Product
+          <a href="https://www.ollawrite.com/#features" className="block w-full text-left py-2 text-slate-900 hover:text-[#e8443a]">
+            Features
           </a>
-          <a href="https://blogs.ollawrite.com" className="block w-full text-left py-2 text-[#e8443a]">
+          <a href="https://www.ollawrite.com/#how" className="block w-full text-left py-2 text-slate-900 hover:text-[#e8443a]">
+            How it works
+          </a>
+          <a href="https://www.ollawrite.com/#pricing" className="block w-full text-left py-2 text-slate-900 hover:text-[#e8443a]">
+            Pricing
+          </a>
+          <a href="https://www.ollawrite.com/#faq" className="block w-full text-left py-2 text-slate-900 hover:text-[#e8443a]">
+            FAQ
+          </a>
+          <a href="https://blogs.ollawrite.com" onClick={() => { onSelectCategory('All'); setOpen(false); }} className="block w-full text-left py-2 text-[#e8443a]">
             Blog
           </a>
-          <a href="https://ollawrite.com/#use-cases" className="block w-full text-left py-2 text-slate-900">
-            Use cases
-          </a>
-          <a href="https://ollawrite.com/#email-api" className="block w-full text-left py-2 text-slate-900">
-            Email API
-          </a>
-          <a href="https://ollawrite.com/docs" className="block w-full text-left py-2 text-slate-900">
-            Docs
-          </a>
-          <a href="https://ollawrite.com/#pricing" className="block w-full text-left py-2 text-slate-900">
-            Pricing
+          <a href="https://www.ollawrite.com/contact/" className="block w-full text-left py-2 text-slate-900 hover:text-[#e8443a]">
+            Contact
           </a>
         </div>
       )}
