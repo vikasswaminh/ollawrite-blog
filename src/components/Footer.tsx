@@ -16,7 +16,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory }) => {
         <div className="max-w-[1540px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           
           <div className="flex items-center gap-4">
-            <a href="/" className="px-2 py-1 rounded-xl flex items-center gap-2.5" aria-label="OllaWrite Knowledge base">
+            <a href="https://www.ollawrite.com" className="px-2 py-1 rounded-xl flex items-center gap-2.5" aria-label="OllaWrite Knowledge base">
               <span className="font-bold text-white text-lg sm:text-xl tracking-tight font-['Lato']">
                 Olla<span className="text-[#e8443a]">Write</span> Knowledge
               </span>
@@ -33,7 +33,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory }) => {
 
           <div className="flex flex-wrap items-center gap-3">
             <a
-              href="https://ollawrite.com"
+              href="https://www.ollawrite.com"
               target="_blank"
               rel="noopener noreferrer"
               className="og-cta-red inline-flex items-center gap-2 text-white font-bold px-4 py-2 text-xs sm:text-sm rounded-lg transition-colors shadow-xs"
@@ -123,24 +123,24 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory }) => {
             <div>
               <h5 className="text-xs font-mono font-bold tracking-wider text-white uppercase mb-2 flex items-center gap-1.5"><span className="inline-block w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#16a34a' }}></span>Compliance</h5>
               <ul className="space-y-1.5 text-xs text-[#94a3b8]">
-                <li><a href="https://ollawrite.com" className="hover:text-white">SOC2 Type II</a></li>
-                <li><a href="https://ollawrite.com" className="hover:text-white">GDPR Verified</a></li>
+                <li><a href="https://www.ollawrite.com" className="hover:text-white">SOC2 Type II</a></li>
+                <li><a href="https://www.ollawrite.com" className="hover:text-white">GDPR Verified</a></li>
               </ul>
             </div>
 
             <div>
               <h5 className="text-xs font-mono font-bold tracking-wider text-white uppercase mb-2 flex items-center gap-1.5"><span className="inline-block w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#f5b400' }}></span>Developer</h5>
               <ul className="space-y-1.5 text-xs text-[#94a3b8]">
-                <li><a href="https://ollawrite.com" className="hover:text-white">Sitemap API</a></li>
-                <li><a href="https://ollawrite.com" className="hover:text-white">Fact SDK</a></li>
+                <li><a href="https://www.ollawrite.com" className="hover:text-white">Sitemap API</a></li>
+                <li><a href="https://www.ollawrite.com" className="hover:text-white">Fact SDK</a></li>
               </ul>
             </div>
 
             <div>
               <h5 className="text-xs font-mono font-bold tracking-wider text-white uppercase mb-2 flex items-center gap-1.5"><span className="inline-block w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#e8443a' }}></span>Company</h5>
               <ul className="space-y-1.5 text-xs text-[#94a3b8]">
-                <li><a href="https://ollawrite.com" className="hover:text-white">About Us</a></li>
-                <li><a href="https://ollawrite.com" className="hover:text-white">Trust Center</a></li>
+                <li><a href="https://www.ollawrite.com" className="hover:text-white">About Us</a></li>
+                <li><a href="https://www.ollawrite.com" className="hover:text-white">Trust Center</a></li>
               </ul>
             </div>
           </div>
@@ -159,11 +159,11 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory }) => {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs text-[#94a3b8]">
-            <a href="https://ollawrite.com" className="hover:text-white font-medium">Contact</a>
+            <a href="https://www.ollawrite.com" className="hover:text-white font-medium">Contact</a>
             <span>·</span>
-            <a href="https://ollawrite.com" className="hover:text-white font-medium">About</a>
+            <a href="https://www.ollawrite.com" className="hover:text-white font-medium">About</a>
             <span>·</span>
-            <a href="https://ollawrite.com" className="hover:text-white font-medium">Verification Terms</a>
+            <a href="https://www.ollawrite.com" className="hover:text-white font-medium">Verification Terms</a>
           </div>
         </div>
 

@@ -90,9 +90,9 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
   const agentWorkflows = others.slice(4, 8);
 
   const websiteBacklinks = [
-    { title: 'OllaWrite AI Platform ↗', href: 'https://ollawrite.com' },
-    { title: 'Site-First Writing Engine ↗', href: 'https://ollawrite.com/#features' },
-    { title: 'Plans & Pricing Overview ↗', href: 'https://ollawrite.com/#pricing' }
+    { title: 'OllaWrite AI Platform ↗', href: 'https://www.ollawrite.com' },
+    { title: 'Site-First Writing Engine ↗', href: 'https://www.ollawrite.com/#features' },
+    { title: 'Plans & Pricing Overview ↗', href: 'https://www.ollawrite.com/#pricing' }
   ];
 
   const primaryTag = article.tags?.[0] || article.category || 'Insights';

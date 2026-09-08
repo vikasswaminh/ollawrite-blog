@@ -36,11 +36,11 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           <div className="hidden sm:flex items-center gap-4 text-slate-200 font-mono whitespace-nowrap font-medium">
-            <a href="#docs" className="hidden lg:inline hover:text-white transition-colors">API_DOCS</a>
+            <a href="https://www.ollawrite.com/#features" className="hidden lg:inline hover:text-white transition-colors">API_DOCS</a>
             <span className="text-slate-400 hidden lg:inline">·</span>
-            <a href="#sandbox" className="hidden md:inline hover:text-white transition-colors">RAG_SANDBOX</a>
+            <a href="https://www.ollawrite.com/#how" className="hidden md:inline hover:text-white transition-colors">RAG_SANDBOX</a>
             <span className="text-slate-400 hidden md:inline">·</span>
-            <a href="https://ollawrite.com" className="text-white hover:text-slate-200 font-bold flex items-center gap-1.5 transition-colors">
+            <a href="https://www.ollawrite.com" className="text-white hover:text-slate-200 font-bold flex items-center gap-1.5 transition-colors">
               <span>[+]</span> RUN_AUDIT →
             </a>
           </div>
@@ -129,7 +129,7 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
 
             <a 
-              href="https://ollawrite.com/" 
+              href="https://www.ollawrite.com/" 
               target="_blank" 
               rel="noreferrer"
               className="og-cta-red text-xs sm:text-sm font-bold px-3 py-1.5 rounded-lg shadow-xs transition-all hidden sm:flex items-center gap-1.5 cursor-pointer whitespace-nowrap font-mono"

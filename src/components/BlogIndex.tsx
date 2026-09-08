@@ -120,7 +120,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
             {/* Website backlinks */}
             <div className="pt-3 mt-3 border-t border-slate-200 flex flex-col gap-1.5">
               <a
-                href="https://ollawrite.com"
+                href="https://www.ollawrite.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
@@ -128,7 +128,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 OllaWrite AI Platform ↗
               </a>
               <a
-                href="https://ollawrite.com/#features"
+                href="https://www.ollawrite.com/#features"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
@@ -136,7 +136,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 Site-First Writing Engine ↗
               </a>
               <a
-                href="https://ollawrite.com/#pricing"
+                href="https://www.ollawrite.com/#pricing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
