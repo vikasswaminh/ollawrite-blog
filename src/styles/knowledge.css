@@ -648,10 +648,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   RED HIGHLIGHT ONLY FOR LINES, WORDS & TEXT SELECTION (NO FULL BOX FILL)
+   RED HIGHLIGHTING ONLY FOR LINES & WORDS (NO FULL BOX HIGHLIGHT)
    ========================================================================== */
 
-/* 1. Universal Text / Word / Line / Sentence Selection Highlight */
+/* 1. Sentence, Word & Text Selection: Solid Vibrant Red */
 ::selection, *::selection {
   background-color: #e8443a !important;
   color: #ffffff !important;
@@ -665,17 +665,25 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: none !important;
 }
 
-/* 2. Interactive text lines, headings & titles turn red on cursor hover */
+/* 2. When cursor is placed over words, lines, headings, or links -> Turn text red */
 a:hover,
+button:hover span,
+button:hover h3,
 button:hover,
 .os-toc-link:hover,
-article:hover h3,
-article:hover h2,
-.group:hover .group-hover\:text-\[\#e8443a\] {
+.os-toc-link:hover span,
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+p:hover {
   color: #e8443a !important;
+  transition: color 0.15s ease;
 }
 
-/* 3. Cards & Boxes: Clean background (no full box fill), subtle border on hover */
+/* 3. Keep all boxes, cards, and containers neutral without full box highlighting */
 article,
 .card-box,
 .tldr-box,
@@ -683,28 +691,27 @@ article,
 .faq-box details,
 aside nav button,
 aside .sidebar-cards-stack button,
-aside .sidebar-cards-stack a {
-  transition: border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+aside .sidebar-cards-stack a,
+button[class*="snap-start"] {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: none !important;
 }
 
-article:hover,
-.card-box:hover,
-.key-takeaway-card:hover,
-.tldr-box:hover,
-.faq-box details:hover,
-aside nav button:hover,
-aside .sidebar-cards-stack button:hover,
-aside .sidebar-cards-stack a:hover,
-button[class*="snap-start"]:hover {
-  border-color: #e8443a !important;
+.tldr-box {
+  background: #eef4ff !important;
+  border-top-color: #003db3 !important;
 }
 
-article:focus,
-article:active,
-.key-takeaway-card:focus,
-.key-takeaway-card:active,
-aside nav button:focus,
-aside nav button:active {
-  border-color: #e8443a !important;
-  outline: none !important;
+.key-takeaway-card {
+  background: #eef4ff !important;
+  border-left-color: #003db3 !important;
+}
+
+[data-theme="dark"] article,
+[data-theme="dark"] .card-box,
+[data-theme="dark"] aside nav button,
+[data-theme="dark"] aside .sidebar-cards-stack button {
+  background-color: #0f172a !important;
+  border-color: #1e293b !important;
 }

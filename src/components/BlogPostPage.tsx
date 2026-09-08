@@ -191,7 +191,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={g.id}
                   onClick={() => onSelectArticle(g)}
-                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] text-slate-800 font-bold text-xs sm:text-sm transition-all cursor-pointer line-clamp-2 focus:outline-none focus:border-[#e8443a] active:border-[#e8443a]"
+                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-sm transition-colors cursor-pointer line-clamp-2"
                   
                 >
                   {g.title}
@@ -232,7 +232,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={w.id}
                   onClick={() => onSelectArticle(w)}
-                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] text-slate-800 font-bold text-xs sm:text-sm transition-all cursor-pointer line-clamp-2 focus:outline-none focus:border-[#e8443a] active:border-[#e8443a]"
+                  className="os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-sm transition-colors cursor-pointer line-clamp-2"
                   
                 >
                   {w.title}
