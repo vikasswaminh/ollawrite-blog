@@ -29,7 +29,7 @@ function parseArticleContentToHtml(content: string): string {
       return `<tr>${cells.map(c => `<td>${c}</td>`).join('')}</tr>`;
     }).join('');
 
-    return `<div class="overflow-x-auto mt-0 mb-3"><table class="prose-table"><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table></div>`;
+    return `<div class="overflow-x-auto my-6"><table class="prose-table"><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table></div>`;
   });
 
   // Process Markdown Headings
