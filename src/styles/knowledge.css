@@ -343,14 +343,16 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.025) !important;
 }
 
-.faq-box > h2 {
+.faq-box > h2,
+.faq-box h2 {
   font-size: 1.45rem !important;
   font-weight: 700 !important;
   color: #0f172a !important;
   margin-top: 0 !important;
   margin-bottom: 0.75rem !important;
-  padding-bottom: 0.4rem !important;
-  border-bottom: 2px solid #e2e8f0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
 }
 
 .faq-box details {
@@ -591,9 +593,11 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #1e293b !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
 }
-[data-theme="dark"] .faq-box > h2 {
+[data-theme="dark"] .faq-box > h2,
+[data-theme="dark"] .faq-box h2 {
   color: #f8fafc !important;
-  border-bottom: 2px solid #1e293b !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
 }
 [data-theme="dark"] .faq-box details {
   background: #111827 !important;
