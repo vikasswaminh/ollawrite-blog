@@ -66,7 +66,7 @@ export const ARTICLES_DATA: Article[] = [
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200",
       "bio": "Pioneer in semantic retrieval, RAG graph architecture, and zero-hallucination language models at OllaWrite."
     },
-    "publishedDate": "09-09-2026",
+    "publishedDate": "Sep 09, 2026",
     "readTime": "23 min read",
     "featured": true,
     "cardType": "featured",
