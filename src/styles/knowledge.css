@@ -192,9 +192,16 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #c7d8f8 !important;
   border-top: 4px solid #003db3 !important;
   border-radius: 8px !important;
-  padding: 1rem 1.25rem !important;
-  margin: 0.85rem 0 1rem !important;
+  padding: 0.75rem 1.25rem !important;
+  margin: 0 0 0.85rem !important;
   box-shadow: 0 2px 8px rgba(0, 61, 179, 0.05) !important;
+}
+
+.blog-main-column > .prose > *:first-child,
+.blog-main-column > .prose > .tldr-box:first-child,
+.prose > *:first-child,
+.prose > .tldr-box:first-child {
+  margin-top: 0 !important;
 }
 
 .tldr-box h3 {
@@ -263,9 +270,21 @@ h1, h2, h3, h4, h5, h6 {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 10px !important;
-  padding: 1.25rem 1.5rem !important;
-  margin: 0.85rem 0 !important;
+  padding: 0.75rem 1.25rem 1.25rem !important;
+  margin: 0.5rem 0 1rem !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.025) !important;
+}
+
+.main-content-card > *:first-child,
+.main-content-card > h2:first-child,
+.main-content-card > h3:first-child,
+.main-content-card > p:first-child,
+.main-content-card > table:first-child,
+.main-content-card > .overflow-x-auto:first-child,
+.main-content-card > .overflow-x-auto:first-child table,
+.main-content-card > div:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .main-content-card p {
