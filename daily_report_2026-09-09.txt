@@ -1,0 +1,159 @@
+================================================================================
+                     OLLAWRITE DEVELOPMENT DAILY PROGRESS REPORT
+                          DATE: SEPTEMBER 09, 2026
+================================================================================
+
+================================================================================
+SECTION 1: BLOG POST UI POLISH & ZERO HOVER HIGHLIGHTS
+Platform:        OllaWrite Editorial Knowledge Base (https://blogs.ollawrite.com)
+Source Paths:    C:\Users\rahul\Downloads\ollawrite-blog
+                 C:\Users\rahul\Downloads\ollAWRITE 2
+Files Modified:  src/styles/knowledge.css, src/components/BlogPostPage.tsx
+================================================================================
+
+1.1 STRICT ZERO HOVER HIGHLIGHT ON ARTICLE CONTENT ELEMENTS
+------------------------------------------------------------
+- Requirement: Inside the blog post page of every single article, placing or hovering
+  the cursor over the TL;DR summary box, Key Takeaways container/cards, and complete
+  content comparison tables must NOT highlight anything (zero visual shifts).
+- Root Cause Identified: Previous CSS rules contained broad `p:hover` and `h*:hover`
+  selectors that tinted all body text, headings, and table cells red on hover, and
+  tabindex attributes applied to content cards triggered focus outlines.
+- Solution Implemented:
+  * Removed the dynamic tabindex/focus assignment useEffect in BlogPostPage.tsx.
+  * Added strict CSS overrides in `src/styles/knowledge.css` for `.tldr-box`,
+    `.key-takeaways-box`, `.key-takeaway-card`, `.main-content-card`, and `table.prose-table`.
+  * Enforced across all states (:hover, :focus, :active):
+    - transform: none !important; (eliminated 3px translateX shift animations)
+    - cursor: default !important;
+    - Neutral borders and backgrounds locked to static slate/ice-blue palettes.
+    - Heading and paragraph text colors locked to high-contrast static colors.
+
+1.2 REMOVAL OF UNINTENDED INNER BORDER LINES INSIDE TL;DR BOX
+-------------------------------------------------------------
+- Issue Identified: A previous wildcard rule (`.tldr-box *`) applied `border-top: 6px solid #003db3`
+  to all inner children, creating two unwanted blue lines:
+  * Line 1: A short horizontal blue bar directly above "TL;DR Summary" (on the inline-block <h3>).
+  * Line 2: A full-width horizontal blue bar directly below "TL;DR Summary" (on the block <p>).
+- Fix Applied:
+  * Replaced wildcard border assignments with explicit `border: none !important;`
+    (and `border-top: none !important; border-bottom: none !important; outline: none !important;`)
+    on all child elements inside `.tldr-box` (`<h3>`, `<p>`, `<span>`, etc.).
+  * Both inner lines were completely removed while preserving the outer container's clean border.
+
+
+================================================================================
+SECTION 2: HEADER NAVIGATION BAR REPLACEMENT & OLLAWRITE ROUTING
+Platform:        OllaWrite Blog Header (https://blogs.ollawrite.com)
+Files Modified:  src/components/Header.tsx
+================================================================================
+
+2.1 COMPLETE REPLACEMENT OF TOP BAR NAVIGATION BUTTONS
+------------------------------------------------------
+- Replaced the previous generic buttons (Product, Use cases, Email API, Docs) with the
+  exact target OllaWrite buttons and destinations requested by the user:
+
+  | Navigation Option   | Target Destination URL                | Behavior / View              |
+  |---------------------|---------------------------------------|------------------------------|
+  | 1. Features         | https://www.ollawrite.com/#features   | Smooth scroll to Features    |
+  | 2. How it works     | https://www.ollawrite.com/#how        | Smooth scroll to Pipeline    |
+  | 3. Pricing          | https://www.ollawrite.com/#pricing    | Smooth scroll to Pricing     |
+  | 4. FAQ              | https://www.ollawrite.com/#faq        | Smooth scroll to FAQ Accordion|
+  | 5. Blog             | https://www.ollawrite.com/blog        | Active Blog View (Red Accent)|
+  | 6. Contact          | https://www.ollawrite.com/contact     | Direct link to Contact page  |
+
+- Mobile Navigation: Updated the mobile slide-out drawer menu in `Header.tsx` to mirror
+  the exact 6 target options with clean high-contrast text and red active indicator.
+- Zero External Redirection: Eliminated 100% of all legacy `ollastack.com` links across
+  the header, ensuring all traffic routes strictly to `ollawrite.com`.
+
+
+================================================================================
+SECTION 3: CLOUDFLARE PAGES BUILD RESOLUTION & MINGIT.ZIP HOSTING
+================================================================================
+
+3.1 CLOUDFLARE PAGES 25MB FILE SIZE LIMIT DIAGNOSIS & RESOLUTION
+-----------------------------------------------------------------
+- Issue Encountered: After adding `MinGit.zip` (37.18 MB) to the blog repository,
+  subsequent GitHub pushes were not reflecting on `https://blogs.ollawrite.com` because
+  Cloudflare Pages has a strict 25 MiB maximum limit per static asset.
+- Solution Implemented:
+  * Removed `MinGit.zip` from `public/` and `dist/` within `ollawrite-blog` and `ollAWRITE 2`.
+  * Removed tracking from the Git index (`git rm --cached public/MinGit.zip dist/MinGit.zip`).
+  * Cloudflare Pages builds immediately resumed succeeding, deploying the latest bundles.
+
+3.2 MINGIT.ZIP LOCAL SERVER HOSTING
+-----------------------------------
+- Maintained active local hosting for MinGit.zip:
+  * Local Host URL: http://localhost:8000/MinGit.zip
+  * Physical Path:  C:\Users\rahul\ollawrite\MinGit.zip (37.18 MB)
+  * Status:         Verified active with HTTP 200 responses.
+
+
+================================================================================
+SECTION 4: BI-DIRECTIONAL CROSS-PLATFORM INTEGRATION
+Platforms Linked:  OllaWrite Blog (https://blogs.ollawrite.com)
+                   OllaWrite Core Platform (https://www.ollawrite.com / localhost:8000)
+================================================================================
+
+4.1 BLOG PLATFORM (https://blogs.ollawrite.com)
+-----------------------------------------------
+- Top Technical Banner: `API_DOCS`, `RAG_SANDBOX`, `RUN_AUDIT`, and `Start free` CTA button
+  route directly to `https://www.ollawrite.com`.
+- Sidebar Website Backlinks (Homepage & Article Pages):
+  * "OllaWrite AI Platform ↗"      -> https://www.ollawrite.com
+  * "Site-First Writing Engine ↗"  -> https://www.ollawrite.com/#features
+  * "Plans & Pricing Overview ↗"   -> https://www.ollawrite.com/#pricing
+- Footer Links: Updated all product, platform, compliance, and contact links to point
+  to `https://www.ollawrite.com`.
+
+4.2 MAIN PLATFORM PLATFORM (C:\Users\rahul\ollawrite\index.html)
+-------------------------------------------------------------------
+- Updated all "Blog" and "Editorial Blog" navigation links across the landing page to
+  route directly to `https://blogs.ollawrite.com/`.
+
+
+================================================================================
+SECTION 5: LIVE PRODUCTION VERIFICATION (https://blogs.ollawrite.com)
+================================================================================
+
+5.1 AUTOMATED VERIFICATION RESULTS
+----------------------------------
+- Live Assets on Cloudflare Pages:
+  * JavaScript Bundle: https://blogs.ollawrite.com/assets/index-3PXYdOpN.js
+  * Stylesheet Bundle: https://blogs.ollawrite.com/assets/index-TqDen4FW.css
+- Audit Checklist:
+  [PASS] Zero references to `ollastack.com` in live production code.
+  [PASS] All 6 navigation bar buttons present and pointing to `ollawrite.com`.
+  [PASS] Zero hover highlight on TL;DR, Key Takeaways, and Comparison Tables.
+  [PASS] Zero inner border lines around TL;DR heading and paragraph.
+  [PASS] Text selection drag highlights in solid vibrant red (#e8443a).
+  [PASS] Essential Guide & Agent Workflow sidebars highlight text in red on hover.
+  [PASS] Newest & Old Article cards highlight perimeter border lines in light red (#f87171).
+
+
+================================================================================
+SECTION 6: ACTIVE SERVERS & REPOSITORY SUMMARY
+================================================================================
+
+1. OLLAWRITE PRODUCTION EDITORIAL BLOG:
+   - Production URL:    https://blogs.ollawrite.com/
+   - Remote Repository: https://github.com/vikasswaminh/ollawrite-blog.git
+   - Active Branch:     main
+   - Latest Commits:
+     * 2474f3c: Fix Cloudflare Pages 25MB file limit & update navbar to ollawrite.com
+     * 97b87d4: Replace navbar buttons with Features, How it works, Pricing, FAQ, Blog, Contact
+     * 413a6b3: Cross-link all navigation, banner, sidebar backlinks and footer options
+     * 36711df: UI fix: remove inner border lines above and below TL;DR Summary heading
+     * 5b6a9bc: UI update: strictly disable hover highlights on TL;DR, Takeaways, and tables
+   - Local Directories: C:\Users\rahul\Downloads\ollawrite-blog
+                        C:\Users\rahul\Downloads\ollAWRITE 2
+
+2. OLLAWRITE CORE PLATFORM SERVER:
+   - Local Live URL:    http://localhost:8000/
+   - MinGit Download:   http://localhost:8000/MinGit.zip
+   - Source Directory:  C:\Users\rahul\ollawrite
+
+================================================================================
+END OF PROGRESS REPORT — All systems operational, synchronized, and verified.
+================================================================================
