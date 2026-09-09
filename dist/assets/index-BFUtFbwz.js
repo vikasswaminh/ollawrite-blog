@@ -56,49 +56,7 @@ Error generating stack: `+e.message+`
 <p>That means content gets evaluated at a more granular level than an entire page. A single well-structured paragraph that directly and clearly answers a specific question can get pulled and cited even from a page that is not otherwise a dominant authority on the broader topic. Conversely, a page that is technically comprehensive but buries its actual answers under vague framing, unnecessary preamble, or unclear structure can get passed over entirely in favor of a shorter, clearer competitor, even if the longer page is more thorough overall when read start to finish by a patient human.</p>
 
 <h2>Traditional SEO vs. AI Search Optimization</h2>
-<p>The differences between the two disciplines run deeper than just a change in terminology. Understanding where they diverge is what keeps an optimization strategy from misapplying old tactics to a fundamentally different evaluation model:</p>
-
-<table class="prose-table">
-<thead>
-<tr>
-<th>Dimension</th>
-<th>Traditional Search Optimization</th>
-<th>AI Search Optimization (AEO / GEO)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Primary Audience</strong></td>
-<td>Human searchers evaluating SERP links</td>
-<td>Language models parsing passage vectors</td>
-</tr>
-<tr>
-<td><strong>Evaluation Level</strong></td>
-<td>Whole-page authority & backlink volume</td>
-<td>Granular, passage-level answer clarity</td>
-</tr>
-<tr>
-<td><strong>Keyword Strategy</strong></td>
-<td>Exact-match & semantic keyword density</td>
-<td>Semantic entity grounding & natural logic</td>
-</tr>
-<tr>
-<td><strong>Content Structure</strong></td>
-<td>Comprehensive long-form narrative</td>
-<td>Modular, self-contained extractable units</td>
-</tr>
-<tr>
-<td><strong>Success Metric</strong></td>
-<td>Organic clicks & search impressions</td>
-<td>Direct citations, mentions & synthesis inclusions</td>
-</tr>
-<tr>
-<td><strong>Staleness Sensitivity</strong></td>
-<td>Moderate (historical ranking inertia)</td>
-<td>High (strict temporal verification gates)</td>
-</tr>
-</tbody>
-</table>
+<p>The differences between the two disciplines run deeper than just a change in terminology. Understanding where they diverge is what keeps an optimization strategy from misapplying old tactics to a fundamentally different evaluation model.</p>
 
 <h2>Core Content Principles That Drive Retrieval and Citation</h2>
 
@@ -344,14 +302,6 @@ There's a whole category of tools now that promise to take AI-generated text and
 
 Most of them work by substituting words for synonyms, restructuring sentence clauses, and inserting minor grammatical irregularities (a missing comma here, a slightly awkward phrase there) because early AI detectors were tuned to flag statistically "too clean" text. The problem is twofold. First, synonym substitution frequently changes meaning in small but real ways ("crucial" and "important" aren't interchangeable in every context, and a tool doing bulk substitution doesn't know the difference). Second, and more importantly, none of this addresses the actual issue: the content still has no specific evidence, no point of view, and no memory of anything real. It just sounds slightly weirder while doing it.
 
-| Evaluation Metric | Automated "Humanizer" Tools | Manual 4-Pass Framework |
-| --- | --- | --- |
-| Cadence Variance | Weak (adds random artificial noise) | High (deliberate, natural speech rhythm) |
-| Specificity & Evidence | Zero (cannot inject real data or case studies) | High (injects verifiable metrics & names) |
-| Voice Authenticity | Unnatural (synonym swapping creates odd phrasing) | Authentic (reflects true brand expertise) |
-| AI Detector Score | Games statistical metrics temporarily | Natural low-probability patterns via real depth |
-| Long-term Reader Trust | Low (reads like spun content) | High (delivers real value and authority) |
-
 A better middle ground, if you're using AI for a first draft, is constraining the model at generation time combined with a genuine manual pass using the four steps above. There's no tool shortcut for pass three. Specificity must come from somewhere real, and that somewhere is either your own knowledge, an interview with someone who has it, or research you've verified rather than let the model summarize.
 
 If you're producing content at real volume (a blog that publishes multiple times a week, product pages across dozens of SKUs, landing pages for different campaigns), doing all four passes by hand on every piece doesn't scale, which is part of why grounded, site-aware drafting tools have become more common: the goal isn't to skip the editing, it's to start the draft from real information so the specificity is baked in from the first draft instead of bolted on afterward. That still leaves passes one, two, and four as things a human needs to do: rhythm and voice are inherently personal, and no tool should be making those calls for you if you want the writing to sound like your team.
@@ -400,13 +350,6 @@ In today's competitive business landscape, it is crucial for companies to priori
 Most companies say customer engagement matters. Fewer track what happens after a support ticket closes. We started doing that about a year ago, and it turned out to be something uncomfortable: nearly a third of customers who rated their support experience five stars still churned within two months. Turns out satisfaction with one interaction and satisfaction with the product are two different numbers, and we'd been treating them as one.
 
 Notice what changed. The vague claim about "prioritizing customer engagement" turned into an actual observation with a number attached. The three formulaic transitions (*crucial, furthermore, ultimately*) are gone entirely. The passage now contains a small piece of friction (an uncomfortable finding) instead of a clean, agreeable statement. And the rhythm varies: a short opening sentence, a slightly longer follow-up, then a longer sentence carrying the actual data point.
-
-| Humanization Pillar | Typical Raw AI Output | Humanized & Grounded Output |
-| :--- | :--- | :--- |
-| **Sentence Rhythm** | Monotonous length (18-24 words per sentence) | Varied rhythm (short 4-word punch + longer detailed explanations) |
-| **Evidence & Facts** | "Studies show significant ROI improvements" | "A 2025 survey of 1,200 B2B marketers showed a 34% drop in CAC" |
-| **Transition Phrasing** | "Moreover, it is crucial to consider..." | "Here's what most teams miss when testing this..." |
-| **Editorial Stance** | Balanced, neutral summary of all sides | Clear opinion with named trade-offs and recommendations |
 
 ## Building Humanization into Your Regular Workflow
 
@@ -600,14 +543,6 @@ A handful of failure patterns show up constantly and naming them directly is mor
 
 ## The Future Is Hybrid, And It's Harder Than You Think
 
-| Criterion | AI Writing Tools | Traditional Content Writing | Hybrid AI + Human |
-| :--- | :--- | :--- | :--- |
-| **Drafting Speed** | Minutes | Hours to Days | 15 to 30 Minutes |
-| **Original Insight** | None (Pattern synthesis) | High (Lived experience) | High (Human guided) |
-| **Production Cost** | Low | High | Optimal |
-| **Fact Reliability** | Requires Verification | High | Verified before publishing |
-| **Scalability** | Unlimited | Restricted by headcount | High with quality control |
-
 Where this is heading is probably obvious: the best content operations in 2026 and beyond are going to be ones that use AI for what it's good at and humans for what they're good at. But doing that well is harder than it sounds.
 
 It requires restraint. Not using AI just because you can. Having clear rules about when to use AI and when to demand human writing. It requires skill. Knowing how to prompt an AI tool to produce something usable rather than generic. Knowing what to edit and what to leave alone. And it requires clear thinking about what content needs to accomplish.
@@ -763,13 +698,6 @@ What happens to bad AI content isn't usually a dramatic manual penalty. It's qui
 So, the real question isn't "will AI content get penalized." It's "does this specific piece of content deserve to rank better than what's currently there." That's a much more useful question to be asking every time you sit down to write, whether AI is involved or not.
 
 ## The Workflow, Immediately
-
-| SEO Content Stage | Manual Human Process | Unassisted AI Prompting | Grounded AI Workflow |
-| :--- | :--- | :--- | :--- |
-| **SERP Intent Analysis** | 2-3 Hours analyzing competitor headings | None (Model guesses intent) | Automated SERP crawl & outline brief |
-| **Drafting Speed** | 4-6 Hours | < 1 Minute | 5-10 Minutes |
-| **E-E-A-T Signal Depth** | High | Low & Generic | High (Injected proprietary docs & insights) |
-| **On-Page Formatting** | Manual table & callout building | Wall of text paragraphs | Pre-structured markdown tables & callouts |
 
 Before we go step by step, here's the shape of the process we're about to walk through, because it's easy to lose the thread across a long guide like this one.
 
@@ -1004,12 +932,6 @@ The next wave, arriving alongside the first genuinely capable transformer-based 
 
 ## The Main Types of AI Content Generators You'll Actually Run Into
 
-| Generator Architecture | Core Mechanism | Strengths | Ideal Use Case |
-| :--- | :--- | :--- | :--- |
-| **Conversational LLM** | Direct Chat Prompting | Flexible, fast, multi-purpose | Quick brainstorming & code |
-| **Templated SaaS** | Pre-built prompt wrappers | Form-based content types | High-volume social & ads |
-| **Site-Grounded Systems** | Automated crawling & RAG | Factual accuracy & E-E-A-T | Long-form SEO & docs |
-
 For organizations that require domain-grounded long-form content rather than raw prompt guessing, [OllaWrite's AI Content Generator](https://www.ollawrite.com) indexes public sitemaps and site documentation to produce brand-aligned articles.
 
 For organizations that need domain-grounded long-form content rather than generic prompts, [OllaWrite's AI Content Generator](https://www.ollawrite.com) automatically indexes your public sitemap and docs to produce brand-aligned articles.
@@ -1176,13 +1098,6 @@ Pairing automated draft generation with expert editorial oversight achieves both
 
 ## The Three Pillars of Modern AI SEO
 
-| Strategy Pillar | Old AI SEO Approach | Modern 2026 Grounded Strategy |
-| :--- | :--- | :--- |
-| **Topic Selection** | High-volume single keywords | Entity clusters & complete sub-intent mapping |
-| **Data Sourcing** | Pre-trained LLM memory | Live SERP & proprietary site sitemap crawl |
-| **Quality Control** | Unedited automated publishing | Multi-agent factual critic & human SME review |
-| **Search Result Target** | Page-one blue links | AI Overviews, Featured Snippets & Organic top 3 |
-
 ### 1. Topical Authority & Entity Mapping
 
 Search engines no longer rank isolated keywords in a vacuum. They construct comprehensive knowledge graphs of concepts, entities, and brand associations.
@@ -1199,12 +1114,12 @@ Google's patents and ranking systems explicitly evaluate "information gain," eva
 
 ## The 4-Agent SEO Publishing Architecture
 
-| Autonomous Agent | Primary Responsibility | Key Output / Benchmark |
-| :--- | :--- | :--- |
-| **Sitemap Crawler** | Ingests existing URLs, headers, and internal links | Prevents cannibalization & anchors context |
-| **SERP Gap Auditor** | Crawls top 20 competing ranking pages for intent gaps | Structured outline & entity requirements |
-| **Contextual Drafter** | Writes long-form copy strictly bounded by brief | Grounded drafts with verified source citations |
-| **Editorial Critic** | Validates factual claims and evaluates tone | SHIP approval or mandatory REWRITE verdict |
+To execute modern grounded AI search optimization at scale, four autonomous agents work in sequence:
+
+- **Sitemap Crawler**: Ingests existing URLs, headers, and internal links to prevent cannibalization and anchor context.
+- **SERP Gap Auditor**: Crawls top 20 competing ranking pages for intent gaps to build structured outlines and entity requirements.
+- **Contextual Drafter**: Writes long-form copy strictly bounded by the research brief with verified source citations.
+- **Editorial Critic**: Validates factual claims and evaluates tone to issue a SHIP approval or mandatory REWRITE verdict.
 
 ## Scaling Content Without Sacrificing Domain Trust
 
@@ -1328,14 +1243,7 @@ Most tools skip this step entirely, because it's an extra layer of cost and comp
 
 AI writing tools didn't appear out of nowhere in 2022 when ChatGPT went viral. Feed in a topic, and the software would stitch together pre-written sentence fragments with synonym substitution to produce something that technically read as unique text but was, functionally, a mad lib. Search engines got very good at detecting and penalizing this almost immediately, and for good reason, it was genuinely low-value content designed purely to rank, not to inform anyone. Then came the first wave of transformer-based tools, roughly 2019 to 2021, built on early GPT models. These were a real leap, actual coherent sentences, actual topical relevance, but they had almost no grounding. They'd happily write a confident, well-structured paragraph of complete nonsense, because the underlying models had no mechanism for factchecking themselves against reality. This is also the era where "AI content is full of made-up statistics" became a completely fair criticism, because it usually was. The current generation, roughly from 2023 onward, is where things get genuinely more interesting, not just because the underlying models got smarter (though they did, substantially), but because tool builders started attaching real capabilities around them: live web search, document ingestion, website crawling, multi-step reasoning where one AI process checks another's work. This is the shift from "AI that writes" to "AI that researches, then writes, then checks itself” and it's the difference between a tool that's a novelty and one that's defensible to use for real published content. Knowing this history matters because a lot of the negative reputation "AI content" carries, thin, generic, occasionally fabricated, was earned honestly by the earlier generations of tools. The category has moved. Not every product in it has moved with it.
 
-## Comparison Matrix: The 5 Types of AI Content Writers
-
-| System Capability | Basic AI Writer | Grounded AI Publishing Engine |
-| :--- | :--- | :--- |
-| **Context Source** | Blank text prompt | Live sitemaps & custom knowledge base |
-| **Fact Verification** | None (Risk of hallucinations) | Automated claim auditing against sources |
-| **SEO Awareness** | Basic keyword insertion | Intent-mapped outlines & structured data |
-| **Brand Consistency** | Static tone adjectives | Dynamic style guide and tone enforcement |
+## The 5 Types of AI Content Writers
 
 To see how site-grounded multi-agent writing systems compare against traditional prompt wrappers, test [OllaWrite's AI Content Writer](https://www.ollawrite.com) which combines automated SERP research, brief creation, and fact-checking critics.
 
@@ -1704,16 +1612,6 @@ QuillBot is particularly useful for paraphrasing and summarization, while Wordtu
 
 The right tool depends on what you're writing and how you work.
 
-| Category | Recommended Tool | Core Strength | Key Limitation |
-| :--- | :--- | :--- | :--- |
-| **Long-Form & Voice** | Claude 3.5 Sonnet | Unmatched natural flow | Requires clear outline prompts |
-| **Research & Structure** | ChatGPT Plus / Pro | Deep web search & reasoning | Tone requires active direction |
-| **Ecosystem Integration** | Google Gemini Advanced | Seamless Workspace workflow | Less stylized prose output |
-| **Enterprise Brand QA** | Writer / Jasper | Style guide enforcement | Higher cost, rigid templates |
-| **Editing & Grammar** | Grammarly / ProWritingAid | Non-destructive polish | Does not generate full drafts |
-| **Search Optimization** | Surfer SEO / Frase | SERP-based scoring | Can encourage robotic writing |
-| **Creative Fiction** | Sudowrite / NovelCrafter | Scene expansion & canon tracking | Unsuited for factual B2B copy |
-
 - **Best overall:** ChatGPT
 - **Best for natural long-form writing:** Claude
 - **Best for Google Workspace:** Gemini
@@ -1867,13 +1765,6 @@ Site-first AI architecture flips this model completely upside down. Instead of r
 
 ## How Site-First Generation Works
 
-| Production Metric | Prompt-Based Writing | Site-First Grounded AI |
-| :--- | :--- | :--- |
-| **Setup Effort** | Manual prompt crafting per article | Automated sitemap & doc indexing |
-| **Fact Hallucination Rate** | High (15-25% of claims require fixing) | Near Zero (< 1% verified against site) |
-| **Internal Linking** | Manual post-editing | Automated contextual injection |
-| **Editorial Turnaround** | Days per article | Minutes per article |
-
 1. **Sitemap Crawling & Indexing**: The auditor agent scans your sitemap to extract published topics, entity maps, and internal URL structures.
 2. **Contextual Brief Generation**: The briefing agent identifies content gaps, maps primary search intent, and selects internal links to include.
 3. **Grounded Multi-Agent Drafting**: The drafter generates the article strictly using facts present in your site knowledge base.
@@ -1930,13 +1821,6 @@ Asking a single AI model to perform research, design an outline, write long-form
 By dividing the workflow into specialized roles, each agent operates with maximum focus and dedicated system prompts tailored specifically to its single responsibility.
 
 ## The 4-Agent Content Architecture
-
-| Agent Role | Primary Responsibility | Input Source | Output Deliverable |
-| :--- | :--- | :--- | :--- |
-| **Auditor** | Site indexing & gap analysis | Live sitemap & URLs | Content gap report |
-| **Briefing Agent** | Intent mapping & outline construction | SERP data & keyword briefs | Structured markdown brief |
-| **Drafter** | Natural language prose generation | Brief & site context docs | Comprehensive raw draft |
-| **Editor Critic** | Quality scoring & hallucination audit | Raw draft vs source docs | Pass/Fail scorecard & edits |
 
 ### 1. The Auditor Agent
 Before writing starts, the Auditor analyzes your website topology to map existing entities, identify cannibalization risks, and pinpoint internal linking opportunities.
@@ -2001,13 +1885,6 @@ Scaling content production with AI quickly creates a bottleneck at the human edi
 The Editor Critic agent solves this by introducing an automated gatekeeper. By running a dedicated evaluation pass before human review, teams filter out weak drafts automatically and focus human attention where it creates the highest value: strategic judgment and creative polish.
 
 ## How the Ship Verdict Engine Works
-
-| Audit Dimension | Evaluation Criteria | Passing Threshold |
-| :--- | :--- | :--- |
-| **Factual Accuracy** | 100% of claims verified against site knowledge base | 98% + |
-| **Tone & Style** | Elimination of stock AI jargon ("delve", "testament to") | 90% + |
-| **SEO Intent Match** | Coverage of primary & secondary SERP entities | 95% + |
-| **Readability & Rhythm** | Varied sentence length & clear section hierarchy | 90% + |
 
 1. **Claim Extraction**: The Critic scans the draft and isolates every factual statement, number, and feature reference.
 2. **Knowledge Base Verification**: Each claim is matched against ground-truth documentation from your site.
@@ -2342,14 +2219,6 @@ The real differentiator here isn't how fast the tool generates text. Every tool 
 
 ### AI Copywriting vs. AI Content Writing vs. Traditional Copywriting
 
-| Copy Dimension | Prompt Generator Tools | Grounded AI Systems | Human Copywriters |
-| :--- | :--- | :--- | :--- |
-| **Input Depth** | Basic text box description | Live site crawl & product docs | Customer interviews & market research |
-| **Generation Speed** | Instant (< 5 seconds) | Fast (15-30 seconds) | Slow (hours to days) |
-| **Brand Voice Control** | Weak & generic | High via style guides | Native intuition |
-| **Conversion Rate** | Low to moderate | High & predictable | Very high |
-| **Best Used For** | Brainstorming angles | Production ad & page copy | High-stakes brand campaigns |
-
 These three terms get used almost interchangeably online, which genuinely confuses people, so it's worth drawing the actual lines clearly:
 
 AI copywriting is short form and conversion focused. It exists to make someone act right now: click, buy, subscribe. Success is measured in a conversion rate, a click through rate, an open rate. It lives or dies on a single line sometimes, one headline, one subject line, one call to action button.
@@ -2617,13 +2486,6 @@ Read that framing again, because it's doing a lot of work. Google isn't asking, 
 
 ## The Helpful Content System, Explained Properly
 
-| Search Evaluation Dimension | Raw Unedited AI Output | Grounded & Edited AI Content |
-| :--- | :--- | :--- |
-| **Google Policy Compliance** | Risk of Scaled Content Abuse flag | Fully compliant people-first content |
-| **Information Gain** | Zero (Rehashes existing SERP) | High (Adds original data & experience) |
-| **E-E-A-T Signal Strength** | Low & Generic | High (Verifiable sources & citations) |
-| **AI Overview Citation** | Unlikely | High probability (Structured claims) |
-
 Google folded its Helpful Content System into the core ranking algorithm rather than keeping it as a separate, occasional update, which tells you something important. This isn't a filter that runs occasionally and catches obviously spammy sites. It's a continuous signal baked into how every page gets evaluated, all the time.
 
 So, what does it measure? Based on Google's published documentation and the patterns visible across sites that have recovered from demotions versus sites that haven't, a few consistent signals stand out:
@@ -2761,13 +2623,6 @@ Most guides on this topic focus on only one of those dimensions, usually the voi
 Real optimization works on all four layers together, because they reinforce each other. Grounded facts naturally break up predictable rhythm, because real details do not arrive in tidy three sentence chunks. Search alignment forces you to answer the question a reader typed in, which pushes out the generic filler a model defaults to. Human voice work exposes where the content is hollow, because it is much harder to write a sentence in your own authentic voice about something you do not actually know.
 
 ## The Four Pillars of Optimized AI Content
-
-| Optimization Pillar | Raw Generated Draft | Fully Optimized Content |
-| :--- | :--- | :--- |
-| **Factual Grounding** | Vague, unverifiable claims | Verified facts traced to real sources |
-| **Structural Rhythm** | Symmetrical template paragraphs | Deliberately varied pacing |
-| **Search Alignment** | Generic topic coverage | Intent-matched format and depth |
-| **Human Voice** | Agreeable, forgettable tone | Specific, consistent perspective |
 
 ### Pillar One: Factual Grounding
 
