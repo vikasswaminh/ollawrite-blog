@@ -190,18 +190,18 @@ h1, h2, h3, h4, h5, h6 {
 .tldr-box {
   background: #eef4ff !important;
   border: 1px solid #c7d8f8 !important;
-  border-top: 6px solid #003db3 !important;
+  border-top: 4px solid #003db3 !important;
   border-radius: 8px !important;
-  padding: 1.75rem 2rem !important;
-  margin: 2rem 0 2.5rem !important;
-  box-shadow: 0 4px 12px rgba(0, 61, 179, 0.06) !important;
+  padding: 1rem 1.25rem !important;
+  margin: 0.85rem 0 1rem !important;
+  box-shadow: 0 2px 8px rgba(0, 61, 179, 0.05) !important;
 }
 
 .tldr-box h3 {
   margin-top: 0 !important;
-  margin-bottom: 0.75rem !important;
+  margin-bottom: 0.4rem !important;
   color: #002d86 !important;
-  font-size: 1.35rem !important;
+  font-size: 1.15rem !important;
   font-weight: 700 !important;
   display: inline-block !important;
   border-bottom: none !important;
@@ -210,51 +210,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tldr-box p {
-  font-size: 1.22rem !important;
-  line-height: 1.8 !important;
+  font-size: 1.05rem !important;
+  line-height: 1.6 !important;
   color: #1e293b !important;
   margin-bottom: 0 !important;
 }
 
 /* Key Takeaways Container & Point Cards in lighter blue boxes */
 .key-takeaways-box {
-  margin: 2.5rem 0 !important;
+  margin: 1rem 0 !important;
 }
 
 .key-takeaways-box > h3 {
-  font-size: 1.38rem !important;
+  font-size: 1.2rem !important;
   font-weight: 700 !important;
   color: #000000 !important;
   margin-top: 0 !important;
-  margin-bottom: 1.25rem !important;
+  margin-bottom: 0.6rem !important;
   display: flex !important;
   align-items: center !important;
-  gap: 0.5rem !important;
+  gap: 0.4rem !important;
 }
 
 .key-takeaway-card {
   background: #eef4ff !important;
   border: 1px solid #c7d8f8 !important;
-  border-left: 5px solid #003db3 !important;
-  border-radius: 8px !important;
-  padding: 1.25rem 1.5rem !important;
-  margin-bottom: 1rem !important;
-  box-shadow: 0 2px 6px rgba(0, 61, 179, 0.04) !important;
+  border-left: 4px solid #003db3 !important;
+  border-radius: 6px !important;
+  padding: 0.65rem 0.9rem !important;
+  margin-bottom: 0.45rem !important;
+  box-shadow: 0 1px 4px rgba(0, 61, 179, 0.03) !important;
   transition: none !important;
 }
 
 .key-takeaway-card h4, .key-takeaway-card h2, .key-takeaway-card h3, .key-takeaway-card h5, .key-takeaway-card h6, .key-takeaways-box h4 {
   color: #000000 !important;
-  font-size: 1.08rem !important;
+  font-size: 1rem !important;
   font-weight: 700 !important;
   margin-top: 0 !important;
-  margin-bottom: 0.4rem !important;
+  margin-bottom: 0.2rem !important;
 }
 
 .key-takeaway-card p {
   color: #334155 !important;
-  font-size: 1.05rem !important;
-  line-height: 1.65 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
   margin-bottom: 0 !important;
 }
 
@@ -262,51 +262,51 @@ h1, h2, h3, h4, h5, h6 {
 .main-content-card {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
-  border-radius: 12px !important;
-  padding: 2.75rem 3rem !important;
-  margin: 2.5rem 0 !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.035) !important;
+  border-radius: 10px !important;
+  padding: 1.25rem 1.5rem !important;
+  margin: 0.85rem 0 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.025) !important;
 }
 
 .main-content-card p {
-  font-size: 1.22rem !important;
-  line-height: 1.85 !important;
+  font-size: 1.05rem !important;
+  line-height: 1.65 !important;
   color: #1e293b !important;
-  margin-bottom: 1.25rem !important;
+  margin-bottom: 0.65rem !important;
 }
 
 .main-content-card h2 {
-  font-size: 1.95rem !important;
+  font-size: 1.45rem !important;
   font-weight: 700 !important;
   color: #0f172a !important;
-  margin-top: 2.75rem !important;
-  margin-bottom: 1rem !important;
+  margin-top: 1.25rem !important;
+  margin-bottom: 0.45rem !important;
 }
 
 .main-content-card h3 {
-  font-size: 1.55rem !important;
+  font-size: 1.25rem !important;
   font-weight: 700 !important;
   color: #0f172a !important;
-  margin-top: 2.25rem !important;
-  margin-bottom: 0.85rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.35rem !important;
 }
 
 .main-content-card h4 {
-  font-size: 1.2rem !important;
+  font-size: 1.08rem !important;
   font-weight: 700 !important;
   color: #003db3 !important;
-  margin-top: 1.75rem !important;
-  margin-bottom: 0.5rem !important;
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.25rem !important;
 }
 
 /* Clean comparison table styling inside content box */
 .main-content-card table, table.prose-table {
   width: 100% !important;
   border-collapse: collapse !important;
-  margin: 1.75rem 0 2.25rem !important;
+  margin: 0.75rem 0 1rem !important;
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
-  border-radius: 8px !important;
+  border-radius: 6px !important;
   overflow: hidden !important;
   display: table !important;
 }
@@ -315,18 +315,18 @@ h1, h2, h3, h4, h5, h6 {
   background: #f1f5f9 !important;
   color: #0f172a !important;
   font-weight: 700 !important;
-  font-size: 1.08rem !important;
+  font-size: 0.95rem !important;
   border: 1px solid #e2e8f0 !important;
-  padding: 0.9rem 1.2rem !important;
+  padding: 0.5rem 0.75rem !important;
   text-align: left !important;
 }
 
 .main-content-card td, table.prose-table td {
   border: 1px solid #e2e8f0 !important;
-  padding: 0.9rem 1.2rem !important;
+  padding: 0.5rem 0.75rem !important;
   color: #334155 !important;
-  font-size: 1.08rem !important;
-  line-height: 1.6 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
 }
 
 .main-content-card tr:nth-child(even) td, table.prose-table tr:nth-child(even) td {
@@ -335,32 +335,32 @@ h1, h2, h3, h4, h5, h6 {
 
 /* FAQ Box */
 .faq-box {
-  margin: 3.5rem 0 3rem !important;
+  margin: 1.25rem 0 1rem !important;
   background: #f8fafc !important;
   border: 1px solid #e2e8f0 !important;
-  border-radius: 12px !important;
-  padding: 2.75rem 2.5rem !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.035) !important;
+  border-radius: 10px !important;
+  padding: 1.25rem 1.5rem !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.025) !important;
 }
 
 .faq-box > h2 {
-  font-size: 1.85rem !important;
+  font-size: 1.45rem !important;
   font-weight: 700 !important;
   color: #0f172a !important;
   margin-top: 0 !important;
-  margin-bottom: 1.75rem !important;
-  padding-bottom: 0.75rem !important;
+  margin-bottom: 0.75rem !important;
+  padding-bottom: 0.4rem !important;
   border-bottom: 2px solid #e2e8f0 !important;
 }
 
 .faq-box details {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
-  border-radius: 10px !important;
-  margin-bottom: 1rem !important;
+  border-radius: 8px !important;
+  margin-bottom: 0.4rem !important;
   overflow: hidden !important;
   transition: all 0.2s ease !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02) !important;
 }
 
 .faq-box details:last-child {
@@ -369,17 +369,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .faq-box details:hover {
   border-color: #a8c1f5 !important;
-  box-shadow: 0 4px 12px rgba(0, 61, 179, 0.06) !important;
+  box-shadow: 0 2px 8px rgba(0, 61, 179, 0.05) !important;
 }
 
 .faq-box details[open] {
   border-color: #003db3 !important;
-  box-shadow: 0 4px 14px rgba(0, 61, 179, 0.08) !important;
+  box-shadow: 0 3px 10px rgba(0, 61, 179, 0.06) !important;
 }
 
 .faq-box details summary {
-  padding: 1.25rem 1.5rem !important;
-  font-size: 1.2rem !important;
+  padding: 0.65rem 0.9rem !important;
+  font-size: 1.05rem !important;
   font-weight: 700 !important;
   color: #1e293b !important;
   cursor: pointer !important;
@@ -409,10 +409,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .faq-box details summary::after {
   content: '+' !important;
-  font-size: 1.5rem !important;
+  font-size: 1.3rem !important;
   font-weight: 600 !important;
   color: #003db3 !important;
-  margin-left: 1rem !important;
+  margin-left: 0.75rem !important;
   line-height: 1 !important;
 }
 
@@ -421,9 +421,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .faq-box details p {
-  padding: 1.25rem 1.5rem !important;
-  font-size: 1.15rem !important;
-  line-height: 1.8 !important;
+  padding: 0.65rem 0.9rem !important;
+  font-size: 0.98rem !important;
+  line-height: 1.6 !important;
   color: #334155 !important;
   margin: 0 !important;
   background: #ffffff !important;
@@ -436,19 +436,19 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  padding: 3.5rem 2.5rem !important;
+  padding: 1.5rem 1.25rem !important;
   background: #eef4ff !important;
   border: 1px solid #c7d8f8 !important;
-  border-top: 6px solid #003db3 !important;
-  border-radius: 12px !important;
-  margin-top: 3.5rem !important;
-  box-shadow: 0 4px 18px rgba(0, 61, 179, 0.07) !important;
+  border-top: 4px solid #003db3 !important;
+  border-radius: 10px !important;
+  margin-top: 1.25rem !important;
+  box-shadow: 0 3px 12px rgba(0, 61, 179, 0.05) !important;
 }
 
 .bringing-together-title {
   text-align: center !important;
-  margin: 0 0 1rem 0 !important;
-  font-size: 1.8rem !important;
+  margin: 0 0 0.5rem 0 !important;
+  font-size: 1.35rem !important;
   font-weight: 700 !important;
   color: #002d86 !important;
   width: 100% !important;
@@ -457,9 +457,9 @@ h1, h2, h3, h4, h5, h6 {
 .bringing-together-desc {
   text-align: center !important;
   max-width: 640px !important;
-  margin: 0 auto 1.85rem auto !important;
-  font-size: 1.2rem !important;
-  line-height: 1.75 !important;
+  margin: 0 auto 1rem auto !important;
+  font-size: 1.02rem !important;
+  line-height: 1.6 !important;
   color: #1e293b !important;
   width: 100% !important;
 }
@@ -475,18 +475,18 @@ h1, h2, h3, h4, h5, h6 {
 .cta-button-wrapper .os-btn-primary {
   background: #e8443a !important;
   color: #ffffff !important;
-  font-size: 1.1rem !important;
+  font-size: 0.95rem !important;
   font-weight: 700 !important;
-  padding: 0.9rem 2.25rem !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 14px rgba(232, 68, 58, 0.28) !important;
+  padding: 0.6rem 1.5rem !important;
+  border-radius: 6px !important;
+  box-shadow: 0 3px 10px rgba(232, 68, 58, 0.22) !important;
   transition: all 0.2s ease !important;
 }
 
 .cta-button-wrapper .os-btn-primary:hover {
   background: #c7352d !important;
   transform: translateY(-1px) !important;
-  box-shadow: 0 6px 18px rgba(232, 68, 58, 0.35) !important;
+  box-shadow: 0 4px 14px rgba(232, 68, 58, 0.3) !important;
 }
 
 /* ==========================================================================

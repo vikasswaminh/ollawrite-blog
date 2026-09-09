@@ -63,10 +63,11 @@ function parseArticleContentToHtml(content: string): string {
   const processed = blocks.map(block => {
     const trimmed = block.trim();
     if (!trimmed) return '';
-    if (trimmed.startsWith('<div') || trimmed.startsWith('<h') || trimmed.startsWith('<table') || trimmed.startsWith('<details') || trimmed.startsWith('<blockquote') || trimmed.startsWith('<li')) {
+    if (trimmed.startsWith('<div') || trimmed.startsWith('<h') || trimmed.startsWith('<table') || trimmed.startsWith('<details') || trimmed.startsWith('<blockquote') || trimmed.startsWith('<li') || trimmed.startsWith('<ul') || trimmed.startsWith('<ol')) {
       return trimmed;
     }
-    return `<p class="leading-relaxed mb-4 text-slate-800 font-['Lato'] text-base sm:text-lg">${trimmed.replace(/\n/g, '<br/>')}</p>`;
+    const cleanParagraph = trimmed.replace(/\n+/g, ' ');
+    return `<p class="leading-relaxed mb-3 text-slate-800 font-['Lato'] text-base sm:text-lg">${cleanParagraph}</p>`;
   });
 
   return processed.join('\n');

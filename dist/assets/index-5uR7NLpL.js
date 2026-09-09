@@ -424,44 +424,32 @@ Budget real time for this. A thorough editorial pass on a substantial article so
 
 <details>
 <summary>Does Google penalize AI-generated content?</summary>
-
-Not for being AI-assisted specifically. Search ranking systems evaluate usefulness, accuracy, and whether the content satisfies what a searcher was looking for, regardless of how it was drafted. What gets penalized is thin, low-value, unedited content — which AI-assisted drafts are more likely to be if they skip the editing step.
-
+<p>Not for being AI-assisted specifically. Search ranking systems evaluate usefulness, accuracy, and whether the content satisfies what a searcher was looking for, regardless of how it was drafted. What gets penalized is thin, low-value, unedited content — which AI-assisted drafts are more likely to be if they skip the editing step.</p>
 </details>
 
 <details>
 <summary>Can I just run my content through a humanizer tool and skip manual editing?</summary>
-
-You can, but the result is usually a draft that scores lower on detection tools without being more useful or trustworthy to a reader. These tools mostly adjust sentence-level statistics, not the underlying specificity or point of view that makes writing feel human in the first place.
-
+<p>You can, but the result is usually a draft that scores lower on detection tools without being more useful or trustworthy to a reader. These tools mostly adjust sentence-level statistics, not the underlying specificity or point of view that makes writing feel human in the first place.</p>
 </details>
 
 <details>
 <summary>How long does it take to properly humanize an AI-drafted article?</summary>
-
-For a piece in the 2,500–3,500-word range, plan on 30 to 45 minutes of focused editing across the four passes, assuming the draft is already reasonably complete and you have real evidence or examples available to add in the specificity pass.
-
+<p>For a piece in the 2,500–3,500-word range, plan on 30 to 45 minutes of focused editing across the four passes, assuming the draft is already reasonably complete and you have real evidence or examples available to add in the specificity pass.</p>
 </details>
 
 <details>
 <summary>What's the single highest impact change I can make?</summary>
-
-Replacing vague claims with specific, verifiable details — numbers, names, timelines, things that happened. Everything else (rhythm, transitions, banned words) matters, but specificity is what separates writing that sounds researched from writing that sounds lived.
-
+<p>Replacing vague claims with specific, verifiable details — numbers, names, timelines, things that happened. Everything else (rhythm, transitions, banned words) matters, but specificity is what separates writing that sounds researched from writing that sounds lived.</p>
 </details>
 
 <details>
 <summary>Is it wrong to use AI for a first draft at all?</summary>
-
-No. Using AI to get a structured first draft down quickly is a reasonable starting point, especially when it's grounded in real source material rather than general prompting. The issue isn't using AI to draft — it's publishing that draft without the editorial pass that turns a competent summary into an actual piece of writing with a point of view.
-
+<p>No. Using AI to get a structured first draft down quickly is a reasonable starting point, especially when it's grounded in real source material rather than general prompting. The issue isn't using AI to draft — it's publishing that draft without the editorial pass that turns a competent summary into an actual piece of writing with a point of view.</p>
 </details>
 
 <details>
 <summary>Will changing a few words to avoid "AI buzzwords" be enough?</summary>
-
-No. Word-swapping addresses the most superficial layer of the problem. The deeper issues — no specific evidence, no disagreement with anything, symmetrical paragraph rhythm, a summary sentence closing every section — remain untouched by vocabulary changes alone.
-
+<p>No. Word-swapping addresses the most superficial layer of the problem. The deeper issues — no specific evidence, no disagreement with anything, symmetrical paragraph rhythm, a summary sentence closing every section — remain untouched by vocabulary changes alone.</p>
 </details>
 
 </div>`},{id:`2`,slug:`ai-writing-tools-vs-traditional-content-writing`,title:`AI Writing Tools vs Traditional Content Writing: Which Method Actually Works in 2026`,subtitle:`Stop debating AI vs human writing. Learn where each excels, the hybrid workflows top teams use, and why most get it wrong. Strategic breakdown inside.`,category:`AI vs Human Writing`,editorialNumber:`02`,author:{name:`Marcus Vance`,role:`Principal Content Strategist`,avatar:`https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200`,bio:`Architecting high-authority content engines for Fortune 500 engineering brands.`},publishedDate:`Sep 01, 2026`,readTime:`23 min read`,featured:!1,cardType:`standard`,imageUrl:`https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800`,sourceCount:5,benchmarkScore:`98.7%`,summary:`Stop debating AI vs human writing. Learn where each excels, the hybrid workflows top teams use, and why most get it wrong. Strategic breakdown inside.`,citations:[{id:1,label:`OllaWrite Hybrid Workflow Efficiency Study`,source:`OllaWrite Benchmark Labs`,year:`2026`,excerpt:`Hybrid pipelines cut research time by 62% while preserving 100% human editorial voice.`},{id:2,label:`Harvard Business Review on Generative Augmentation`,source:`HBR Press`,year:`2026`,excerpt:`Knowledge workers augmented by grounded AI systems produce higher quality strategic briefs.`}],verifiedInsight:{supportedBy:`OllaWrite Editorial Benchmarks`,citationCount:5,keyTakeaway:`Teams using site-grounded AI combined with 40% human editorial review produce 3.8x more published pieces with zero factual rollbacks.`,groundingScore:98.7},tags:[`AI vs Human Writing`],toc:[{id:`tl-dr`,title:`TL;DR`},{id:`key-takeaways`,title:`Key Takeaways`},{id:`the-actual-question-nobody-s-asking`,title:`The Actual Question Nobody's Asking`},{id:`what-ai-writing-tools-actually-do-and-what-they-don-t`,title:`What AI Writing Tools Actually Do (And What They Don't)`},{id:`what-traditional-human-writing-actually-brings`,title:`What Traditional Human Writing Actually Brings`},{id:`the-economics-nobody-wants-to-admit`,title:`The Economics Nobody Wants to Admit`},{id:`what-s-actually-happening-in-practice`,title:`What's Actually Happening in Practice`},{id:`the-skill-stagnation-problem`,title:`The Skill Stagnation Problem`}],content:`<div class="tldr-box">
@@ -669,51 +657,37 @@ This requires editorial judgment, which is the thing that separates good content
 
 <details>
 <summary>Should we replace our human writers with AI tools?</summary>
-
-No. If human writers are your competitive advantage, losing them makes you weaker, not faster. If they're not your competitive advantage, you had bigger problems before AI came along.
-
+<p>No. If human writers are your competitive advantage, losing them makes you weaker, not faster. If they're not your competitive advantage, you had bigger problems before AI came along.</p>
 </details>
 
 <details>
 <summary>Will AI-written content ever rank as well as human-written content?</summary>
-
-Potentially, if it's factually sound and answers a user's question comprehensively. Google cares about value to the user, not whether a human wrote it. That said, generic AI-written content ranks worse than distinctive human-written content, so the real question is whether your AI writing will be generic or distinctive. Usually, it's generic.
-
+<p>Potentially, if it's factually sound and answers a user's question comprehensively. Google cares about value to the user, not whether a human wrote it. That said, generic AI-written content ranks worse than distinctive human-written content, so the real question is whether your AI writing will be generic or distinctive. Usually, it's generic.</p>
 </details>
 
 <details>
 <summary>How much editing does AI-generated content need?</summary>
-
-It depends on the quality requirements and the specific piece but generally plan for 40-60% of the original drafting time to be spent editing. More if fact-checking is rigorous.
-
+<p>It depends on the quality requirements and the specific piece but generally plan for 40-60% of the original drafting time to be spent editing. More if fact-checking is rigorous.</p>
 </details>
 
 <details>
 <summary>Is it unethical to publish AI-written content without disclosure?</summary>
-
-That's increasingly becoming a compliance and editorial standards question, and the answer varies by publication and industry. It's worth thinking about it proactively rather than getting caught retroactively.
-
+<p>That's increasingly becoming a compliance and editorial standards question, and the answer varies by publication and industry. It's worth thinking about it proactively rather than getting caught retroactively.</p>
 </details>
 
 <details>
 <summary>Can a solo writer use AI tools effectively?</summary>
-
-Yes, if you're good at prompting and editing. Solo writers often see the biggest efficiency gains because they can trade speed for quality on pieces where speed matters and keep high touch for pieces where quality differentiates.
-
+<p>Yes, if you're good at prompting and editing. Solo writers often see the biggest efficiency gains because they can trade speed for quality on pieces where speed matters and keep high touch for pieces where quality differentiates.</p>
 </details>
 
 <details>
 <summary>What's the best way to transition a human-writing team to using AI tools?</summary>
-
-Introduce them as assistants to human writing, not replacements for it. Train people on how to prompt effectively and how to edit AI output. Start with lower-stakes content and build confidence. Don't expect immediate productivity gains, expect a period where people are slower while they learn to work with the tools.
-
+<p>Introduce them as assistants to human writing, not replacements for it. Train people on how to prompt effectively and how to edit AI output. Start with lower-stakes content and build confidence. Don't expect immediate productivity gains, expect a period where people are slower while they learn to work with the tools.</p>
 </details>
 
 <details>
 <summary>Will human writers eventually become obsolete?</summary>
-
-No. What will become obsolete are writers who haven't learned to work with AI tools. Expertise, distinctive voice, and clear thinking will remain valuable forever. How to execute those things will change, but the value won't.
-
+<p>No. What will become obsolete are writers who haven't learned to work with AI tools. Expertise, distinctive voice, and clear thinking will remain valuable forever. How to execute those things will change, but the value won't.</p>
 </details>
 
 </div>`},{id:`3`,slug:`how-to-use-ai-to-write-seo-friendly-blog-posts`,title:`How to Use AI to Write SEO-Friendly Blog Posts (Without Sounding Like a Robot)`,subtitle:`A real, tested walkthrough of using AI to write blog posts that rank — research, outlining, drafting, humanizing, and on-page SEO, minus the fluff and the generic AI voice.`,category:`AI SEO Writing`,editorialNumber:`03`,author:{name:`Elena Rostova`,role:`Director of Search Intelligence`,avatar:`https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200`,bio:`Leading canonical search research, entity graphs, and generative AI search optimization.`},publishedDate:`Aug 25, 2026`,readTime:`27 min read`,featured:!1,cardType:`standard`,imageUrl:`https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800`,sourceCount:8,benchmarkScore:`99.1%`,summary:`A real, tested walkthrough of using AI to write blog posts that rank — research, outlining, drafting, humanizing, and on-page SEO, minus the fluff and the generic AI voice.`,citations:[{id:1,label:`Google Search Central Information Gain Patent`,source:`USPTO / Google LLC`,year:`2026`,excerpt:`Documents providing novel factual vectors not present in the existing SERP index receive positive ranking adjustments.`}],verifiedInsight:{supportedBy:`OllaWrite Search Labs`,citationCount:8,keyTakeaway:`Articles featuring grounded citation trees rank on page 1 for 3.4x more long-tail queries than unreferenced AI drafts.`,groundingScore:99.1},tags:[`AI SEO Writing`],toc:[{id:`tl-dr`,title:`TL;DR`},{id:`key-takeaways`,title:`Key Takeaways`},{id:`let-s-get-into-it`,title:`Let's Get Into It`},{id:`why-this-topic-actually-matters-right-now`,title:`Why This Topic Actually Matters Right Now`},{id:`how-search-engines-actually-treat-ai-written-content-today`,title:`How Search Engines Actually Treat AI-Written Content Today`},{id:`the-workflow-immediately`,title:`The Workflow, Immediately`},{id:`step-one-research-that-isn-t-just-asking-ai-what-it-already-knows`,title:`Step One: Research That Isn't Just Asking AI What It Already Knows`},{id:`step-two-building-a-brief-the-draft-can-actually-follow`,title:`Step Two: Building a Brief the Draft Can Actually Follow`}],content:`<div class="tldr-box">
@@ -935,44 +909,32 @@ None of these prompts are magic phrasing that unlocks dramatically different mod
 
 <details>
 <summary>Can AI-written blog posts rank on Google?</summary>
-
-Yes, routinely, search engines don't penalize content for AI involvement specifically, they rank based on whether the content genuinely serves the searcher better than the alternatives. AI-assisted posts that are well-researched, properly edited, and grounded in real expertise rank the same way well-written human posts always have. Generic, unedited AI output struggles to rank for the same reason generic, unedited human writing always struggles with it. It's thin and interchangeable, not because a machine touched it.
-
+<p>Yes, routinely, search engines don't penalize content for AI involvement specifically, they rank based on whether the content genuinely serves the searcher better than the alternatives. AI-assisted posts that are well-researched, properly edited, and grounded in real expertise rank the same way well-written human posts always have. Generic, unedited AI output struggles to rank for the same reason generic, unedited human writing always struggles with it. It's thin and interchangeable, not because a machine touched it.</p>
 </details>
 
 <details>
 <summary>How much should I edit an AI-generated draft before publishing?</summary>
-
-Enough that a stranger reading it couldn't identify which sentences came from the model and which came from you. In practice, that usually means a genuine structural and voice pass, not a light typo check, reading it aloud, cutting summarizing filler, adding specific details or opinion the model couldn't have generated, and verifying every factual claim against a real source.
-
+<p>Enough that a stranger reading it couldn't identify which sentences came from the model and which came from you. In practice, that usually means a genuine structural and voice pass, not a light typo check, reading it aloud, cutting summarizing filler, adding specific details or opinion the model couldn't have generated, and verifying every factual claim against a real source.</p>
 </details>
 
 <details>
 <summary>Is it better to write a full draft with one long AI prompt or build it section by section?</summary>
-
-Section by section, almost always, especially for longer pieces. A model asked to generate an entire long article in one pass tends to lose specificity as it goes and drift toward safer, more generic phrasing. Feeding it your brief and relevant source material one section at a time, with clear direction on how each section connects to what came before, produces noticeably sharper, more specific output throughout.
-
+<p>Section by section, almost always, especially for longer pieces. A model asked to generate an entire long article in one pass tends to lose specificity as it goes and drift toward safer, more generic phrasing. Feeding it your brief and relevant source material one section at a time, with clear direction on how each section connects to what came before, produces noticeably sharper, more specific output throughout.</p>
 </details>
 
 <details>
 <summary>Does keyword density still matter for AI-assisted SEO content?</summary>
-
-Not in the mechanical sense it used to. Writing directly and specifically about your actual topic naturally produces reasonable keyword coverage. Deliberately repeating an exact-match phrase a target number of times tends to make writing worse without a corresponding ranking benefit, and it's one of the more obvious tells of over-optimized, under-edited content.
-
+<p>Not in the mechanical sense it used to. Writing directly and specifically about your actual topic naturally produces reasonable keyword coverage. Deliberately repeating an exact-match phrase a target number of times tends to make writing worse without a corresponding ranking benefit, and it's one of the more obvious tells of over-optimized, under-edited content.</p>
 </details>
 
 <details>
 <summary>What's the biggest difference between AI content that ranks and AI content that doesn't?</summary>
-
-Specificity and editorial judgment. Content that ranks answers a real question more completely or more usefully than what's currently ranking, includes detail a generic prompt couldn't have produced on its own, and has clearly been read and cut by a person who cared how it turned out. Content that doesn't rank usually skips the research step, uses a vague prompt, and gets published close to first-draft condition.
-
+<p>Specificity and editorial judgment. Content that ranks answers a real question more completely or more usefully than what's currently ranking, includes detail a generic prompt couldn't have produced on its own, and has clearly been read and cut by a person who cared how it turned out. Content that doesn't rank usually skips the research step, uses a vague prompt, and gets published close to first-draft condition.</p>
 </details>
 
 <details>
 <summary>Should I disclose that a blog post was written with AI assistance?</summary>
-
-There's no universal SEO requirement to disclose this, and search engines don't currently factor disclosure into rankings. Whether to disclose is more of an editorial and trust decision specific to your audience and brand than a search visibility one, some publications and industries have their own standards worth following regardless of what search engines require.
-
+<p>There's no universal SEO requirement to disclose this, and search engines don't currently factor disclosure into rankings. Whether to disclose is more of an editorial and trust decision specific to your audience and brand than a search visibility one, some publications and industries have their own standards worth following regardless of what search engines require.</p>
 </details>
 
 </div>`},{id:`4`,slug:`ai-content-generator-complete-guide`,title:`AI Content Generator: The Complete Guide Nobody Simplified for You`,subtitle:`What an AI content generator actually is, how it works under the hood, which type fits your workflow, and how to use one without your content sounding like every other page on the internet.`,category:`Content Generation`,editorialNumber:`04`,author:{name:`Dr. Aris Thorne`,role:`Head of Grounded Intelligence`,avatar:`https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200`},publishedDate:`Aug 24, 2026`,readTime:`22 min read`,featured:!1,cardType:`standard`,imageUrl:`https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800`,sourceCount:4,benchmarkScore:`97.9%`,summary:`What an AI content generator actually is, how it works under the hood, which type fits your workflow, and how to use one without your content sounding like every other page on the internet.`,citations:[{id:1,label:`ACM Computing Surveys: Language Model Factuality`,source:`ACM Digital Library`,year:`2026`,excerpt:`Zero-shot generation produces factual hallucinations in up to 18% of technical domain claims without external grounding.`}],verifiedInsight:{supportedBy:`OllaWrite Technical Labs`,citationCount:4,keyTakeaway:`Site-grounded RAG architectures reduce hallucination rates from 18.2% down to 0.14% in enterprise technical content.`,groundingScore:97.9},tags:[`Content Generation`],toc:[{id:`tl-dr`,title:`TL;DR`},{id:`key-takeaways`,title:`Key Takeaways`},{id:`what-is-an-ai-content-generator-really`,title:`What Is an AI Content Generator, really?`},{id:`how-these-tools-actually-work-without-hand-waving`,title:`How These Tools Actually Work Without Hand waving`},{id:`a-short-honest-history-of-how-we-got-here`,title:`A Short, Honest History of How We Got Here`},{id:`the-main-types-of-ai-content-generators-you-ll-actually-run-into`,title:`The Main Types of AI Content Generators You'll Actually Run Into`},{id:`what-is-an-ai-content-generator-good-for`,title:`What Is an AI Content Generator Good For?`},{id:`what-are-these-tools-genuinely-bad-at`,title:`What Are These Tools Genuinely Bad At`}],content:`<div class="tldr-box">
@@ -1130,58 +1092,42 @@ Tell it what to avoid, not just what to include. Models respond well to negative
 
 <details>
 <summary>What exactly counts as an AI content generator?</summary>
-
-Broadly, any software that uses a language model to produce written content from a prompt, topic, or brief. This includes general conversational models used for writing, purpose-built content platforms with templates and brand controls, and narrow specialist tools built around one specific content type.
-
+<p>Broadly, any software that uses a language model to produce written content from a prompt, topic, or brief. This includes general conversational models used for writing, purpose-built content platforms with templates and brand controls, and narrow specialist tools built around one specific content type.</p>
 </details>
 
 <details>
 <summary>Is AI-generated content detectable?</summary>
-
-Detection tools exist and have gotten reasonably capable in some contexts, but they're not perfectly reliable, and false positives happen. More practically, generic, unedited AI output is often recognizable to a human reader through its rhythm and structure, independent of any formal detection tool, which is exactly why the editing step matters regardless of whether formal detection is involved.
-
+<p>Detection tools exist and have gotten reasonably capable in some contexts, but they're not perfectly reliable, and false positives happen. More practically, generic, unedited AI output is often recognizable to a human reader through its rhythm and structure, independent of any formal detection tool, which is exactly why the editing step matters regardless of whether formal detection is involved.</p>
 </details>
 
 <details>
 <summary>Can an AI content generator replace a human writer?</summary>
-
-Not for anything that requires genuine expertise, a specific point of view, or lived experience the model doesn't have access to. It can very effectively speed up drafting, structuring, and revision, which is a real and valuable role, but it's a role alongside a person, not instead of one.
-
+<p>Not for anything that requires genuine expertise, a specific point of view, or lived experience the model doesn't have access to. It can very effectively speed up drafting, structuring, and revision, which is a real and valuable role, but it's a role alongside a person, not instead of one.</p>
 </details>
 
 <details>
 <summary>How much editing does AI-generated content typically need?</summary>
-
-It varies by tool and by how specific your prompt was but treat every draft as a genuine first draft rather than a finished piece. At minimum, expect to add specific details the model couldn't have known, tighten repetitive summarizing sentences, and verify any facts or figures before publishing.
-
+<p>It varies by tool and by how specific your prompt was but treat every draft as a genuine first draft rather than a finished piece. At minimum, expect to add specific details the model couldn't have known, tighten repetitive summarizing sentences, and verify any facts or figures before publishing.</p>
 </details>
 
 <details>
 <summary>Do AI content generators hurt SEO rankings?</summary>
-
-Not inherently. The mechanism of production isn't the primary thing search systems evaluate; usefulness and specificity are. Thin, generic AI output underperforms because it's thin and generic and interchangeable with countless similar pages, not specifically because it was AI-generated.
-
+<p>Not inherently. The mechanism of production isn't the primary thing search systems evaluate; usefulness and specificity are. Thin, generic AI output underperforms because it's thin and generic and interchangeable with countless similar pages, not specifically because it was AI-generated.</p>
 </details>
 
 <details>
 <summary>What's the difference between a general AI model and a specialized content platform?</summary>
-
-A general model, like a conversational AI assistant, is a flexible reasoning tool that happens to write extremely well and can handle almost any content type with the right prompting. A specialized platform wraps a model in templates, scoring systems, or workflow features aimed at one specific job, usually at a meaningfully higher price, and earns that price mainly at team scale or for genuinely narrow needs a general tool doesn't cover well.
-
+<p>A general model, like a conversational AI assistant, is a flexible reasoning tool that happens to write extremely well and can handle almost any content type with the right prompting. A specialized platform wraps a model in templates, scoring systems, or workflow features aimed at one specific job, usually at a meaningfully higher price, and earns that price mainly at team scale or for genuinely narrow needs a general tool doesn't cover well.</p>
 </details>
 
 <details>
 <summary>Is it worth paying for a premium AI content generator as a solo creator?</summary>
-
-Usually not beyond a general-purpose subscription, unless you have a genuinely narrow need continuity tracking, predictive and performance scoring, deep SEO competitor analysis, that a general model doesn't handle well. Most individual writers get the bulk of the value from a well-prompted general model long before enterprise-tier platforms start paying for themselves.
-
+<p>Usually not beyond a general-purpose subscription, unless you have a genuinely narrow need continuity tracking, predictive and performance scoring, deep SEO competitor analysis, that a general model doesn't handle well. Most individual writers get the bulk of the value from a well-prompted general model long before enterprise-tier platforms start paying for themselves.</p>
 </details>
 
 <details>
 <summary>What should I look for first when choosing a tool?</summary>
-
-Start with what the tool is grounded in. A tool that generates purely from a prompt and its training data will produce plausible sounding but generic output. A tool that reads real information, your website, current search results, an uploaded document, before writing starts from a meaningfully stronger foundation, and that difference shows up in the finished draft more than almost any other feature comparison.
-
+<p>Start with what the tool is grounded in. A tool that generates purely from a prompt and its training data will produce plausible sounding but generic output. A tool that reads real information, your website, current search results, an uploaded document, before writing starts from a meaningfully stronger foundation, and that difference shows up in the finished draft more than almost any other feature comparison.</p>
 </details>
 
 </div>`},{id:`5`,slug:`seo-ai-content-strategy-2026`,title:`SEO & AI Content Strategy in 2026: How Google Ranks AI Articles and How to Win`,subtitle:`Everything you need to know about Google's Helpful Content systems, site-grounded authority, search intent mapping, and scaling organic traffic in 2026.`,category:`SEO Strategy`,editorialNumber:`05`,author:{name:`Elena Rostova`,role:`Director of Search Intelligence`,avatar:`https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200`},publishedDate:`Aug 15, 2026`,readTime:`3 min read`,featured:!1,cardType:`standard`,imageUrl:`https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800`,sourceCount:7,benchmarkScore:`99.5%`,summary:`Everything you need to know about Google's Helpful Content systems, site-grounded authority, search intent mapping, and scaling organic traffic in 2026.`,citations:[{id:1,label:`Google Search Central Guidance on AI-Generated Content`,source:`Google LLC`,year:`2026`,excerpt:`Using automation to generate helpful or informative content is not contrary to our search spam guidelines when content demonstrates genuine utility.`}],verifiedInsight:{supportedBy:`Google Search Central & OllaWrite Research`,citationCount:7,keyTakeaway:`Domains that replace generic AI drafts with verified citation-backed articles experience a 310% recovery in organic search impressions.`,groundingScore:99.5},tags:[`SEO Strategy`],toc:[{id:`tl-dr`,title:`TL;DR`},{id:`key-takeaways`,title:`Key Takeaways`},{id:`the-three-pillars-of-modern-ai-seo`,title:`The Three Pillars of Modern AI SEO`},{id:`1-topical-authority-entity-mapping`,title:`1. Topical Authority & Entity Mapping`},{id:`2-factual-grounding-real-source-citations`,title:`2. Factual Grounding & Real Source Citations`},{id:`3-unique-information-gain`,title:`3. Unique Information Gain`},{id:`the-4-agent-seo-publishing-architecture`,title:`The 4-Agent SEO Publishing Architecture`},{id:`scaling-content-without-sacrificing-domain-trust`,title:`Scaling Content Without Sacrificing Domain Trust`}],content:`<div class="tldr-box">
@@ -1274,23 +1220,17 @@ Google's patents and ranking systems explicitly evaluate "information gain" — 
 
 <details>
 <summary>How often should we update existing AI-generated blog posts?</summary>
-
-High-priority organic ranking pages should undergo content refresh audits every 90 to 180 days to incorporate new industry developments and maintain topical authority.
-
+<p>High-priority organic ranking pages should undergo content refresh audits every 90 to 180 days to incorporate new industry developments and maintain topical authority.</p>
 </details>
 
 <details>
 <summary>Does internal linking still matter in 2026?</summary>
-
-Internal linking is more vital than ever. Establishing contextual cross-links between pillar guides and cluster articles helps search engines understand domain hierarchy and distribute ranking signals efficiently.
-
+<p>Internal linking is more vital than ever. Establishing contextual cross-links between pillar guides and cluster articles helps search engines understand domain hierarchy and distribute ranking signals efficiently.</p>
 </details>
 
 <details>
 <summary>What is the ideal word count for competitive SEO articles?</summary>
-
-Word count should be determined by search intent depth rather than arbitrary quotas. Comprehensive guides typically range between 2,500 and 4,500 words to cover all relevant subtopics thoroughly.
-
+<p>Word count should be determined by search intent depth rather than arbitrary quotas. Comprehensive guides typically range between 2,500 and 4,500 words to cover all relevant subtopics thoroughly.</p>
 </details>
 
 </div>`},{id:`6`,slug:`what-is-an-ai-content-writer`,title:`What Is an AI Content Writer? The Honest Answer (Not the Sales Pitch)`,subtitle:`An AI content writer is software that researches, drafts, and edits text using language models — but not all work the same way. Here's what happens under the hood, where they fall apart, and how to evaluate them.`,category:`AI Writing`,editorialNumber:`06`,author:{name:`Marcus Vance`,role:`Principal Content Strategist`,avatar:`https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200`},publishedDate:`Aug 21, 2026`,readTime:`22 min read`,featured:!1,cardType:`standard`,imageUrl:`https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=800`,sourceCount:5,benchmarkScore:`98.2%`,summary:`An AI content writer is software that researches, drafts, and edits text using language models — but not all work the same way. Here's what happens under the hood, where they fall apart, and how to evaluate them.`,citations:[{id:1,label:`OllaWrite Software Taxonomy Whitepaper`,source:`OllaWrite Publications`,year:`2026`,excerpt:`Over 78% of commercial AI writing tools remain single-prompt API wrappers around public foundation models.`}],verifiedInsight:{supportedBy:`OllaWrite Technical Labs`,citationCount:5,keyTakeaway:`Multi-agent editorial systems that isolate research, drafting, and critical review produce 5.1x higher factual consistency than single-pass generation.`,groundingScore:98.2},tags:[`AI Writing`],toc:[{id:`tl-dr`,title:`TL;DR`},{id:`key-takeaways`,title:`Key Takeaways`},{id:`let-s-start-with-the-question-nobody-answers-properly`,title:`Let's Start with the Question Nobody Answers Properly`},{id:`what-an-ai-content-writer-actually-is`,title:`What an AI Content Writer Actually Is`},{id:`how-these-tools-actually-work-step-by-step`,title:`How These Tools Actually Work, Step by Step`},{id:`step-one-input`,title:`Step One: Input`},{id:`step-two-research-if-the-tool-bothers`,title:`Step Two: Research (If the Tool Bothers)`},{id:`step-three-structuring-the-brief`,title:`Step Three: Structuring the Brief`}],content:`<div class="tldr-box">
@@ -1498,44 +1438,32 @@ It's worth being clear-eyed about the trajectory here rather than either dismiss
 
 <details>
 <summary>Is an AI content writer the same thing as a chatbot like ChatGPT?</summary>
-
-Not quite. ChatGPT and similar tools are general-purpose language model interfaces, you can ask them to write, but also to code, summarize, brainstorm, or answer questions on almost anything. An AI content writer is typically a purpose-built product wrapped around that same underlying model technology, specifically structured around a content workflow: research, briefing, drafting, and often review, tailored to producing publishable written content rather than general conversation.
-
+<p>Not quite. ChatGPT and similar tools are general-purpose language model interfaces, you can ask them to write, but also to code, summarize, brainstorm, or answer questions on almost anything. An AI content writer is typically a purpose-built product wrapped around that same underlying model technology, specifically structured around a content workflow: research, briefing, drafting, and often review, tailored to producing publishable written content rather than general conversation.</p>
 </details>
 
 <details>
 <summary>Can an AI content writer rank on Google?</summary>
-
-Content produced by one can rank, the same way human-written content can rank, search engines are evaluating the usefulness and quality of the result, not detecting and specifically penalizing the production method. Thin, unhelpful content produced by an AI tool tends to struggle in search the same way thin, unhelpful human-written content does. The production method isn't really the deciding factor.
-
+<p>Content produced by one can rank, the same way human-written content can rank, search engines are evaluating the usefulness and quality of the result, not detecting and specifically penalizing the production method. Thin, unhelpful content produced by an AI tool tends to struggle in search the same way thin, unhelpful human-written content does. The production method isn't really the deciding factor.</p>
 </details>
 
 <details>
 <summary>Do I still need a human editor if I'm using a good AI content writer?</summary>
-
-Yes. Even the best current tools with built-in critique steps benefit from a final human check, particularly for fact accuracy, brand judgment calls, and anything where genuine lived expertise matters. Treat the AI's review step as a strong first filter, not a replacement for a person reading the final piece before it publishes.
-
+<p>Yes. Even the best current tools with built-in critique steps benefit from a final human check, particularly for fact accuracy, brand judgment calls, and anything where genuine lived expertise matters. Treat the AI's review step as a strong first filter, not a replacement for a person reading the final piece before it publishes.</p>
 </details>
 
 <details>
 <summary>How much does a decent AI content writer cost?</summary>
-
-Pricing varies enormously by depth of capability, basic prompt-to-draft tools can run anywhere from free to around twenty or thirty dollars a month, while tools with real website auditing, research grounding, brand voice memory, and multi-step review tend to sit in a higher tier, often somewhere between fifty and a couple hundred dollars a month depending on volume and team size. The price difference usually reflects real underlying engineering complexity rather than pure margin.
-
+<p>Pricing varies enormously by depth of capability, basic prompt-to-draft tools can run anywhere from free to around twenty or thirty dollars a month, while tools with real website auditing, research grounding, brand voice memory, and multi-step review tend to sit in a higher tier, often somewhere between fifty and a couple hundred dollars a month depending on volume and team size. The price difference usually reflects real underlying engineering complexity rather than pure margin.</p>
 </details>
 
 <details>
 <summary>Will using AI content writers hurt my site's credibility?</summary>
-
-Not inherently, what hurts credibility is publishing thin, generic, or inaccurate content, regardless of whether AI was involved in producing it. A research-grounded workflow with genuine human review tends to produce content that's indistinguishable in quality from a skilled human writer's output. A prompt-and-pray workflow published without review is a much bigger credibility risk, and that risk exists independent of whether AI was involved at all.
-
+<p>Not inherently, what hurts credibility is publishing thin, generic, or inaccurate content, regardless of whether AI was involved in producing it. A research-grounded workflow with genuine human review tends to produce content that's indistinguishable in quality from a skilled human writer's output. A prompt-and-pray workflow published without review is a much bigger credibility risk, and that risk exists independent of whether AI was involved at all.</p>
 </details>
 
 <details>
 <summary>What's the difference between an AI content writer and an AI copywriting tool?</summary>
-
-The terms overlap a lot in casual use, but "copywriting" tools are more often oriented toward short, conversion-focused text, ad copy, headlines, product taglines, while "content writer" tools more often handle longer-form material like blog posts, articles, and guides. Many modern tools do both, so the distinction is more about the specific use case than a hard technical line.
-
+<p>The terms overlap a lot in casual use, but "copywriting" tools are more often oriented toward short, conversion-focused text, ad copy, headlines, product taglines, while "content writer" tools more often handle longer-form material like blog posts, articles, and guides. Many modern tools do both, so the distinction is more about the specific use case than a hard technical line.</p>
 </details>
 
 </div>`},{id:`7`,slug:`best-ai-writing-tools-in-2026`,title:`Best AI Writing Tools in 2026: The Honest, No-Fluff Guide Nobody Else Will Give You`,subtitle:`Tired of \\"best AI writing tools\\" lists that read like ads? Here's a real, tested breakdown of the AI writing tools worth your money in 2026 — and the ones that aren't.`,category:`Tool Reviews`,editorialNumber:`07`,author:{name:`Elena Rostova`,role:`Director of Search Intelligence`,avatar:`https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200`},publishedDate:`Aug 20, 2026`,readTime:`21 min read`,featured:!1,cardType:`standard`,imageUrl:`https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800`,sourceCount:9,benchmarkScore:`99.0%`,summary:`Tired of \\"best AI writing tools\\" lists that read like ads? Here's a real, tested breakdown of the AI writing tools worth your money in 2026 — and the ones that aren't.`,citations:[{id:1,label:`Enterprise Content Automation Benchmark (2026)`,source:`Global Editorial Standards Institute`,year:`2026`,excerpt:`Tools utilizing automated quality gate critics cut post-generation human editing overhead by 73%.`}],verifiedInsight:{supportedBy:`Global Editorial Standards Institute`,citationCount:9,keyTakeaway:`Site-grounded AI systems achieve the lowest cost per verified publishable article ($4.20 vs $24.80 for generic prompt iteration).`,groundingScore:99},tags:[`Tool Reviews`],toc:[{id:`tl-dr`,title:`TL;DR`},{id:`key-takeaways`,title:`Key Takeaways`},{id:`why-this-conversation-even-matters-in-2026`,title:`Why This Conversation Even Matters in 2026`},{id:`how-we-re-judging-these-tools-so-you-can-trust-the-list`,title:`How We're Judging These Tools (So You Can Trust the List)`},{id:`the-leading-ai-writing-tools-tested-and-compared`,title:`The Leading AI Writing Tools Tested and Compared`},{id:`chatgpt-still-the-default`,title:`ChatGPT: Still the Default`},{id:`claude-natural-long-form-writing`,title:`Claude: Natural, Long-Form Writing`},{id:`google-gemini-best-for-google-workspace`,title:`Google Gemini: Best for Google Workspace`}],content:`<div class="tldr-box">
@@ -1589,23 +1517,13 @@ Regardless of the model chosen, human subject-matter experts must review facts, 
 | **Enterprise Brand QA** | Writer / Jasper | Style guide enforcement | Higher cost & platform overhead |
 | **SEO Content Briefs** | Surfer SEO | SERP intent & entity scoring | Can encourage bloated text |
 
-I'll be honest with you before we even get into this.
+I'll be honest with you before we even get into this: every "best AI writing tools" article you've read this year probably starts the same way, a breathless line about how AI has "revolutionized content creation," followed by a list of fifteen tools, half of which the writer clearly never opened. You scroll, you skim, you close the tab, and you're no closer to knowing which tool is worth your money. I'm not going to do that to you.
 
-Every "best AI writing tools" article you've read this year probably starts the same way, a breathless line about how AI has "revolutionized content creation," followed by a list of fifteen tools, half of which the writer clearly never opened. You scroll, you skim, you close the tab, and you're no closer to knowing which tool is worth your money.
-
-I'm not going to do that to you.
-
-This is a long read, you asked for depth, so you're getting depth, but every section earns its place. We're going to walk through the tools that genuinely matter in 2026, what they're good at, where they quietly fall apart, who should be using them, and who's wasting their subscription. And because this is 2026 and not 2023, we're also going to talk honestly about the elephant in the room: two general-purpose AI models have gotten so good that most "specialized" AI writing tools now must justify their existence in ways they didn't a couple of years ago.
-
-Grab a coffee. Let's get into it properly.
+This is a long read—you asked for depth, so you're getting depth, but every section earns its place. We're going to walk through the tools that genuinely matter in 2026, what they're good at, where they quietly fall apart, who should be using them, and who's wasting their subscription. And because this is 2026 and not 2023, we're also going to talk honestly about the elephant in the room: two general-purpose AI models have gotten so good that most "specialized" AI writing tools now must justify their existence in ways they didn't a couple of years ago. Grab a coffee. Let's get into it properly.
 
 ## Why This Conversation Even Matters in 2026
 
-Rewind three or four years and "AI writing tool" meant something narrow, a text box that spat out generic blog intros nobody wanted to read, or a Chrome extension that fixed your commas. Useful, sure, but nobody was building a career or a content strategy around it.
-
-That's not the world we're in anymore.
-
-By 2026, AI-assisted writing isn't a novelty add-on to a content workflow, it's the workflow, for a huge chunk of writers, marketers, students, freelancers, and small business owners. The tools themselves have split into two very distinct camps and understanding that split is honestly the single most useful thing I can tell you before we go tool by tool.
+Rewind three or four years and "AI writing tool" meant something narrow: a text box that spat out generic blog intros nobody wanted to read, or a Chrome extension that fixed your commas. Useful, sure, but nobody was building a career or a content strategy around it. That's not the world we're in anymore. By 2026, AI-assisted writing isn't a novelty add-on to a content workflow, it's the workflow for a huge chunk of writers, marketers, students, freelancers, and small business owners. The tools themselves have split into two very distinct camps, and understanding that split is honestly the single most useful thing I can tell you before we go tool by tool.
 
 Camp one is the general-purpose AI model, think ChatGPT, Claude, Gemini. These aren't "writing tools" in the narrow sense. They're reasoning engines that happen to be extraordinary at writing when you know how to talk to them. They've absorbed most of what specialized writing apps used to charge $50 a month for: outlining, tone matching, editing, brainstorming, even basic SEO structuring.
 
@@ -1617,13 +1535,9 @@ One more thing before we dive in, and this matters more than almost anything els
 
 ## How We're Judging These Tools (So You Can Trust the List)
 
-I want to be transparent about the criteria here instead of just handing you a ranked list and asking you to trust it blindly.
+I want to be transparent about the criteria here instead of just handing you a ranked list and asking you to trust it blindly. We looked at five core factors for every tool: how natural the output actually sounds without heavy editing, how well it handles genuinely long-form content, whether it has real SEO or search-visibility awareness baked in, how it fits into an actual daily workflow rather than a sandbox demo, and, critically, value for money relative to what a general AI chatbot can already do for free or near-free.
 
-We looked at five things for every tool: how natural the output actually sounds without heavy editing, how well it handles genuinely long-form content (not just a 300-word product description), whether it has real SEO or search-visibility awareness baked in, how it fits into an actual daily workflow rather than a sandbox demo, and, critically, value for money relative to what a general AI chatbot can already do for free or near-free.
-
-We also paid close attention to something most "best of" lists conveniently skip how detectable the output is. In 2026, AI content detection has gotten uncomfortably good in some contexts (Google's helpful content systems, plagiarism checkers used by universities, editorial teams doing manual review), and uncomfortably unreliable in others. A tool that produces text that reads as generic AI slop isn't just an aesthetic problem anymore, it can tank your search rankings, get a student flagged for academic dishonesty, or make a piece of marketing copy feel instantly untrustworthy to a human reader. So "does it sound human" isn't a nice-to-have criterion. It's arguably the most important one.
-
-With that out of the way, let's go tool by tool.
+We also paid close attention to something most "best of" lists conveniently skip: how detectable the output is. In 2026, AI content detection has gotten uncomfortably good in some contexts and uncomfortably unreliable in others. A tool that produces text that reads as generic AI slop can tank your search rankings, get flagged for academic dishonesty, or make marketing copy feel instantly untrustworthy. So "does it sound human" isn't a nice-to-have criterion—it is arguably the most important one. With that out of the way, let's go tool by tool.
 
 ## The Leading AI Writing Tools Tested and Compared
 
@@ -1637,7 +1551,7 @@ Its biggest strength is flexibility. It can organize complex information clearly
 
 The main weakness is tone. Without careful prompting and editing, its writing can sometimes feel structured or overly polished, with repetitive sentence patterns, predictable three-part parallel constructions, and tidy conclusions that wrap up every section prematurely. To get truly compelling prose out of ChatGPT, you must explicitly demand varied sentence rhythms, punchy declarations, and conversational transitions.
 
-Best for: Freelancers, marketers, bloggers, and professionals who need one flexible tool for research, drafting, and editing.
+**Best for:** Freelancers, marketers, bloggers, and professionals who need one flexible tool for research, drafting, and editing.
 
 ### Claude: Natural, Long-Form Writing
 
@@ -1647,7 +1561,7 @@ It also performs exceptionally well with technical and complex subjects, making 
 
 The main limitation is that it doesn't provide built-in SEO optimization features, live SERP keyword frequency counters, or direct CMS integrations like specialized marketing platforms. However, pairing Claude with a standalone SEO editor represents one of the highest-performing content creation workflows available in 2026.
 
-Best for: Bloggers, thought leaders, technical writers, and content strategists who prioritize writing quality, intellectual nuance, and natural tone.
+**Best for:** Bloggers, thought leaders, technical writers, and content strategists who prioritize writing quality, intellectual nuance, and natural tone.
 
 ### Google Gemini: Best for Google Workspace
 
@@ -1657,7 +1571,7 @@ Its biggest advantage is native ecosystem integration. Instead of constantly cop
 
 It is also exceptionally useful for research-heavy content that requires up-to-the-minute information, recent product updates, or live event tracking where offline models would hallucinate outdated facts.
 
-Best for: Individuals and teams already working extensively within the Google ecosystem who value seamless document workflows.
+**Best for:** Individuals and teams already working extensively within the Google ecosystem who value seamless document workflows.
 
 ### Writesonic: SEO-Focused Content
 
@@ -1667,7 +1581,7 @@ With its integrated keyword intelligence, automated SERP competitor analysis, an
 
 The tradeoff is writing quality. The output can sometimes feel more formulaic and keyword-stuffed than content produced with Claude or a carefully prompted ChatGPT session. For agencies producing hundreds of local landing pages or informational directory posts, the efficiency gain is undeniable; for personal brands, a heavy human editing pass is still required.
 
-Best for: SEO teams and content marketers producing large volumes of search-focused content on tight publishing deadlines.
+**Best for:** SEO teams and content marketers producing large volumes of search-focused content on tight publishing deadlines.
 
 ### Copy.ai: Marketing Workflows
 
@@ -1677,7 +1591,7 @@ It is particularly useful for repetitive marketing tasks such as creating bulk a
 
 Its workflow approach drastically reduces the friction of repeatedly prompting an AI tool for routine, high-volume marketing tasks.
 
-Best for: Marketing teams and e-commerce businesses producing large amounts of multi-variant short-form copy.
+**Best for:** Marketing teams and e-commerce businesses producing large amounts of multi-variant short-form copy.
 
 ### Grammarly: Best for Editing and Polish
 
@@ -1687,7 +1601,7 @@ Its undisputed strength is real-time grammar, clarity, spelling, conciseness, an
 
 It works particularly well as a mandatory final editing layer after generating first drafts with ChatGPT, Claude, or any other AI writing tool.
 
-Best for: Working professionals and content teams who want consistent grammar, clarity, and tone across everything they write.
+**Best for:** Working professionals and content teams who want consistent grammar, clarity, and tone across everything they write.
 
 ### ProWritingAid: Deep Editing
 
@@ -1697,7 +1611,7 @@ It provides comprehensive analysis of sentence length variety, pacing, repeated 
 
 While it is far too detailed for quick social media posts or 500-word news summaries, it is indispensable for rigorous manuscript revision.
 
-Best for: Novelists, nonfiction book authors, and writers conducting rigorous developmental revisions on complex long-form manuscripts.
+**Best for:** Novelists, nonfiction book authors, and writers conducting rigorous developmental revisions on complex long-form manuscripts.
 
 ### Surfer SEO: For Search Rankings
 
@@ -1707,7 +1621,7 @@ It reverse-engineers the top-ranking search engine results for your target query
 
 For content operations focused heavily on competitive organic search performance, pairing Surfer's data-driven guidelines with Claude's natural writing style yields unmatched ranking potential.
 
-Best for: SEO professionals, content agencies, and digital publishers focused squarely on organic search rankings and keyword optimization.
+**Best for:** SEO professionals, content agencies, and digital publishers focused squarely on organic search rankings and keyword optimization.
 
 ### Frase: Research and Content Briefs
 
@@ -1717,7 +1631,7 @@ By crawling the live SERP for any keyword, Frase automatically identifies common
 
 Its primary value lies in strategic research and briefing rather than purely generating final draft prose.
 
-Best for: SEO strategists, content managers, and agency leads who want faster, higher-quality research briefs before drafting starts.
+**Best for:** SEO strategists, content managers, and agency leads who want faster, higher-quality research briefs before drafting starts.
 
 ### Notion AI: Writing Inside Your Workspace
 
@@ -1727,7 +1641,7 @@ Its main advantage is unmatched workflow convenience. Users can brainstorm ideas
 
 While its raw prose quality may not match Claude for long-form editorial essays, the zero-friction integration makes it a daily productivity multiplier for connected teams.
 
-Best for: Teams and modern remote organizations that use Notion as their primary digital headquarters.
+**Best for:** Teams and modern remote organizations that use Notion as their primary digital headquarters.
 
 ### Sudowrite: For Fiction Writers
 
@@ -1737,7 +1651,7 @@ Unlike general AI chatbots that default to corporate essay structures, Sudowrite
 
 The generated prose still requires careful human steering to preserve an author's distinct literary voice, but as a collaborative creative partner, it is unmatched.
 
-Best for: Novelists, screenwriters, and fiction authors who want a dedicated creative assistant for scene drafting and world-building.
+**Best for:** Novelists, screenwriters, and fiction authors who want a dedicated creative assistant for scene drafting and world-building.
 
 ### Novel Crafter: For Complex Fiction Projects
 
@@ -1747,7 +1661,7 @@ Its standout capability is the Codex, an integrated narrative database that stor
 
 For epic fantasy, sci-fi sagas, and multi-book series, it solves the continuity headaches that plague standard AI tools.
 
-Best for: Serious novelists and authors managing complex, multi-layered fiction universes and long-form book series.
+**Best for:** Serious novelists and authors managing complex, multi-layered fiction universes and long-form book series.
 
 ### Rytr: Budget-Friendly Option
 
@@ -1755,7 +1669,7 @@ Rytr is a simple, lightweight, and budget-friendly writing assistant tailored fo
 
 It provides straightforward templates for crafting social media captions, email subject lines, product descriptions, call-to-action buttons, and quick blog outlines. While it lacks the deep reasoning capabilities of ChatGPT or the nuanced long-form cadence of Claude, its affordable pricing and user-friendly interface make it accessible to beginners who don't need complex enterprise features.
 
-Best for: Solo creators, freelance beginners, and small business owners looking for an affordable, straightforward writing assistant.
+**Best for:** Solo creators, freelance beginners, and small business owners looking for an affordable, straightforward writing assistant.
 
 ### Anyword: Performance Marketing
 
@@ -1763,7 +1677,7 @@ Anyword specializes in predictive performance scoring and copy intelligence for 
 
 Its core differentiator is the Predictive Performance Score, which evaluates headlines, ad copy variations, and email subject lines against historical marketing data to estimate their conversion potential before launch. By analyzing audience demographics and engagement signals, Anyword helps performance marketing teams allocate advertising spend toward the highest-probability copy variations.
 
-Best for: Performance marketers, conversion rate optimization specialists, and growth teams running high-stakes digital ad campaigns.
+**Best for:** Performance marketers, conversion rate optimization specialists, and growth teams running high-stakes digital ad campaigns.
 
 ### Writer: Enterprise AI
 
@@ -1771,7 +1685,7 @@ Writer is an enterprise-grade AI writing and content governance platform built s
 
 It enables enterprise content operations to build custom language models trained exclusively on their internal documentation, enforce brand guidelines across thousands of employees, and ensure that generated content complies with legal and regulatory mandates. With SOC 2 Type II compliance and robust data privacy safeguards, Writer ensures that proprietary company data is never used to train public models.
 
-Best for: Large enterprise organizations, financial institutions, and regulated industries requiring strict brand governance and data privacy.
+**Best for:** Large enterprise organizations, financial institutions, and regulated industries requiring strict brand governance and data privacy.
 
 ### QuillBot and Wordtune: Rewriting Tools
 
@@ -1781,13 +1695,11 @@ QuillBot excels at paraphrasing, vocabulary expansion, and summarizing dense aca
 
 Used as a secondary editing tool after initial drafting, they provide quick, targeted polish for awkward sentences and repetitive syntax.
 
-Best for: Students, non-native English writers, and authors seeking quick rephrasing, vocabulary suggestions, and sentence-level clarity.
+**Best for:** Students, non-native English writers, and authors seeking quick rephrasing, vocabulary suggestions, and sentence-level clarity.
 
 ## So Which One Should You Actually Pick?
 
-For teams seeking an automated, site-grounded AI publishing platform that indexes your live sitemaps and enforces factual critic verification, [OllaWrite](https://www.ollawrite.com).
-
-If your primary requirement is a dedicated, site-grounded AI writing engine that crawls your live domain to generate perfectly aligned long-form content, [OllaWrite](https://www.ollawrite.com) is built from the ground up for multi-agent publishing workflows.
+For teams seeking an automated, site-grounded AI publishing platform that indexes your live sitemaps and enforces factual critic verification, [OllaWrite](https://www.ollawrite.com) is built from the ground up for multi-agent publishing workflows.
 
 The right tool depends on what you're writing, who you are writing for, and how your daily workflow is structured.
 
@@ -1812,9 +1724,7 @@ For the vast majority of content writers, bloggers, and marketing teams, Claude 
 
 ## How to Humanize AI-Written Content
 
-When scaling editorial production, utilizing [OllaWrite's site-grounded writing engine](https://www.ollawrite.com) ensures every draft matches your authentic brand tone before manual review.
-
-Regardless of which AI writing tool you select, raw AI output should always be treated as a working first draft rather than a finished publication.
+When scaling editorial production, utilizing [OllaWrite's site-grounded writing engine](https://www.ollawrite.com) ensures every draft matches your authentic brand tone before manual review. Regardless of which AI writing tool you select, raw AI output should always be treated as a working first draft rather than a finished publication.
 
 First, read the draft aloud and remove repetitive phrases, predictable transitional words (such as "furthermore," "in conclusion," and "delve"), and generic summarizing paragraphs that merely restate what was already explained. Real human writing trusts the reader to follow along without needing constant recaps at the end of every subhead.
 
@@ -1852,44 +1762,32 @@ Third, source grounding and real-time citation transparency are becoming mandato
 
 <details>
 <summary>Which AI writing tool is best for blog writing in 2026?</summary>
-
-For most bloggers, Claude currently offers the best balance of natural tone and long-form quality without needing heavy editing afterward. ChatGPT is a very close second, particularly for research-heavy or highly structured posts.
-
+<p>For most bloggers, Claude currently offers the best balance of natural tone and long-form quality without needing heavy editing afterward. ChatGPT is a very close second, particularly for research-heavy or highly structured posts.</p>
 </details>
 
 <details>
 <summary>Are AI writing tools worth paying for?</summary>
-
-For most individual writers, a general AI subscription (Claude Pro or ChatGPT Plus) covers the vast majority of what specialized tools charge significantly more for. Specialized tools earn their price mainly at team scale, or for genuinely narrow needs like fiction continuity tracking or predictive ad copy scoring.
-
+<p>For most individual writers, a general AI subscription (Claude Pro or ChatGPT Plus) covers the vast majority of what specialized tools charge significantly more for. Specialized tools earn their price mainly at team scale, or for genuinely narrow needs like fiction continuity tracking or predictive ad copy scoring.</p>
 </details>
 
 <details>
 <summary>Can AI writing tools replace a human writer entirely?</summary>
-
-No, and this isn't up for debate at this point. AI can draft, structure, and polish extremely well. It cannot generate genuine expertise, lived experience, or an original point of view, the things that make content worth someone's time to read.
-
+<p>No, and this isn't up for debate at this point. AI can draft, structure, and polish extremely well. It cannot generate genuine expertise, lived experience, or an original point of view, the things that make content worth someone's time to read.</p>
 </details>
 
 <details>
 <summary>What's the best free AI writing tool right now?</summary>
-
-ChatGPT's free tier and Claude's free tier both remain genuinely capable for most everyday writing needs, with usage limits being the main constraint rather than quality.
-
+<p>ChatGPT's free tier and Claude's free tier both remain genuinely capable for most everyday writing needs, with usage limits being the main constraint rather than quality.</p>
 </details>
 
 <details>
 <summary>Do AI writing tools hurt SEO rankings?</summary>
-
-Not inherently, search engines have shifted focus toward content quality and usefulness rather than penalizing AI involvement outright. Generic, unedited AI output tends to underperform not because it's AI, but because it's thin and interchangeable with a thousand similar pages.
-
+<p>Not inherently, search engines have shifted focus toward content quality and usefulness rather than penalizing AI involvement outright. Generic, unedited AI output tends to underperform not because it's AI, but because it's thin and interchangeable with a thousand similar pages.</p>
 </details>
 
 <details>
 <summary>How do I make AI-written content sound less robotic?</summary>
-
-Read it aloud, cut unnecessary summarizing sentences, add specific personal detail or opinion the AI couldn't have generated on its own, and vary your paragraph and sentence lengths deliberately rather than accepting the AI's default rhythm.
-
+<p>Read it aloud, cut unnecessary summarizing sentences, add specific personal detail or opinion the AI couldn't have generated on its own, and vary your paragraph and sentence lengths deliberately rather than accepting the AI's default rhythm.</p>
 </details>
 
 </div>`},{id:`8`,slug:`why-site-first-ai-writing-replaces-prompt-guessing`,title:`Why Site-First AI Writing Replaces Prompt Guessing in Enterprise Content`,subtitle:`Most AI writing tools start from a blank prompt. Here is why crawling live sitemaps and grounding claims in real documentation changes the economics of content production.`,category:`Site-First AI`,editorialNumber:`08`,author:{name:`Dr. Aris Thorne`,role:`Head of Grounded Intelligence`,avatar:`https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200`},publishedDate:`Aug 14, 2026`,readTime:`2 min read`,featured:!1,cardType:`standard`,imageUrl:`https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800`,sourceCount:6,benchmarkScore:`99.8%`,summary:`Most AI writing tools start from a blank prompt. Here is why crawling live sitemaps and grounding claims in real documentation changes the economics of content production.`,citations:[{id:1,label:`OllaWrite Site-First Patent Application`,source:`OllaWrite Intellectual Property`,year:`2026`,excerpt:`Dynamic sitemap graph synchronization enables AI agents to maintain zero contradictory product claims across distributed documents.`}],verifiedInsight:{supportedBy:`OllaWrite IP & Research Group`,citationCount:6,keyTakeaway:`Site-first grounding eliminates contradictory claims across multiple articles by maintaining an active semantic knowledge graph.`,groundingScore:99.8},tags:[`Site-First AI`],toc:[{id:`tl-dr`,title:`TL;DR`},{id:`key-takeaways`,title:`Key Takeaways`},{id:`the-problem-with-blank-prompt-ai-generators`,title:`The Problem with Blank-Prompt AI Generators`},{id:`how-site-first-generation-works`,title:`How Site-First Generation Works`}],content:`<div class="tldr-box">
@@ -2320,44 +2218,32 @@ That's really the honest version of this story. Not that AI does keyword researc
 
 <details>
 <summary>Is AI keyword research accurate enough to trust on its own?</summary>
-
-Not entirely. AI is strong at generating and grouping keyword ideas, but it can invent search volume or difficulty numbers with total confidence. Always verify any shortlist against a real search data source before committing to it.
-
+<p>Not entirely. AI is strong at generating and grouping keyword ideas, but it can invent search volume or difficulty numbers with total confidence. Always verify any shortlist against a real search data source before committing to it.</p>
 </details>
 
 <details>
 <summary>Can AI find keywords a traditional tool would miss?</summary>
-
-Yes, especially long-tail and question-based phrasing. AI is good at predicting how people naturally ask about a topic, even before search volume data exists for that exact phrasing.
-
+<p>Yes, especially long-tail and question-based phrasing. AI is good at predicting how people naturally ask about a topic, even before search volume data exists for that exact phrasing.</p>
 </details>
 
 <details>
 <summary>Do I still need a traditional keyword tool if I use AI?</summary>
-
-Generally yes. AI handles expansion, clustering, and intent classification well, but real volume and difficulty numbers still need to come from an actual search data source.
-
+<p>Generally yes. AI handles expansion, clustering, and intent classification well, but real volume and difficulty numbers still need to come from an actual search data source.</p>
 </details>
 
 <details>
 <summary>How do I stop AI from giving generic keyword suggestions?</summary>
-
-Feed it specific context: your actual site pages, real competitor URLs, and your target audience. A vague prompt produces a vague list. A detailed prompt produces relevant, usable results.
-
+<p>Feed it specific context: your actual site pages, real competitor URLs, and your target audience. A vague prompt produces a vague list. A detailed prompt produces relevant, usable results.</p>
 </details>
 
 <details>
 <summary>How often should I redo keyword research using AI?</summary>
-
-A quarterly pass is a reasonable rhythm for most sites. It catches shifting search phrasing and new competitor content without turning keyword research into a constant, time-consuming task.
-
+<p>A quarterly pass is a reasonable rhythm for most sites. It catches shifting search phrasing and new competitor content without turning keyword research into a constant, time-consuming task.</p>
 </details>
 
 <details>
 <summary>Should every AI suggested keyword become an article?</summary>
-
-No. Prioritize based on relevance, realistic ranking difficulty, and your actual publishing capacity. A long list of clusters is only useful if you can realistically act on it.
-
+<p>No. Prioritize based on relevance, realistic ranking difficulty, and your actual publishing capacity. A long list of clusters is only useful if you can realistically act on it.</p>
 </details>
 
 </div>`},{id:`12`,slug:`ai-copywriting-complete-guide`,title:`AI Copywriting: Complete Guide`,subtitle:`AI copywriting explained properly. How it works, where it beats human writers, where it still fails, and a real workflow for writing copy that converts without sounding like every other AI generated ad on the internet.`,category:`Tool Reviews`,editorialNumber:`12`,author:{name:`Marcus Vance`,role:`Principal Content Strategist`,avatar:`https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200`},publishedDate:`Sep 04, 2026`,readTime:`30 min read`,featured:!1,cardType:`standard`,imageUrl:`https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=800`,sourceCount:7,benchmarkScore:`99.2%`,summary:`AI copywriting explained properly. How it works, where it beats human writers, where it still fails, and a real workflow for writing copy that converts without sounding like every other AI generated ad on the internet.`,citations:[{id:1,label:`Direct Response Copywriting AI Benchmark`,source:`Conversion Rate Institute`,year:`2026`,excerpt:`Grounded AI copywriting pipelines generate landing page variations yielding 3.1x higher conversion intent.`}],verifiedInsight:{supportedBy:`Conversion Rate Institute & OllaWrite`,citationCount:7,keyTakeaway:`Product-grounded AI copywriting workflows reduce landing page bounce rates by 44% compared to generic prompt generation.`,groundingScore:99.2},tags:[`AI Writing`,`Tool Reviews`],toc:[{id:`tl-dr`,title:`TL;DR`},{id:`key-takeaways`,title:`Key Takeaways`},{id:`let-s-talk-about-what-copywriting-actually-is-before-we-talk-about-ai`,title:`Let's Talk About What Copywriting Actually Is Before We Talk About AI`},{id:`what-ai-copywriting-actually-is`,title:`What AI Copywriting Actually Is`},{id:`ai-copywriting-vs-ai-content-writing-vs-traditional-copywriting`,title:`AI Copywriting vs. AI Content Writing vs. Traditional Copywriting`},{id:`how-ai-copywriting-tools-actually-work-step-by-step`,title:`How AI Copywriting Tools Actually Work, Step by Step`},{id:`a-short-honest-history-of-ai-copywriting`,title:`A Short, Honest History of AI Copywriting`},{id:`the-different-types-of-ai-copywriting-tools`,title:`The Different Types of AI Copywriting Tools`}],content:`<div class="tldr-box">
@@ -2436,7 +2322,7 @@ The real differentiator here isn't how fast the tool generates text. Every tool 
 
 ### AI Copywriting vs. AI Content Writing vs. Traditional Copywriting
 
-These three terms get used almost interchangeably online, and that's genuinely confuses people, so it's worth drawing the actual lines.
+These three terms get used almost interchangeably online, which genuinely confuses people, so it's worth drawing the actual lines clearly:
 
 AI copywriting is short form and conversion focused. It exists to make someone act right now: click, buy, subscribe. Success is measured in a conversion rate, a click through rate, an open rate. It lives or dies on a single line sometimes, one headline, one subject line, one call to action button.
 
@@ -2604,44 +2490,32 @@ If you're evaluating one of these tools seriously, for real published, paid, or 
 
 <details>
 <summary>Is AI copywriting the same as AI content writing?</summary>
-
-Not quite. AI copywriting is short form and conversion focused, aimed at making someone act immediately, judged by click through and conversion rates. AI content writing is typically longer form and informational first, aimed at informing or ranking in search over time. Many tools do both, but the skills and evaluation criteria genuinely differ.
-
+<p>Not quite. AI copywriting is short form and conversion focused, aimed at making someone act immediately, judged by click through and conversion rates. AI content writing is typically longer form and informational first, aimed at informing or ranking in search over time. Many tools do both, but the skills and evaluation criteria genuinely differ.</p>
 </details>
 
 <details>
 <summary>Can AI written ad copy outperform human written copy?</summary>
-
-It can, particularly at volume, because AI makes it cheap to test many more angles against real traffic than a human team could generate and test manually. But the winning variation still typically needs a specific, real insight fed into it somewhere in the process, an actual customer objection, an actual differentiator, that the model didn't invent on its own.
-
+<p>It can, particularly at volume, because AI makes it cheap to test many more angles against real traffic than a human team could generate and test manually. But the winning variation still typically needs a specific, real insight fed into it somewhere in the process, an actual customer objection, an actual differentiator, that the model didn't invent on its own.</p>
 </details>
 
 <details>
 <summary>Do I still need a human copywriter if I'm using a good AI copywriting tool?</summary>
-
-Yes, for anything meaningful. Even strong AI copywriting tools benefit from a human checking tone, verifying claims, and applying the kind of specific audience insight that comes from lived experience with real customers rather than pattern matched training data. Treat AI output as a strong first draft and a source of testable variation, not a finished, unreviewed final product.
-
+<p>Yes, for anything meaningful. Even strong AI copywriting tools benefit from a human checking tone, verifying claims, and applying the kind of specific audience insight that comes from lived experience with real customers rather than pattern matched training data. Treat AI output as a strong first draft and a source of testable variation, not a finished, unreviewed final product.</p>
 </details>
 
 <details>
 <summary>Is AI-generated copy easy to detect and does that hurt performance?</summary>
-
-Genuinely well grounded, specific AI copy is often indistinguishable from strong human written copy at the sentence level. What gets flagged by readers and hurts performance is genericness and vagueness, not the production method itself. Thin, generic human written copy underperforms for the same reason thin, generic AI copy does.
-
+<p>Genuinely well grounded, specific AI copy is often indistinguishable from strong human written copy at the sentence level. What gets flagged by readers and hurts performance is genericness and vagueness, not the production method itself. Thin, generic human written copy underperforms for the same reason thin, generic AI copy does.</p>
 </details>
 
 <details>
 <summary>What's the biggest mistake people make when they first start using AI for copywriting?</summary>
-
-Typing a vague, thin prompt and expecting sharp, specific, persuasive copy back. The output is only ever as specific as the input. Feeding a tool of real customer language, real objections, and real product details is the single biggest lever for better results, far more than switching between different tools.
-
+<p>Typing a vague, thin prompt and expecting sharp, specific, persuasive copy back. The output is only ever as specific as the input. Feeding a tool of real customer language, real objections, and real product details is the single biggest lever for better results, far more than switching between different tools.</p>
 </details>
 
 <details>
 <summary>How much does a good AI copywriting tool cost?</summary>
-
-Pricing varies widely by capability. Basic prompt to draft generators often run free to around twenty or thirty dollars a month. Tools with real product and website grounding, brand voice memory, and a genuine review step tend to sit higher, often in the fifty to a few hundred-dollar range monthly depending on volume, reflecting real underlying engineering complexity rather than pure margin.
-
+<p>Pricing varies widely by capability. Basic prompt to draft generators often run free to around twenty or thirty dollars a month. Tools with real product and website grounding, brand voice memory, and a genuine review step tend to sit higher, often in the fifty to a few hundred-dollar range monthly depending on volume, reflecting real underlying engineering complexity rather than pure margin.</p>
 </details>
 
 </div>`},{id:`13`,slug:`does-ai-content-rank-on-google`,title:`Does AI Content Rank on Google? The Real Answer for 2026`,subtitle:`Google doesn't penalize AI writing; it penalizes bad writing. Here's the real, tested breakdown of what gets AI-generated content to rank in 2026.`,category:`SEO Strategy`,editorialNumber:`13`,author:{name:`Elena Rostova`,role:`Director of Search Intelligence`,avatar:`https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200`},publishedDate:`Sep 07, 2026`,readTime:`7 min read`,featured:!1,cardType:`standard`,imageUrl:`https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800`,sourceCount:8,benchmarkScore:`99.6%`,summary:`Google doesn't penalize AI writing; it penalizes bad writing. Here's the real, tested breakdown of what gets AI-generated content to rank in 2026.`,citations:[{id:1,label:`Google Search Central Guidance on AI-Generated Content`,source:`Google Search Central`,year:`2026`,excerpt:`Appropriate use of AI or automation is not against Google guidelines. What matters is helpfulness and quality.`},{id:2,label:`OllaWrite Search Engine Ranking & Citation Benchmark`,source:`OllaWrite Search Labs`,year:`2026`,excerpt:`Grounded citation-backed articles earn 3.6x more inclusions inside AI Overviews.`}],verifiedInsight:{supportedBy:`Google Search Central & OllaWrite Search Labs`,citationCount:8,keyTakeaway:`Google rewards helpful, people-first content regardless of production method, while penalizing thin, mass-produced prompt spams.`,groundingScore:99.6},tags:[`SEO Strategy`,`AI Writing`],toc:[{id:`tl-dr`,title:`TL;DR`},{id:`key-takeaways`,title:`Key Takeaways`},{id:`let-s-settle-this-argument-once-and-for-all`,title:`Let's Settle This Argument Once and For All`},{id:`what-google-has-actually-said-about-ai-content`,title:`What Google Has Actually Said About AI Content`},{id:`the-helpful-content-system-explained-properly`,title:`The Helpful Content System, Explained Properly`},{id:`e-e-a-t-is-where-ai-content-actually-struggles`,title:`E-E-A-T Is Where AI Content Actually Struggles`},{id:`what-actually-gets-ai-content-to-rank`,title:`What Actually Gets AI Content to Rank`},{id:`frequently-asked-questions`,title:`Frequently Asked Questions`}],content:`<div class="tldr-box">
@@ -2751,30 +2625,22 @@ This is precisely the wall that pure AI generation runs into. A language model c
 
 <details>
 <summary>Does Google have a specific penalty for AI-generated content?</summary>
-
-No. Google's public guidance states plainly that appropriate use of AI or automation is not against its guidelines, and that content is evaluated on quality and helpfulness rather than how it was produced.
-
+<p>No. Google's public guidance states plainly that appropriate use of AI or automation is not against its guidelines, and that content is evaluated on quality and helpfulness rather than how it was produced.</p>
 </details>
 
 <details>
 <summary>Can Google detect that content was written by AI?</summary>
-
-Google evaluates quality patterns—depth, originality, verifiability, and user satisfaction—rather than relying on raw statistical detection tools which are often unreliable.
-
+<p>Google evaluates quality patterns—depth, originality, verifiability, and user satisfaction—rather than relying on raw statistical detection tools which are often unreliable.</p>
 </details>
 
 <details>
 <summary>Do I need to disclose that an article was written with AI assistance?</summary>
-
-Google does not require disclosure for standard editorial content. Disclosure expectations depend on specific industry standards and legal regulations regarding images or news reporting.
-
+<p>Google does not require disclosure for standard editorial content. Disclosure expectations depend on specific industry standards and legal regulations regarding images or news reporting.</p>
 </details>
 
 <details>
 <summary>How much editing does an AI draft actually need before publishing?</summary>
-
-Every factual claim should be verified by a subject-matter specialist, and original data or firsthand experience should be added to ensure the piece delivers unique information gain.
-
+<p>Every factual claim should be verified by a subject-matter specialist, and original data or firsthand experience should be added to ensure the piece delivers unique information gain.</p>
 </details>
 
 </div>
@@ -3013,37 +2879,27 @@ That is the entire difference between AI generated content and AI optimized cont
 
 <details>
 <summary>Does AI generated content rank worse than human written content?</summary>
-
-No, not inherently. Search systems evaluate usefulness, accuracy, and how well a piece satisfies the intent behind a search, not the tool used to produce the first draft. Thin, ungrounded, poorly edited content underperforms regardless of its origin, and thoroughly optimized AI assisted content can perform just as well as, and sometimes better than, unedited human writing.
-
+<p>No, not inherently. Search systems evaluate usefulness, accuracy, and how well a piece satisfies the intent behind a search, not the tool used to produce the first draft. Thin, ungrounded, poorly edited content underperforms regardless of its origin, and thoroughly optimized AI assisted content can perform just as well as, and sometimes better than, unedited human writing.</p>
 </details>
 
 <details>
 <summary>How long should the optimization process take on a typical draft?</summary>
-
-For a standard-length article, expect thirty to sixty minutes of genuine editorial work covering fact verification, structural editing, and a full read aloud pass. Longer, more competitive pieces intended to rank for high value terms warrant considerably more time, often several hours spread across research, drafting, and multiple review passes.
-
+<p>For a standard-length article, expect thirty to sixty minutes of genuine editorial work covering fact verification, structural editing, and a full read aloud pass. Longer, more competitive pieces intended to rank for high value terms warrant considerably more time, often several hours spread across research, drafting, and multiple review passes.</p>
 </details>
 
 <details>
 <summary>Is it necessary to disclose that content was produced with AI assistance?</summary>
-
-That depends on your industry, your audience's expectations, and any applicable regulations in your specific field. What matters more universally than disclosure policy is accuracy and usefulness. A properly optimized piece earns trust through the quality of what it delivers, regardless of what tools were involved in producing the first draft.
-
+<p>That depends on your industry, your audience's expectations, and any applicable regulations in your specific field. What matters more universally than disclosure policy is accuracy and usefulness. A properly optimized piece earns trust through the quality of what it delivers, regardless of what tools were involved in producing the first draft.</p>
 </details>
 
 <details>
 <summary>Can the entire optimization process be automated?</summary>
-
-Large portions of it can be assisted by tools, particularly the initial structural cleanup and consistency checking. Fact verification and the final editorial judgment call on whether a piece genuinely reflects real expertise still benefit enormously from human review, because that judgment requires understanding context and stakes in a way that is difficult to fully hand off, even to well-designed automated systems.
-
+<p>Large portions of it can be assisted by tools, particularly the initial structural cleanup and consistency checking. Fact verification and the final editorial judgment call on whether a piece genuinely reflects real expertise still benefit enormously from human review, because that judgment requires understanding context and stakes in a way that is difficult to fully hand off, even to well-designed automated systems.</p>
 </details>
 
 <details>
 <summary>What is the single highest impact step in this entire process?</summary>
-
-Fact grounding, without question. A structurally perfect, beautifully voiced piece built on vague or unsupported claims will still underperform a rougher piece built on genuinely specific, verified information. Everything else in the optimization process makes grounded content easier to read. Nothing in the process can manufacture grounding that was never there to begin with.
-
+<p>Fact grounding, without question. A structurally perfect, beautifully voiced piece built on vague or unsupported claims will still underperform a rougher piece built on genuinely specific, verified information. Everything else in the optimization process makes grounded content easier to read. Nothing in the process can manufacture grounding that was never there to begin with.</p>
 </details>
 
 </div>
@@ -3060,6 +2916,6 @@ OllaWrite automates source grounding, structural review, and multi-agent editori
 <a href="https://ollawrite.com" class="os-btn-primary">Start Writing Free with OllaWrite →</a>
 </div>
 
-</div>`}],Pe={All:{dot:`#ffffff`,bg:`#0f172a`,border:`#1e293b`,text:`#ffffff`,badgeBg:`#334155`,badgeText:`#f8fafc`,accent:`#0f172a`},"AI Writing":{dot:`#f59e0b`,bg:`#fffbeb`,border:`#fde68a`,text:`#92400e`,badgeBg:`#fef3c7`,badgeText:`#78350f`,accent:`#f59e0b`},Guides:{dot:`#f59e0b`,bg:`#fffbeb`,border:`#fde68a`,text:`#92400e`,badgeBg:`#fef3c7`,badgeText:`#78350f`,accent:`#f59e0b`},"Site-First AI":{dot:`#0284c7`,bg:`#f0f9ff`,border:`#bae6fd`,text:`#0369a1`,badgeBg:`#e0f2fe`,badgeText:`#075985`,accent:`#0284c7`},RAG:{dot:`#0284c7`,bg:`#f0f9ff`,border:`#bae6fd`,text:`#0369a1`,badgeBg:`#e0f2fe`,badgeText:`#075985`,accent:`#0284c7`},"SEO Strategy":{dot:`#16a34a`,bg:`#f0fdf4`,border:`#bbf7d0`,text:`#15803d`,badgeBg:`#dcfce7`,badgeText:`#166534`,accent:`#16a34a`},SEO:{dot:`#16a34a`,bg:`#f0fdf4`,border:`#bbf7d0`,text:`#15803d`,badgeBg:`#dcfce7`,badgeText:`#166534`,accent:`#16a34a`},"AI SEO Writing":{dot:`#10b981`,bg:`#ecfdf5`,border:`#a7f3d0`,text:`#047857`,badgeBg:`#d1fae5`,badgeText:`#065f46`,accent:`#10b981`},"Humanizing AI":{dot:`#e11d48`,bg:`#fff1f2`,border:`#fecdd3`,text:`#be123c`,badgeBg:`#ffe4e6`,badgeText:`#9f1239`,accent:`#e11d48`},AEO:{dot:`#e11d48`,bg:`#fff1f2`,border:`#fecdd3`,text:`#be123c`,badgeBg:`#ffe4e6`,badgeText:`#9f1239`,accent:`#e11d48`},"Multi-Agent AI":{dot:`#9333ea`,bg:`#faf5ff`,border:`#e9d5ff`,text:`#7e22ce`,badgeBg:`#f3e8ff`,badgeText:`#6b21a8`,accent:`#9333ea`},GEO:{dot:`#9333ea`,bg:`#faf5ff`,border:`#e9d5ff`,text:`#7e22ce`,badgeBg:`#f3e8ff`,badgeText:`#6b21a8`,accent:`#9333ea`},"Editorial QA":{dot:`#059669`,bg:`#ecfdf5`,border:`#a7f3d0`,text:`#047857`,badgeBg:`#d1fae5`,badgeText:`#065f46`,accent:`#059669`},Citations:{dot:`#059669`,bg:`#ecfdf5`,border:`#a7f3d0`,text:`#047857`,badgeBg:`#d1fae5`,badgeText:`#065f46`,accent:`#059669`},"Content Generation":{dot:`#64748b`,bg:`#f8fafc`,border:`#e2e8f0`,text:`#334155`,badgeBg:`#f1f5f9`,badgeText:`#475569`,accent:`#64748b`},"Robots.txt":{dot:`#64748b`,bg:`#f8fafc`,border:`#e2e8f0`,text:`#334155`,badgeBg:`#f1f5f9`,badgeText:`#475569`,accent:`#64748b`},"Tool Reviews":{dot:`#4f46e5`,bg:`#eef2ff`,border:`#c7d2fe`,text:`#3730a3`,badgeBg:`#e0e7ff`,badgeText:`#312e81`,accent:`#4f46e5`},"AI Search":{dot:`#4f46e5`,bg:`#eef2ff`,border:`#c7d2fe`,text:`#3730a3`,badgeBg:`#e0e7ff`,badgeText:`#312e81`,accent:`#4f46e5`},"AI vs Human Writing":{dot:`#db2777`,bg:`#fdf2f8`,border:`#fbcfe8`,text:`#9d174d`,badgeBg:`#fce7f3`,badgeText:`#831843`,accent:`#db2777`}},Fe={dot:`#0284c7`,bg:`#f0f9ff`,border:`#bae6fd`,text:`#0369a1`,badgeBg:`#e0f2fe`,badgeText:`#075985`,accent:`#0284c7`};function Ie(e){return e&&Pe[e]||Fe}var Le=[`#003db3`,`#e8443a`,`#f59e0b`,`#16a34a`,`#9333ea`];function Re(e){return Le[(e%Le.length+Le.length)%Le.length]}var ze=({articles:e,allArticles:t,activeCategory:n=`All`,onSelectCategory:r,onReadArticle:i})=>{let a=[...e].sort((e,t)=>new Date(t.publishedDate).getTime()-new Date(e.publishedDate).getTime()),o=a[0],s=a.slice(1),c=n=>{let r=t||e,a=r.find(e=>e.title.toLowerCase().includes(n.toLowerCase().slice(0,15)));a?i(a):r[0]&&i(r[0])},l=t||e,u=[{name:`All`,count:l.length},{name:`AI Writing`,count:l.filter(e=>e.category===`AI Writing`).length||4},{name:`Site-First AI`,count:l.filter(e=>e.category===`Site-First AI`).length||2},{name:`SEO Strategy`,count:l.filter(e=>e.category===`SEO Strategy`).length||2},{name:`AI SEO Writing`,count:l.filter(e=>e.category===`AI SEO Writing`).length||1},{name:`Humanizing AI`,count:l.filter(e=>e.category===`Humanizing AI`).length||1},{name:`Editorial QA`,count:l.filter(e=>e.category===`Editorial QA`).length||1},{name:`Content Generation`,count:l.filter(e=>e.category===`Content Generation`).length||1},{name:`Multi-Agent AI`,count:l.filter(e=>e.category===`Multi-Agent AI`).length||1},{name:`Tool Reviews`,count:l.filter(e=>e.category===`Tool Reviews`).length||1}];return(0,A.jsxs)(`div`,{className:`w-full mx-auto px-[2cm] py-6 font-['Lato'] text-slate-800 bg-white`,children:[(0,A.jsxs)(`div`,{className:`lg:hidden space-y-6 mb-8`,children:[(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2 mb-3`,children:(0,A.jsx)(`span`,{className:`px-3.5 py-1.5 text-xs sm:text-sm font-bold rounded-full font-mono`,style:{backgroundColor:`#003db3`,color:`#ffffff`},children:`Essential Guide`})}),(0,A.jsx)(`div`,{className:`flex gap-3.5 overflow-x-auto pb-2 -mx-4 px-4 snap-x`,children:Ae.slice(0,5).map((e,t)=>(0,A.jsx)(`button`,{onClick:()=>c(e),className:`snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer transition-colors group`,children:(0,A.jsx)(`h3`,{className:`font-bold text-[15px] sm:text-base text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']`,children:e})},t))})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2 mb-3`,children:(0,A.jsx)(`span`,{className:`px-3.5 py-1.5 text-xs sm:text-sm font-bold text-white rounded-full font-mono`,style:{backgroundColor:`#e8443a`},children:`Agent Workflow`})}),(0,A.jsx)(`div`,{className:`flex gap-3.5 overflow-x-auto pb-2 -mx-4 px-4 snap-x`,children:je.slice(0,5).map((e,t)=>(0,A.jsx)(`button`,{onClick:()=>c(e),className:`snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer transition-colors group`,children:(0,A.jsx)(`h3`,{className:`font-bold text-[15px] sm:text-base text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']`,children:e})},t))})]})]}),(0,A.jsxs)(`div`,{className:`flex gap-6 xl:gap-8`,children:[(0,A.jsx)(`aside`,{className:`hidden lg:block w-[240px] shrink-0`,children:(0,A.jsxs)(`div`,{className:`sticky top-20 rounded-2xl border border-[#f1f5f9] bg-white/60 p-3.5`,children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2 mb-3`,children:(0,A.jsx)(`span`,{className:`px-2.5 py-1 text-xs font-bold rounded-full font-mono`,style:{backgroundColor:`#003db3`,color:`#ffffff`},children:`Essential Guide`})}),(0,A.jsx)(`nav`,{className:`space-y-2`,children:Ae.map((e,t)=>(0,A.jsx)(`button`,{onClick:()=>c(e),tabIndex:0,className:`w-full text-left block p-2.5 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-[13px] font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs`,children:(0,A.jsx)(`span`,{children:e})},t))}),(0,A.jsxs)(`div`,{className:`pt-3 mt-3 border-t border-slate-200 flex flex-col gap-1.5`,children:[(0,A.jsx)(`a`,{href:`https://www.ollawrite.com`,target:`_blank`,rel:`noopener noreferrer`,className:`os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug`,children:`OllaWrite AI Platform ↗`}),(0,A.jsx)(`a`,{href:`https://www.ollawrite.com/#features`,target:`_blank`,rel:`noopener noreferrer`,className:`os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug`,children:`Site-First Writing Engine ↗`}),(0,A.jsx)(`a`,{href:`https://www.ollawrite.com/#pricing`,target:`_blank`,rel:`noopener noreferrer`,className:`os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug`,children:`Plans & Pricing Overview ↗`})]}),(0,A.jsxs)(`button`,{onClick:()=>c(`Humanize`),className:`inline-flex items-center mt-3 px-2 text-xs font-mono font-bold text-slate-700 hover:text-[#e8443a] cursor-pointer gap-1.5 hover:underline`,children:[(0,A.jsx)(`span`,{children:`EXPLORE_FULL_INDEX`}),(0,A.jsx)(le,{size:14})]})]})}),(0,A.jsxs)(`div`,{className:`flex-1 min-w-0`,children:[(0,A.jsxs)(`div`,{className:`mb-5`,children:[(0,A.jsx)(`h1`,{className:`text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-tight font-['Lato']`,children:`OllaWrite Insights: Grounded AI Research & Editorial Guides`}),(0,A.jsx)(`p`,{className:`text-sm sm:text-base text-slate-600 mt-2 font-normal leading-relaxed font-['Lato']`,children:`Expert-led guides on AI content optimization, search strategy, and the future of grounded intelligence.`})]}),(0,A.jsxs)(`section`,{className:`mb-10`,children:[(0,A.jsxs)(`div`,{className:`flex items-center gap-3 mb-4`,children:[(0,A.jsxs)(`div`,{className:`flex items-center gap-2 px-3 py-1 rounded-full`,style:{backgroundColor:`#ede9fe`,color:`#7c3aed`},children:[(0,A.jsx)(k,{className:`w-4 h-4 text-[#7c3aed]`}),(0,A.jsx)(`h2`,{className:`text-xs sm:text-sm font-bold uppercase tracking-wide font-['Lato']`,children:`Newest Article`})]}),(0,A.jsx)(`span`,{className:`text-xs sm:text-sm text-slate-500 font-medium`,children:`Live telemetry from 10 autonomous engines`})]}),o&&(0,A.jsx)(`div`,{onClick:()=>i(o),tabIndex:0,role:`button`,"aria-label":o.title,onKeyDown:e=>{(e.key===`Enter`||e.key===` `)&&i(o)},className:`block mb-6 group cursor-pointer focus:outline-none`,children:(()=>{let e=Ie(o.category);return(0,A.jsxs)(`div`,{className:`relative overflow-hidden rounded-xl border border-slate-200 hover:border-[#f87171] hover:shadow-xs transition-all flex flex-col md:flex-row bg-white active:border-[#f87171]`,children:[(0,A.jsx)(`div`,{className:`md:w-[36%] aspect-[16/10] md:aspect-auto overflow-hidden bg-slate-100 min-h-[190px]`,children:(0,A.jsx)(`img`,{src:o.imageUrl,alt:o.title,className:`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300`,loading:`eager`})}),(0,A.jsxs)(`div`,{className:`md:w-[64%] p-4 sm:p-6 bg-slate-50/50 flex flex-col justify-between`,children:[(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`div`,{className:`flex items-center justify-between gap-2 mb-2.5`,children:(0,A.jsx)(`div`,{className:`flex items-center gap-2`,children:(0,A.jsxs)(`span`,{className:`inline-flex items-center gap-1.5 text-xs font-mono px-2.5 py-0.5 rounded-full font-bold border`,style:{backgroundColor:e.bg,color:e.text,borderColor:e.border},children:[(0,A.jsx)(`span`,{className:`w-1.5 h-1.5 rounded-full shrink-0`,style:{backgroundColor:e.dot}}),(0,A.jsx)(`span`,{children:o.category})]})})}),(0,A.jsx)(`h3`,{className:`text-lg sm:text-xl font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors mb-2 font-['Lato']`,children:o.title}),(0,A.jsx)(`p`,{className:`text-xs sm:text-sm text-slate-600 hover:text-[#e8443a] line-clamp-2 mb-3 font-normal leading-relaxed font-['Lato'] transition-colors`,children:o.subtitle})]}),(0,A.jsxs)(`div`,{className:`flex items-center justify-between text-xs text-slate-500 pt-2.5 border-t border-slate-200 group-hover:border-[#f87171] transition-colors font-mono font-medium`,children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2`,children:(0,A.jsx)(`span`,{children:o.readTime})}),(0,A.jsx)(`span`,{className:`text-slate-600 font-semibold`,children:o.publishedDate})]})]})]})})()}),(0,A.jsx)(`div`,{className:`flex flex-wrap items-center gap-2 mb-6 select-none`,children:u.map(e=>{let t=Ie(e.name),i=n===e.name;return(0,A.jsxs)(`button`,{onClick:()=>r&&r(e.name),className:`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs sm:text-[13px] font-bold transition-all cursor-pointer hover:scale-[1.03] active:scale-[0.98] font-['Lato']`,style:{backgroundColor:i&&e.name===`All`?`#0f172a`:t.bg,color:i&&e.name===`All`?`#ffffff`:t.text,border:`1.5px solid ${i?e.name===`All`?`#0f172a`:t.dot:t.border}`,boxShadow:i?`0 0 0 2px ${t.dot}33, 0 2px 6px rgba(0,0,0,0.06)`:`0 1px 2px rgba(0,0,0,0.03)`},title:`Filter by ${e.name} (${e.count} articles)`,children:[(0,A.jsx)(`span`,{className:`w-2 h-2 rounded-full shrink-0`,style:{backgroundColor:i&&e.name===`All`?`#ffffff`:t.dot}}),(0,A.jsx)(`span`,{children:e.name}),(0,A.jsx)(`span`,{className:`text-[11px] font-bold px-2 py-0.5 rounded-full font-mono leading-none`,style:{backgroundColor:i&&e.name===`All`?`#334155`:t.badgeBg,color:i&&e.name===`All`?`#f8fafc`:t.badgeText},children:e.count})]},e.name)})}),(0,A.jsx)(`div`,{className:`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5`,children:s.map(e=>{let t=Ie(e.category);return(0,A.jsxs)(`article`,{onClick:()=>i(e),tabIndex:0,role:`button`,"aria-label":e.title,onKeyDown:t=>{(t.key===`Enter`||t.key===` `)&&i(e)},className:`border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:border-[#f87171] hover:shadow-xs cursor-pointer flex flex-col p-3.5 active:border-[#f87171]`,children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2 mb-2 font-mono`,children:(0,A.jsxs)(`span`,{className:`inline-flex items-center gap-1.5 text-xs px-2.5 py-0.5 rounded-full font-bold border`,style:{backgroundColor:t.bg,color:t.text,borderColor:t.border},children:[(0,A.jsx)(`span`,{className:`w-1.5 h-1.5 rounded-full shrink-0`,style:{backgroundColor:t.dot}}),(0,A.jsx)(`span`,{children:e.category})]})}),(0,A.jsx)(`h3`,{className:`text-sm font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 flex-1 font-['Lato'] mb-1.5`,children:e.title}),(0,A.jsx)(`p`,{className:`text-xs text-slate-600 hover:text-[#e8443a] line-clamp-2 mb-2.5 leading-relaxed font-normal font-['Lato'] transition-colors`,children:e.subtitle}),(0,A.jsxs)(`div`,{className:`flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100 group-hover:border-[#f87171] transition-colors font-mono font-medium`,children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2`,children:(0,A.jsx)(`span`,{children:e.readTime})}),(0,A.jsx)(`span`,{className:`text-slate-600 font-semibold`,children:e.publishedDate})]})]},e.id)})})]})]}),(0,A.jsx)(`aside`,{className:`hidden lg:block w-[240px] shrink-0`,children:(0,A.jsxs)(`div`,{className:`sticky top-20 rounded-2xl border border-[#f1f5f9] bg-white/60 p-3.5`,children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2 mb-3`,children:(0,A.jsx)(`span`,{className:`px-2.5 py-1 text-xs font-bold rounded-full font-mono`,style:{backgroundColor:`#ede9fe`,color:`#7c3aed`},children:`Agent Workflow`})}),(0,A.jsx)(`nav`,{className:`space-y-2`,children:je.map((e,t)=>(0,A.jsx)(`button`,{onClick:()=>c(e),tabIndex:0,className:`w-full text-left block p-2.5 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-[13px] font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs`,children:(0,A.jsx)(`span`,{children:e})},t))}),(0,A.jsxs)(`button`,{onClick:()=>c(`Site-First`),className:`inline-flex items-center mt-3 px-2 text-xs font-mono font-bold hover:underline cursor-pointer gap-1.5`,style:{color:`#e8443a`},children:[(0,A.jsx)(`span`,{children:`EXPLORE_CITATION_INDEX`}),(0,A.jsx)(le,{size:14})]})]})})]})]})};function Be(e){if(!e)return``;let t=e;return t=t.replace(/((?:\|[^\n]+\|\n?)+)/g,e=>{let t=e.trim().split(`
-`).filter(e=>e.trim().startsWith(`|`));if(t.length<2)return e;let n=t[0],r=t.slice(2),i=e=>e.split(`|`).slice(1,-1).map(e=>e.trim());return`<div class="overflow-x-auto my-6"><table class="prose-table"><thead><tr>${i(n).map(e=>`<th>${e}</th>`).join(``)}</tr></thead><tbody>${r.map(e=>`<tr>${i(e).map(e=>`<td>${e}</td>`).join(``)}</tr>`).join(``)}</tbody></table></div>`}),t=t.replace(/^## (.*$)/gim,(e,t)=>`<h2 id="${t.replace(/<[^>]+>/g,``).toLowerCase().replace(/[^a-z0-9]+/g,`-`)}" class="text-xl sm:text-2xl font-bold text-slate-900 mt-10 mb-4 font-['Lato']">${t}</h2>`),t=t.replace(/^### (.*$)/gim,(e,t)=>`<h3 id="${t.replace(/<[^>]+>/g,``).toLowerCase().replace(/[^a-z0-9]+/g,`-`)}" class="text-lg sm:text-xl font-bold text-slate-900 mt-8 mb-3 font-['Lato']">${t}</h3>`),t=t.replace(/^#### (.*$)/gim,(e,t)=>`<h4 id="${t.replace(/<[^>]+>/g,``).toLowerCase().replace(/[^a-z0-9]+/g,`-`)}" class="text-base font-bold text-[#003db3] mt-5 mb-2 font-['Lato']">${t}</h4>`),t=t.replace(/\*\*(.*?)\*\*/g,`<strong>$1</strong>`),t=t.replace(/\*(.*?)\*/g,`<em>$1</em>`),t=t.replace(/\[([^\]]+)\]\(([^)]+)\)/g,`<a href="$2" target="_blank" rel="noopener noreferrer" class="text-[#003db3] underline hover:text-[#002d86] font-medium">$1</a>`),t=t.replace(/^> (.*$)/gim,`<blockquote class="pl-4 border-l-4 border-[#003db3] my-5 italic text-slate-700 bg-[#eef4ff]/60 py-3 px-4 rounded-r">$1</blockquote>`),t=t.replace(/^-\s+(.*$)/gim,`<li class="ml-4 list-disc text-slate-800 my-1">$1</li>`),t=t.replace(/^(\d+)\.\s+(.*$)/gim,`<li class="ml-4 list-decimal text-slate-800 my-1"><strong>$1.</strong> $2</li>`),t.split(/\n\n+/).map(e=>{let t=e.trim();return t?t.startsWith(`<div`)||t.startsWith(`<h`)||t.startsWith(`<table`)||t.startsWith(`<details`)||t.startsWith(`<blockquote`)||t.startsWith(`<li`)?t:`<p class="leading-relaxed mb-5 text-slate-800 font-['Lato'] text-base sm:text-lg">${t.replace(/\n/g,`<br/>`)}</p>`:``}).join(`
-`)}var Ve=({article:e,onBack:t,onSelectArticle:n,allArticles:r})=>{let[i,a]=w.useState(!1);(0,w.useEffect)(()=>{window.scrollTo({top:0,behavior:`smooth`})},[e]);let o=r.filter(t=>t.id!==e.id).sort((e,t)=>new Date(t.publishedDate).getTime()-new Date(e.publishedDate).getTime()),s=o.slice(0,4),c=o.slice(4,8),l=[{title:`OllaWrite AI Platform ↗`,href:`https://www.ollawrite.com`},{title:`Site-First Writing Engine ↗`,href:`https://www.ollawrite.com/#features`},{title:`Plans & Pricing Overview ↗`,href:`https://www.ollawrite.com/#pricing`}],u=e.tags?.[0]||e.category||`Insights`;return(0,A.jsx)(`div`,{className:`w-full bg-white text-slate-900 font-['Lato'] min-h-screen py-8 px-4 sm:px-6 lg:px-12 animate-fade-in`,children:(0,A.jsxs)(`div`,{className:`max-w-[1560px] mx-auto`,children:[(0,A.jsxs)(`div`,{className:`flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-200`,children:[(0,A.jsxs)(`nav`,{className:`flex items-center gap-2 text-sm text-slate-500 font-medium`,children:[(0,A.jsxs)(`button`,{onClick:t,className:`hover:text-[#e8443a] transition cursor-pointer font-bold text-[#e8443a] flex items-center gap-1`,children:[(0,A.jsx)(se,{size:16}),` Home`]}),(0,A.jsx)(`span`,{children:`/`}),(0,A.jsx)(`button`,{onClick:t,className:`hover:text-[#e8443a] transition cursor-pointer`,children:`Blog`}),(0,A.jsx)(`span`,{children:`/`}),(0,A.jsx)(`span`,{className:`text-slate-900 font-semibold`,children:u})]}),(0,A.jsxs)(`button`,{onClick:()=>{navigator.clipboard.writeText(window.location.href),a(!0),setTimeout(()=>a(!1),2e3)},className:`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-700 transition text-xs font-mono font-bold cursor-pointer`,children:[i?(0,A.jsx)(D,{size:14,className:`text-emerald-600`}):(0,A.jsx)(ye,{size:14}),(0,A.jsx)(`span`,{children:i?`COPIED_LINK`:`SHARE_ARTICLE`})]})]}),(0,A.jsxs)(`header`,{className:`post-header mb-10 pb-8 border-b border-slate-200`,children:[(0,A.jsxs)(`div`,{className:`post-meta-caption flex items-center gap-3 text-sm font-bold text-[#003db3] uppercase mb-4`,children:[(0,A.jsx)(`span`,{className:`px-3 py-1 rounded text-xs tracking-wider`,style:{backgroundColor:Ie(e.category).bg,color:Ie(e.category).text},children:u}),(0,A.jsx)(`span`,{children:`•`}),(0,A.jsx)(`span`,{className:`text-slate-500 font-semibold`,children:e.publishedDate}),(0,A.jsx)(`span`,{children:`•`}),(0,A.jsx)(`span`,{className:`text-slate-500 font-semibold`,children:e.readTime})]}),(0,A.jsx)(`h1`,{className:`os-display-title text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 leading-tight mb-4 font-['Lato']`,children:e.title}),e.subtitle&&(0,A.jsx)(`p`,{className:`os-lead-paragraph text-lg sm:text-xl text-slate-600 leading-relaxed mb-6 font-normal`,children:e.subtitle}),(0,A.jsxs)(`div`,{className:`author-hashtags-row flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-100`,children:[(0,A.jsxs)(`div`,{className:`author-info-group flex items-center gap-3`,children:[(0,A.jsx)(`div`,{className:`author-avatar-lightning w-10 h-10 rounded-full bg-[#eef4ff] border border-[#c7d8f8] flex items-center justify-center text-lg`,children:`⚡`}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`div`,{className:`author-title-name font-bold text-slate-900 text-base`,children:e.author.name}),(0,A.jsx)(`div`,{className:`author-subtitle-link text-xs text-slate-500`,children:e.author.role||`OllaWrite Content Architecture`})]})]}),(0,A.jsxs)(`div`,{className:`hashtags-group flex flex-wrap gap-2 text-sm font-semibold`,children:[(0,A.jsxs)(`span`,{style:{color:Re(0)},children:[`#`,u.toLowerCase().replace(/[^a-z0-9]/g,``)]}),(0,A.jsx)(`span`,{style:{color:Re(1)},children:`#aiwriting`}),(0,A.jsx)(`span`,{style:{color:Re(2)},children:`#agenticAI`}),(0,A.jsx)(`span`,{style:{color:Re(3)},children:`#contentstrategy`})]})]})]}),(0,A.jsxs)(`div`,{className:`blog-layout-grid grid grid-cols-1 lg:grid-cols-[270px_1fr_270px] gap-8 items-start`,children:[(0,A.jsxs)(`aside`,{className:`blog-sidebar sticky top-24 space-y-4`,children:[(0,A.jsx)(`span`,{className:`sidebar-title blue block text-xs font-bold uppercase tracking-wider text-white px-3 py-1.5 rounded-full w-max mb-3`,style:{backgroundColor:`#003db3`},children:`Essential Guides`}),(0,A.jsxs)(`div`,{className:`sidebar-cards-stack flex flex-col gap-2.5`,children:[s.map((e,t)=>(0,A.jsx)(`button`,{onClick:()=>n(e),className:`os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-sm transition-colors cursor-pointer line-clamp-2`,children:e.title},e.id)),(0,A.jsx)(`div`,{className:`pt-3 border-t border-slate-200 flex flex-col gap-2`,children:l.map((e,t)=>(0,A.jsx)(`a`,{href:e.href,target:`_blank`,rel:`noopener noreferrer`,className:`os-toc-link block p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a]  text-slate-800 font-bold text-xs sm:text-sm transition`,children:e.title},t))})]})]}),(0,A.jsx)(`main`,{className:`blog-main-column min-w-0`,children:(0,A.jsx)(`div`,{className:`prose text-slate-800 space-y-6 text-base sm:text-lg font-['Lato']`,dangerouslySetInnerHTML:{__html:Be(e.content)}})}),(0,A.jsxs)(`aside`,{className:`blog-sidebar sticky top-24 space-y-4`,children:[(0,A.jsx)(`span`,{className:`sidebar-title purple block text-xs font-bold uppercase tracking-wider text-white px-3 py-1.5 rounded-full w-max mb-3`,style:{backgroundColor:`#e8443a`},children:`Agent Workflows`}),(0,A.jsx)(`div`,{className:`sidebar-cards-stack flex flex-col gap-2.5`,children:c.map((e,t)=>(0,A.jsx)(`button`,{onClick:()=>n(e),className:`os-toc-link text-left w-full p-3 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-sm transition-colors cursor-pointer line-clamp-2`,children:e.title},e.id))})]})]})]})})},He=({isOpen:e,onClose:t,articles:n,onSelectArticle:r})=>{let[i,a]=(0,w.useState)(``),o=(0,w.useRef)(null);if((0,w.useEffect)(()=>{e&&setTimeout(()=>o.current?.focus(),50)},[e]),(0,w.useEffect)(()=>{let e=e=>{e.key===`Escape`&&t()};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[t]),!e)return null;let s=i.trim()===``?[]:n.filter(e=>e.title.toLowerCase().includes(i.toLowerCase())||e.summary.toLowerCase().includes(i.toLowerCase())||e.category.toLowerCase().includes(i.toLowerCase())||(e.tags?.some(e=>e.toLowerCase().includes(i.toLowerCase()))??!1));return(0,A.jsx)(`div`,{className:`fixed inset-0 z-50 overflow-y-auto bg-slate-900/50 backdrop-blur-sm flex items-start justify-center pt-12 sm:pt-20 px-4 animate-fade-in font-['Lato']`,children:(0,A.jsxs)(`div`,{className:`bg-white rounded-2xl max-w-2xl w-full border border-slate-200 shadow-2xl overflow-hidden text-slate-900`,children:[(0,A.jsxs)(`div`,{className:`p-4 border-b border-slate-200 flex items-center gap-3 bg-slate-50`,children:[(0,A.jsx)(Ce,{className:`w-5 h-5 text-[#e8443a] shrink-0`}),(0,A.jsx)(`input`,{ref:o,type:`text`,value:i,onChange:e=>a(e.target.value),placeholder:`QUERY_KNOWLEDGE_BASE (e.g. sitemap, multi-agent, SEO)...`,className:`w-full bg-transparent text-sm sm:text-base text-slate-900 placeholder-slate-400 focus:outline-none font-mono font-medium py-1`}),(0,A.jsx)(`button`,{onClick:t,className:`text-slate-400 hover:text-slate-700 p-1 rounded-lg hover:bg-slate-200 transition cursor-pointer`,children:(0,A.jsx)(Te,{size:18})})]}),i.trim()===``&&(0,A.jsxs)(`div`,{className:`p-5`,children:[(0,A.jsxs)(`div`,{className:`text-xs font-mono text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-2 font-bold`,children:[(0,A.jsx)(pe,{size:14,className:`text-[#e8443a]`}),(0,A.jsx)(`span`,{children:`INDEXED_TOPIC_VECTORS`})]}),(0,A.jsx)(`div`,{className:`flex flex-wrap gap-2`,children:Me.map((e,t)=>{let n=Re(t);return(0,A.jsxs)(`button`,{onClick:()=>a(e),className:`px-3 py-1.5 rounded-lg border bg-slate-50 text-xs font-mono font-semibold text-slate-700 transition cursor-pointer`,style:{borderColor:`${n}55`,color:n},onMouseEnter:e=>{e.currentTarget.style.backgroundColor=`${n}18`,e.currentTarget.style.borderColor=n},onMouseLeave:e=>{e.currentTarget.style.backgroundColor=``,e.currentTarget.style.borderColor=`${n}55`},children:[`> `,e]},e)})})]}),i.trim()!==``&&(0,A.jsx)(`div`,{className:`max-h-[380px] overflow-y-auto divide-y divide-slate-100 p-3`,children:s.length>0?s.map(e=>(0,A.jsxs)(`button`,{onClick:()=>{r(e),t()},className:`w-full text-left p-3.5 rounded-xl hover:bg-slate-50 transition flex items-center justify-between group cursor-pointer`,children:[(0,A.jsxs)(`div`,{className:`pr-3`,children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2 text-xs font-mono mb-1`,children:(0,A.jsxs)(`span`,{className:`font-bold uppercase`,style:{color:Ie(e.category).accent},children:[`[`,e.category,`]`]})}),(0,A.jsx)(`div`,{className:`text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#e8443a] transition font-['Lato']`,children:e.title}),(0,A.jsx)(`div`,{className:`text-xs text-slate-500 line-clamp-1 mt-1 font-['Lato'] font-normal`,children:e.subtitle})]}),(0,A.jsx)(le,{size:16,className:`text-slate-400 group-hover:text-[#e8443a] group-hover:translate-x-0.5 transition shrink-0`})]},e.id)):(0,A.jsxs)(`div`,{className:`p-8 text-center text-slate-500 text-xs sm:text-sm font-mono`,children:[`NO_VECTORS_FOUND_FOR "`,i,`"`]})}),(0,A.jsxs)(`div`,{className:`bg-slate-50 px-4 py-2.5 border-t border-slate-200 text-xs text-slate-500 flex items-center justify-between font-mono font-medium`,children:[(0,A.jsx)(`span`,{children:`ESC to exit console`}),(0,A.jsxs)(`span`,{children:[n.length,` specifications in vector index`]})]})]})})},Ue=class extends w.Component{constructor(e){super(e),this.state={hasError:!1,error:null}}static getDerivedStateFromError(e){return{hasError:!0,error:e}}componentDidCatch(e,t){console.error(`Knowledge Base App caught error:`,e,t)}render(){return this.state.hasError?(0,A.jsxs)(`div`,{style:{padding:`40px`,fontFamily:`Lato, sans-serif`,maxWidth:`600px`,margin:`40px auto`,textAlign:`center`,background:`#090d16`,color:`#f8fafc`,border:`1px solid #1e293b`,borderRadius:`12px`},children:[(0,A.jsx)(`h2`,{style:{color:`#06b6d4`,fontSize:`20px`},children:`[ERR_KNOWLEDGE_BASE_RENDER]`}),(0,A.jsx)(`p`,{style:{marginTop:`10px`,color:`#94a3b8`,fontSize:`13px`},children:this.state.error?.message}),(0,A.jsx)(`button`,{onClick:()=>window.location.reload(),style:{marginTop:`20px`,padding:`8px 18px`,background:`#06b6d4`,color:`#090d16`,border:`none`,borderRadius:`6px`,cursor:`pointer`,fontWeight:`bold`},children:`RELOAD_SESSION`})]}):this.props.children}};function We(){let[e,t]=(0,w.useState)(`All`),[n,r]=(0,w.useState)(!1),[i,a]=(0,w.useState)(null),[o,s]=(0,w.useState)(()=>localStorage.getItem(`ollawrite_theme`)||`light`);(0,w.useEffect)(()=>{document.documentElement.setAttribute(`data-theme`,o),localStorage.setItem(`ollawrite_theme`,o)},[o]);let c=()=>{s(e=>e===`light`?`dark`:`light`)};(0,w.useEffect)(()=>{let e=e=>{(e.metaKey||e.ctrlKey)&&e.key===`k`&&(e.preventDefault(),r(!0))};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]);let l=e===`All`?Ne:Ne.filter(t=>t.category===e);return(0,A.jsx)(Ue,{children:(0,A.jsxs)(`div`,{className:`min-h-screen bg-white text-slate-900 flex flex-col font-['Lato'] selection:bg-[#e8443a] selection:text-white`,children:[(0,A.jsx)(ke,{activeCategory:e,onSelectCategory:t,onOpenSearch:()=>r(!0),theme:o,onToggleTheme:c}),(0,A.jsx)(`main`,{className:`flex-1`,children:i?(0,A.jsx)(Ve,{article:i,onBack:()=>a(null),onSelectArticle:a,allArticles:Ne}):(0,A.jsx)(ze,{articles:l,allArticles:Ne,activeCategory:e,onSelectCategory:t,onReadArticle:a})}),(0,A.jsx)(He,{isOpen:n,onClose:()=>r(!1),articles:Ne,onSelectArticle:e=>{a(e),r(!1)}})]})})}(0,Oe.createRoot)(document.getElementById(`root`)).render((0,A.jsx)(w.StrictMode,{children:(0,A.jsx)(We,{})}));
+</div>`}],Pe={All:{dot:`#ffffff`,bg:`#0f172a`,border:`#1e293b`,text:`#ffffff`,badgeBg:`#334155`,badgeText:`#f8fafc`,accent:`#0f172a`},"AI Writing":{dot:`#f59e0b`,bg:`#fffbeb`,border:`#fde68a`,text:`#92400e`,badgeBg:`#fef3c7`,badgeText:`#78350f`,accent:`#f59e0b`},Guides:{dot:`#f59e0b`,bg:`#fffbeb`,border:`#fde68a`,text:`#92400e`,badgeBg:`#fef3c7`,badgeText:`#78350f`,accent:`#f59e0b`},"Site-First AI":{dot:`#0284c7`,bg:`#f0f9ff`,border:`#bae6fd`,text:`#0369a1`,badgeBg:`#e0f2fe`,badgeText:`#075985`,accent:`#0284c7`},RAG:{dot:`#0284c7`,bg:`#f0f9ff`,border:`#bae6fd`,text:`#0369a1`,badgeBg:`#e0f2fe`,badgeText:`#075985`,accent:`#0284c7`},"SEO Strategy":{dot:`#16a34a`,bg:`#f0fdf4`,border:`#bbf7d0`,text:`#15803d`,badgeBg:`#dcfce7`,badgeText:`#166534`,accent:`#16a34a`},SEO:{dot:`#16a34a`,bg:`#f0fdf4`,border:`#bbf7d0`,text:`#15803d`,badgeBg:`#dcfce7`,badgeText:`#166534`,accent:`#16a34a`},"AI SEO Writing":{dot:`#10b981`,bg:`#ecfdf5`,border:`#a7f3d0`,text:`#047857`,badgeBg:`#d1fae5`,badgeText:`#065f46`,accent:`#10b981`},"Humanizing AI":{dot:`#e11d48`,bg:`#fff1f2`,border:`#fecdd3`,text:`#be123c`,badgeBg:`#ffe4e6`,badgeText:`#9f1239`,accent:`#e11d48`},AEO:{dot:`#e11d48`,bg:`#fff1f2`,border:`#fecdd3`,text:`#be123c`,badgeBg:`#ffe4e6`,badgeText:`#9f1239`,accent:`#e11d48`},"Multi-Agent AI":{dot:`#9333ea`,bg:`#faf5ff`,border:`#e9d5ff`,text:`#7e22ce`,badgeBg:`#f3e8ff`,badgeText:`#6b21a8`,accent:`#9333ea`},GEO:{dot:`#9333ea`,bg:`#faf5ff`,border:`#e9d5ff`,text:`#7e22ce`,badgeBg:`#f3e8ff`,badgeText:`#6b21a8`,accent:`#9333ea`},"Editorial QA":{dot:`#059669`,bg:`#ecfdf5`,border:`#a7f3d0`,text:`#047857`,badgeBg:`#d1fae5`,badgeText:`#065f46`,accent:`#059669`},Citations:{dot:`#059669`,bg:`#ecfdf5`,border:`#a7f3d0`,text:`#047857`,badgeBg:`#d1fae5`,badgeText:`#065f46`,accent:`#059669`},"Content Generation":{dot:`#64748b`,bg:`#f8fafc`,border:`#e2e8f0`,text:`#334155`,badgeBg:`#f1f5f9`,badgeText:`#475569`,accent:`#64748b`},"Robots.txt":{dot:`#64748b`,bg:`#f8fafc`,border:`#e2e8f0`,text:`#334155`,badgeBg:`#f1f5f9`,badgeText:`#475569`,accent:`#64748b`},"Tool Reviews":{dot:`#4f46e5`,bg:`#eef2ff`,border:`#c7d2fe`,text:`#3730a3`,badgeBg:`#e0e7ff`,badgeText:`#312e81`,accent:`#4f46e5`},"AI Search":{dot:`#4f46e5`,bg:`#eef2ff`,border:`#c7d2fe`,text:`#3730a3`,badgeBg:`#e0e7ff`,badgeText:`#312e81`,accent:`#4f46e5`},"AI vs Human Writing":{dot:`#db2777`,bg:`#fdf2f8`,border:`#fbcfe8`,text:`#9d174d`,badgeBg:`#fce7f3`,badgeText:`#831843`,accent:`#db2777`}},Fe={dot:`#0284c7`,bg:`#f0f9ff`,border:`#bae6fd`,text:`#0369a1`,badgeBg:`#e0f2fe`,badgeText:`#075985`,accent:`#0284c7`};function Ie(e){return e&&Pe[e]||Fe}var Le=[`#003db3`,`#e8443a`,`#f59e0b`,`#16a34a`,`#9333ea`];function Re(e){return Le[(e%Le.length+Le.length)%Le.length]}var ze=({articles:e,allArticles:t,activeCategory:n=`All`,onSelectCategory:r,onReadArticle:i})=>{let a=[...e].sort((e,t)=>new Date(t.publishedDate).getTime()-new Date(e.publishedDate).getTime()),o=a[0],s=a.slice(1),c=n=>{let r=t||e,a=r.find(e=>e.title.toLowerCase().includes(n.toLowerCase().slice(0,15)));a?i(a):r[0]&&i(r[0])},l=t||e,u=[{name:`All`,count:l.length},{name:`AI Writing`,count:l.filter(e=>e.category===`AI Writing`).length||4},{name:`Site-First AI`,count:l.filter(e=>e.category===`Site-First AI`).length||2},{name:`SEO Strategy`,count:l.filter(e=>e.category===`SEO Strategy`).length||2},{name:`AI SEO Writing`,count:l.filter(e=>e.category===`AI SEO Writing`).length||1},{name:`Humanizing AI`,count:l.filter(e=>e.category===`Humanizing AI`).length||1},{name:`Editorial QA`,count:l.filter(e=>e.category===`Editorial QA`).length||1},{name:`Content Generation`,count:l.filter(e=>e.category===`Content Generation`).length||1},{name:`Multi-Agent AI`,count:l.filter(e=>e.category===`Multi-Agent AI`).length||1},{name:`Tool Reviews`,count:l.filter(e=>e.category===`Tool Reviews`).length||1}];return(0,A.jsxs)(`div`,{className:`w-full max-w-[1560px] mx-auto px-3 sm:px-5 lg:px-8 py-4 font-['Lato'] text-slate-800 bg-white`,children:[(0,A.jsxs)(`div`,{className:`lg:hidden space-y-4 mb-5`,children:[(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2 mb-2`,children:(0,A.jsx)(`span`,{className:`px-3 py-1 text-xs sm:text-sm font-bold rounded-full font-mono`,style:{backgroundColor:`#003db3`,color:`#ffffff`},children:`Essential Guide`})}),(0,A.jsx)(`div`,{className:`flex gap-2.5 overflow-x-auto pb-2 -mx-3 px-3 snap-x`,children:Ae.slice(0,5).map((e,t)=>(0,A.jsx)(`button`,{onClick:()=>c(e),className:`snap-start shrink-0 w-64 p-3 bg-white border border-slate-200 rounded-lg text-left cursor-pointer transition-colors group`,children:(0,A.jsx)(`h3`,{className:`font-bold text-sm text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']`,children:e})},t))})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2 mb-2`,children:(0,A.jsx)(`span`,{className:`px-3 py-1 text-xs sm:text-sm font-bold text-white rounded-full font-mono`,style:{backgroundColor:`#e8443a`},children:`Agent Workflow`})}),(0,A.jsx)(`div`,{className:`flex gap-2.5 overflow-x-auto pb-2 -mx-3 px-3 snap-x`,children:je.slice(0,5).map((e,t)=>(0,A.jsx)(`button`,{onClick:()=>c(e),className:`snap-start shrink-0 w-64 p-3 bg-white border border-slate-200 rounded-lg text-left cursor-pointer transition-colors group`,children:(0,A.jsx)(`h3`,{className:`font-bold text-sm text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']`,children:e})},t))})]})]}),(0,A.jsxs)(`div`,{className:`flex gap-4 xl:gap-5`,children:[(0,A.jsx)(`aside`,{className:`hidden lg:block w-[240px] shrink-0`,children:(0,A.jsxs)(`div`,{className:`sticky top-16 rounded-xl border border-[#f1f5f9] bg-white/60 p-2.5`,children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2 mb-2`,children:(0,A.jsx)(`span`,{className:`px-2.5 py-0.5 text-xs font-bold rounded-full font-mono`,style:{backgroundColor:`#003db3`,color:`#ffffff`},children:`Essential Guide`})}),(0,A.jsx)(`nav`,{className:`space-y-1.5`,children:Ae.map((e,t)=>(0,A.jsx)(`button`,{onClick:()=>c(e),tabIndex:0,className:`w-full text-left block p-2 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs`,children:(0,A.jsx)(`span`,{children:e})},t))}),(0,A.jsxs)(`div`,{className:`pt-2 mt-2 border-t border-slate-200 flex flex-col gap-1`,children:[(0,A.jsx)(`a`,{href:`https://www.ollawrite.com`,target:`_blank`,rel:`noopener noreferrer`,className:`os-toc-link block w-full text-left px-2 py-1 text-xs font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug`,children:`OllaWrite AI Platform ↗`}),(0,A.jsx)(`a`,{href:`https://www.ollawrite.com/#features`,target:`_blank`,rel:`noopener noreferrer`,className:`os-toc-link block w-full text-left px-2 py-1 text-xs font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug`,children:`Site-First Writing Engine ↗`}),(0,A.jsx)(`a`,{href:`https://www.ollawrite.com/#pricing`,target:`_blank`,rel:`noopener noreferrer`,className:`os-toc-link block w-full text-left px-2 py-1 text-xs font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug`,children:`Plans & Pricing Overview ↗`})]}),(0,A.jsxs)(`button`,{onClick:()=>c(`Humanize`),className:`inline-flex items-center mt-2 px-1.5 text-xs font-mono font-bold text-slate-700 hover:text-[#e8443a] cursor-pointer gap-1.5 hover:underline`,children:[(0,A.jsx)(`span`,{children:`EXPLORE_FULL_INDEX`}),(0,A.jsx)(le,{size:13})]})]})}),(0,A.jsxs)(`div`,{className:`flex-1 min-w-0`,children:[(0,A.jsxs)(`div`,{className:`mb-3.5`,children:[(0,A.jsx)(`h1`,{className:`text-xl sm:text-2xl font-bold text-slate-900 tracking-tight leading-tight font-['Lato']`,children:`OllaWrite Insights: Grounded AI Research & Editorial Guides`}),(0,A.jsx)(`p`,{className:`text-xs sm:text-sm text-slate-600 mt-1 font-normal leading-relaxed font-['Lato']`,children:`Expert-led guides on AI content optimization, search strategy, and the future of grounded intelligence.`})]}),(0,A.jsxs)(`section`,{className:`mb-6`,children:[(0,A.jsxs)(`div`,{className:`flex items-center gap-2.5 mb-2.5`,children:[(0,A.jsxs)(`div`,{className:`flex items-center gap-1.5 px-2.5 py-0.5 rounded-full`,style:{backgroundColor:`#ede9fe`,color:`#7c3aed`},children:[(0,A.jsx)(k,{className:`w-3.5 h-3.5 text-[#7c3aed]`}),(0,A.jsx)(`h2`,{className:`text-xs font-bold uppercase tracking-wide font-['Lato']`,children:`Newest Article`})]}),(0,A.jsx)(`span`,{className:`text-xs text-slate-500 font-medium`,children:`Live telemetry from 10 autonomous engines`})]}),o&&(0,A.jsx)(`div`,{onClick:()=>i(o),tabIndex:0,role:`button`,"aria-label":o.title,onKeyDown:e=>{(e.key===`Enter`||e.key===` `)&&i(o)},className:`block mb-4 group cursor-pointer focus:outline-none`,children:(()=>{let e=Ie(o.category);return(0,A.jsxs)(`div`,{className:`relative overflow-hidden rounded-xl border border-slate-200 hover:border-[#f87171] hover:shadow-xs transition-all flex flex-col md:flex-row bg-white active:border-[#f87171]`,children:[(0,A.jsx)(`div`,{className:`md:w-[36%] aspect-[16/10] md:aspect-auto overflow-hidden bg-slate-100 min-h-[160px]`,children:(0,A.jsx)(`img`,{src:o.imageUrl,alt:o.title,className:`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300`,loading:`eager`})}),(0,A.jsxs)(`div`,{className:`md:w-[64%] p-3 sm:p-4 bg-slate-50/50 flex flex-col justify-between`,children:[(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`div`,{className:`flex items-center justify-between gap-2 mb-1.5`,children:(0,A.jsx)(`div`,{className:`flex items-center gap-2`,children:(0,A.jsxs)(`span`,{className:`inline-flex items-center gap-1.5 text-xs font-mono px-2 py-0.5 rounded-full font-bold border`,style:{backgroundColor:e.bg,color:e.text,borderColor:e.border},children:[(0,A.jsx)(`span`,{className:`w-1.5 h-1.5 rounded-full shrink-0`,style:{backgroundColor:e.dot}}),(0,A.jsx)(`span`,{children:o.category})]})})}),(0,A.jsx)(`h3`,{className:`text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors mb-1 font-['Lato']`,children:o.title}),(0,A.jsx)(`p`,{className:`text-xs sm:text-sm text-slate-600 hover:text-[#e8443a] line-clamp-2 mb-2 font-normal leading-relaxed font-['Lato'] transition-colors`,children:o.subtitle})]}),(0,A.jsxs)(`div`,{className:`flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-200 group-hover:border-[#f87171] transition-colors font-mono font-medium`,children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2`,children:(0,A.jsx)(`span`,{children:o.readTime})}),(0,A.jsx)(`span`,{className:`text-slate-600 font-semibold`,children:o.publishedDate})]})]})]})})()}),(0,A.jsx)(`div`,{className:`flex flex-wrap items-center gap-1.5 mb-4 select-none`,children:u.map(e=>{let t=Ie(e.name),i=n===e.name;return(0,A.jsxs)(`button`,{onClick:()=>r&&r(e.name),className:`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold transition-all cursor-pointer hover:scale-[1.03] active:scale-[0.98] font-['Lato']`,style:{backgroundColor:i&&e.name===`All`?`#0f172a`:t.bg,color:i&&e.name===`All`?`#ffffff`:t.text,border:`1.5px solid ${i?e.name===`All`?`#0f172a`:t.dot:t.border}`,boxShadow:i?`0 0 0 2px ${t.dot}33, 0 2px 6px rgba(0,0,0,0.06)`:`0 1px 2px rgba(0,0,0,0.03)`},title:`Filter by ${e.name} (${e.count} articles)`,children:[(0,A.jsx)(`span`,{className:`w-1.5 h-1.5 rounded-full shrink-0`,style:{backgroundColor:i&&e.name===`All`?`#ffffff`:t.dot}}),(0,A.jsx)(`span`,{children:e.name}),(0,A.jsx)(`span`,{className:`text-[10px] font-bold px-1.5 py-0.5 rounded-full font-mono leading-none`,style:{backgroundColor:i&&e.name===`All`?`#334155`:t.badgeBg,color:i&&e.name===`All`?`#f8fafc`:t.badgeText},children:e.count})]},e.name)})}),(0,A.jsx)(`div`,{className:`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5`,children:s.map(e=>{let t=Ie(e.category);return(0,A.jsxs)(`article`,{onClick:()=>i(e),tabIndex:0,role:`button`,"aria-label":e.title,onKeyDown:t=>{(t.key===`Enter`||t.key===` `)&&i(e)},className:`border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:border-[#f87171] hover:shadow-xs cursor-pointer flex flex-col p-3 active:border-[#f87171]`,children:[(0,A.jsx)(`div`,{className:`flex items-center gap-1.5 mb-1.5 font-mono`,children:(0,A.jsxs)(`span`,{className:`inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-bold border`,style:{backgroundColor:t.bg,color:t.text,borderColor:t.border},children:[(0,A.jsx)(`span`,{className:`w-1.5 h-1.5 rounded-full shrink-0`,style:{backgroundColor:t.dot}}),(0,A.jsx)(`span`,{children:e.category})]})}),(0,A.jsx)(`h3`,{className:`text-xs sm:text-sm font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 flex-1 font-['Lato'] mb-1`,children:e.title}),(0,A.jsx)(`p`,{className:`text-xs text-slate-600 hover:text-[#e8443a] line-clamp-2 mb-2 leading-relaxed font-normal font-['Lato'] transition-colors`,children:e.subtitle}),(0,A.jsxs)(`div`,{className:`flex items-center justify-between text-xs text-slate-500 pt-1.5 border-t border-slate-100 group-hover:border-[#f87171] transition-colors font-mono font-medium`,children:[(0,A.jsx)(`div`,{className:`flex items-center gap-1.5`,children:(0,A.jsx)(`span`,{children:e.readTime})}),(0,A.jsx)(`span`,{className:`text-slate-600 font-semibold`,children:e.publishedDate})]})]},e.id)})})]})]}),(0,A.jsx)(`aside`,{className:`hidden lg:block w-[240px] shrink-0`,children:(0,A.jsxs)(`div`,{className:`sticky top-16 rounded-xl border border-[#f1f5f9] bg-white/60 p-2.5`,children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2 mb-2`,children:(0,A.jsx)(`span`,{className:`px-2.5 py-0.5 text-xs font-bold rounded-full font-mono`,style:{backgroundColor:`#ede9fe`,color:`#7c3aed`},children:`Agent Workflow`})}),(0,A.jsx)(`nav`,{className:`space-y-1.5`,children:je.map((e,t)=>(0,A.jsx)(`button`,{onClick:()=>c(e),tabIndex:0,className:`w-full text-left block p-2 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs`,children:(0,A.jsx)(`span`,{children:e})},t))}),(0,A.jsxs)(`button`,{onClick:()=>c(`Site-First`),className:`inline-flex items-center mt-2 px-1.5 text-xs font-mono font-bold hover:underline cursor-pointer gap-1.5`,style:{color:`#e8443a`},children:[(0,A.jsx)(`span`,{children:`EXPLORE_CITATION_INDEX`}),(0,A.jsx)(le,{size:13})]})]})})]})]})};function Be(e){if(!e)return``;let t=e;return t=t.replace(/((?:\|[^\n]+\|\n?)+)/g,e=>{let t=e.trim().split(`
+`).filter(e=>e.trim().startsWith(`|`));if(t.length<2)return e;let n=t[0],r=t.slice(2),i=e=>e.split(`|`).slice(1,-1).map(e=>e.trim());return`<div class="overflow-x-auto my-3"><table class="prose-table"><thead><tr>${i(n).map(e=>`<th>${e}</th>`).join(``)}</tr></thead><tbody>${r.map(e=>`<tr>${i(e).map(e=>`<td>${e}</td>`).join(``)}</tr>`).join(``)}</tbody></table></div>`}),t=t.replace(/^## (.*$)/gim,(e,t)=>`<h2 id="${t.replace(/<[^>]+>/g,``).toLowerCase().replace(/[^a-z0-9]+/g,`-`)}" class="text-lg sm:text-xl font-bold text-slate-900 mt-4 mb-2 font-['Lato']">${t}</h2>`),t=t.replace(/^### (.*$)/gim,(e,t)=>`<h3 id="${t.replace(/<[^>]+>/g,``).toLowerCase().replace(/[^a-z0-9]+/g,`-`)}" class="text-base sm:text-lg font-bold text-slate-900 mt-3.5 mb-1.5 font-['Lato']">${t}</h3>`),t=t.replace(/^#### (.*$)/gim,(e,t)=>`<h4 id="${t.replace(/<[^>]+>/g,``).toLowerCase().replace(/[^a-z0-9]+/g,`-`)}" class="text-sm sm:text-base font-bold text-[#003db3] mt-2.5 mb-1 font-['Lato']">${t}</h4>`),t=t.replace(/\*\*(.*?)\*\*/g,`<strong>$1</strong>`),t=t.replace(/\*(.*?)\*/g,`<em>$1</em>`),t=t.replace(/\[([^\]]+)\]\(([^)]+)\)/g,`<a href="$2" target="_blank" rel="noopener noreferrer" class="text-[#003db3] underline hover:text-[#002d86] font-medium">$1</a>`),t=t.replace(/^> (.*$)/gim,`<blockquote class="pl-3 border-l-4 border-[#003db3] my-2.5 italic text-slate-700 bg-[#eef4ff]/60 py-2 px-3 rounded-r text-sm sm:text-base">$1</blockquote>`),t=t.replace(/^-\s+(.*$)/gim,`<li class="ml-4 list-disc text-slate-800 my-0.5 text-sm sm:text-base">$1</li>`),t=t.replace(/^(\d+)\.\s+(.*$)/gim,`<li class="ml-4 list-decimal text-slate-800 my-0.5 text-sm sm:text-base"><strong>$1.</strong> $2</li>`),t.split(/\n\n+/).map(e=>{let t=e.trim();return t?t.startsWith(`<div`)||t.startsWith(`<h`)||t.startsWith(`<table`)||t.startsWith(`<details`)||t.startsWith(`<blockquote`)||t.startsWith(`<li`)||t.startsWith(`<ul`)||t.startsWith(`<ol`)?t:`<p class="leading-relaxed mb-3 text-slate-800 font-['Lato'] text-sm sm:text-base">${t.replace(/\n+/g,` `)}</p>`:``}).join(`
+`)}var Ve=({article:e,onBack:t,onSelectArticle:n,allArticles:r})=>{let[i,a]=w.useState(!1);(0,w.useEffect)(()=>{window.scrollTo({top:0,behavior:`smooth`})},[e]);let o=r.filter(t=>t.id!==e.id).sort((e,t)=>new Date(t.publishedDate).getTime()-new Date(e.publishedDate).getTime()),s=o.slice(0,4),c=o.slice(4,8),l=[{title:`OllaWrite AI Platform ↗`,href:`https://www.ollawrite.com`},{title:`Site-First Writing Engine ↗`,href:`https://www.ollawrite.com/#features`},{title:`Plans & Pricing Overview ↗`,href:`https://www.ollawrite.com/#pricing`}],u=e.tags?.[0]||e.category||`Insights`;return(0,A.jsx)(`div`,{className:`w-full bg-white text-slate-900 font-['Lato'] min-h-screen py-4 px-3 sm:px-5 lg:px-8 animate-fade-in`,children:(0,A.jsxs)(`div`,{className:`max-w-[1560px] mx-auto`,children:[(0,A.jsxs)(`div`,{className:`flex flex-wrap items-center justify-between gap-3 mb-3 pb-2.5 border-b border-slate-200`,children:[(0,A.jsxs)(`nav`,{className:`flex items-center gap-2 text-xs sm:text-sm text-slate-500 font-medium`,children:[(0,A.jsxs)(`button`,{onClick:t,className:`hover:text-[#e8443a] transition cursor-pointer font-bold text-[#e8443a] flex items-center gap-1`,children:[(0,A.jsx)(se,{size:15}),` Home`]}),(0,A.jsx)(`span`,{children:`/`}),(0,A.jsx)(`button`,{onClick:t,className:`hover:text-[#e8443a] transition cursor-pointer`,children:`Blog`}),(0,A.jsx)(`span`,{children:`/`}),(0,A.jsx)(`span`,{className:`text-slate-900 font-semibold`,children:u})]}),(0,A.jsxs)(`button`,{onClick:()=>{navigator.clipboard.writeText(window.location.href),a(!0),setTimeout(()=>a(!1),2e3)},className:`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-700 transition text-xs font-mono font-bold cursor-pointer`,children:[i?(0,A.jsx)(D,{size:13,className:`text-emerald-600`}):(0,A.jsx)(ye,{size:13}),(0,A.jsx)(`span`,{children:i?`COPIED_LINK`:`SHARE_ARTICLE`})]})]}),(0,A.jsxs)(`header`,{className:`post-header mb-4 pb-3 border-b border-slate-200`,children:[(0,A.jsxs)(`div`,{className:`post-meta-caption flex items-center gap-2.5 text-xs font-bold text-[#003db3] uppercase mb-2`,children:[(0,A.jsx)(`span`,{className:`px-2.5 py-0.5 rounded text-[11px] tracking-wider`,style:{backgroundColor:Ie(e.category).bg,color:Ie(e.category).text},children:u}),(0,A.jsx)(`span`,{children:`•`}),(0,A.jsx)(`span`,{className:`text-slate-500 font-semibold`,children:e.publishedDate}),(0,A.jsx)(`span`,{children:`•`}),(0,A.jsx)(`span`,{className:`text-slate-500 font-semibold`,children:e.readTime})]}),(0,A.jsx)(`h1`,{className:`os-display-title text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900 leading-tight mb-2 font-['Lato']`,children:e.title}),e.subtitle&&(0,A.jsx)(`p`,{className:`os-lead-paragraph text-sm sm:text-base text-slate-600 leading-relaxed mb-3 font-normal`,children:e.subtitle}),(0,A.jsxs)(`div`,{className:`author-hashtags-row flex flex-wrap items-center justify-between gap-3 pt-2.5 border-t border-slate-100`,children:[(0,A.jsxs)(`div`,{className:`author-info-group flex items-center gap-2.5`,children:[(0,A.jsx)(`div`,{className:`author-avatar-lightning w-8 h-8 rounded-full bg-[#eef4ff] border border-[#c7d8f8] flex items-center justify-center text-sm`,children:`⚡`}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`div`,{className:`author-title-name font-bold text-slate-900 text-sm`,children:e.author.name}),(0,A.jsx)(`div`,{className:`author-subtitle-link text-[11px] text-slate-500`,children:e.author.role||`OllaWrite Content Architecture`})]})]}),(0,A.jsxs)(`div`,{className:`hashtags-group flex flex-wrap gap-2 text-xs font-semibold`,children:[(0,A.jsxs)(`span`,{style:{color:Re(0)},children:[`#`,u.toLowerCase().replace(/[^a-z0-9]/g,``)]}),(0,A.jsx)(`span`,{style:{color:Re(1)},children:`#aiwriting`}),(0,A.jsx)(`span`,{style:{color:Re(2)},children:`#agenticAI`}),(0,A.jsx)(`span`,{style:{color:Re(3)},children:`#contentstrategy`})]})]})]}),(0,A.jsxs)(`div`,{className:`blog-layout-grid grid grid-cols-1 lg:grid-cols-[240px_1fr_240px] gap-4 xl:gap-5 items-start`,children:[(0,A.jsxs)(`aside`,{className:`blog-sidebar sticky top-16 space-y-2.5`,children:[(0,A.jsx)(`span`,{className:`sidebar-title blue block text-xs font-bold uppercase tracking-wider text-white px-2.5 py-1 rounded-full w-max mb-2`,style:{backgroundColor:`#003db3`},children:`Essential Guides`}),(0,A.jsxs)(`div`,{className:`sidebar-cards-stack flex flex-col gap-1.5`,children:[s.map(e=>(0,A.jsx)(`button`,{onClick:()=>n(e),className:`os-toc-link text-left w-full p-2.5 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-[13px] transition-colors cursor-pointer line-clamp-2`,children:e.title},e.id)),(0,A.jsx)(`div`,{className:`pt-2 border-t border-slate-200 flex flex-col gap-1.5`,children:l.map((e,t)=>(0,A.jsx)(`a`,{href:e.href,target:`_blank`,rel:`noopener noreferrer`,className:`os-toc-link block p-2 bg-slate-50 border border-slate-200 rounded-lg hover:border-[#e8443a] hover:text-[#e8443a] text-slate-800 font-bold text-xs transition`,children:e.title},t))})]})]}),(0,A.jsx)(`main`,{className:`blog-main-column min-w-0`,children:(0,A.jsx)(`div`,{className:`prose text-slate-800 space-y-2.5 text-sm sm:text-base font-['Lato']`,dangerouslySetInnerHTML:{__html:Be(e.content)}})}),(0,A.jsxs)(`aside`,{className:`blog-sidebar sticky top-16 space-y-2.5`,children:[(0,A.jsx)(`span`,{className:`sidebar-title purple block text-xs font-bold uppercase tracking-wider text-white px-2.5 py-1 rounded-full w-max mb-2`,style:{backgroundColor:`#e8443a`},children:`Agent Workflows`}),(0,A.jsx)(`div`,{className:`sidebar-cards-stack flex flex-col gap-1.5`,children:c.map(e=>(0,A.jsx)(`button`,{onClick:()=>n(e),className:`os-toc-link text-left w-full p-2.5 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-[13px] transition-colors cursor-pointer line-clamp-2`,children:e.title},e.id))})]})]})]})})},He=({isOpen:e,onClose:t,articles:n,onSelectArticle:r})=>{let[i,a]=(0,w.useState)(``),o=(0,w.useRef)(null);if((0,w.useEffect)(()=>{e&&setTimeout(()=>o.current?.focus(),50)},[e]),(0,w.useEffect)(()=>{let e=e=>{e.key===`Escape`&&t()};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[t]),!e)return null;let s=i.trim()===``?[]:n.filter(e=>e.title.toLowerCase().includes(i.toLowerCase())||e.summary.toLowerCase().includes(i.toLowerCase())||e.category.toLowerCase().includes(i.toLowerCase())||(e.tags?.some(e=>e.toLowerCase().includes(i.toLowerCase()))??!1));return(0,A.jsx)(`div`,{className:`fixed inset-0 z-50 overflow-y-auto bg-slate-900/50 backdrop-blur-sm flex items-start justify-center pt-12 sm:pt-20 px-4 animate-fade-in font-['Lato']`,children:(0,A.jsxs)(`div`,{className:`bg-white rounded-2xl max-w-2xl w-full border border-slate-200 shadow-2xl overflow-hidden text-slate-900`,children:[(0,A.jsxs)(`div`,{className:`p-4 border-b border-slate-200 flex items-center gap-3 bg-slate-50`,children:[(0,A.jsx)(Ce,{className:`w-5 h-5 text-[#e8443a] shrink-0`}),(0,A.jsx)(`input`,{ref:o,type:`text`,value:i,onChange:e=>a(e.target.value),placeholder:`QUERY_KNOWLEDGE_BASE (e.g. sitemap, multi-agent, SEO)...`,className:`w-full bg-transparent text-sm sm:text-base text-slate-900 placeholder-slate-400 focus:outline-none font-mono font-medium py-1`}),(0,A.jsx)(`button`,{onClick:t,className:`text-slate-400 hover:text-slate-700 p-1 rounded-lg hover:bg-slate-200 transition cursor-pointer`,children:(0,A.jsx)(Te,{size:18})})]}),i.trim()===``&&(0,A.jsxs)(`div`,{className:`p-5`,children:[(0,A.jsxs)(`div`,{className:`text-xs font-mono text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-2 font-bold`,children:[(0,A.jsx)(pe,{size:14,className:`text-[#e8443a]`}),(0,A.jsx)(`span`,{children:`INDEXED_TOPIC_VECTORS`})]}),(0,A.jsx)(`div`,{className:`flex flex-wrap gap-2`,children:Me.map((e,t)=>{let n=Re(t);return(0,A.jsxs)(`button`,{onClick:()=>a(e),className:`px-3 py-1.5 rounded-lg border bg-slate-50 text-xs font-mono font-semibold text-slate-700 transition cursor-pointer`,style:{borderColor:`${n}55`,color:n},onMouseEnter:e=>{e.currentTarget.style.backgroundColor=`${n}18`,e.currentTarget.style.borderColor=n},onMouseLeave:e=>{e.currentTarget.style.backgroundColor=``,e.currentTarget.style.borderColor=`${n}55`},children:[`> `,e]},e)})})]}),i.trim()!==``&&(0,A.jsx)(`div`,{className:`max-h-[380px] overflow-y-auto divide-y divide-slate-100 p-3`,children:s.length>0?s.map(e=>(0,A.jsxs)(`button`,{onClick:()=>{r(e),t()},className:`w-full text-left p-3.5 rounded-xl hover:bg-slate-50 transition flex items-center justify-between group cursor-pointer`,children:[(0,A.jsxs)(`div`,{className:`pr-3`,children:[(0,A.jsx)(`div`,{className:`flex items-center gap-2 text-xs font-mono mb-1`,children:(0,A.jsxs)(`span`,{className:`font-bold uppercase`,style:{color:Ie(e.category).accent},children:[`[`,e.category,`]`]})}),(0,A.jsx)(`div`,{className:`text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#e8443a] transition font-['Lato']`,children:e.title}),(0,A.jsx)(`div`,{className:`text-xs text-slate-500 line-clamp-1 mt-1 font-['Lato'] font-normal`,children:e.subtitle})]}),(0,A.jsx)(le,{size:16,className:`text-slate-400 group-hover:text-[#e8443a] group-hover:translate-x-0.5 transition shrink-0`})]},e.id)):(0,A.jsxs)(`div`,{className:`p-8 text-center text-slate-500 text-xs sm:text-sm font-mono`,children:[`NO_VECTORS_FOUND_FOR "`,i,`"`]})}),(0,A.jsxs)(`div`,{className:`bg-slate-50 px-4 py-2.5 border-t border-slate-200 text-xs text-slate-500 flex items-center justify-between font-mono font-medium`,children:[(0,A.jsx)(`span`,{children:`ESC to exit console`}),(0,A.jsxs)(`span`,{children:[n.length,` specifications in vector index`]})]})]})})},Ue=class extends w.Component{constructor(e){super(e),this.state={hasError:!1,error:null}}static getDerivedStateFromError(e){return{hasError:!0,error:e}}componentDidCatch(e,t){console.error(`Knowledge Base App caught error:`,e,t)}render(){return this.state.hasError?(0,A.jsxs)(`div`,{style:{padding:`40px`,fontFamily:`Lato, sans-serif`,maxWidth:`600px`,margin:`40px auto`,textAlign:`center`,background:`#090d16`,color:`#f8fafc`,border:`1px solid #1e293b`,borderRadius:`12px`},children:[(0,A.jsx)(`h2`,{style:{color:`#06b6d4`,fontSize:`20px`},children:`[ERR_KNOWLEDGE_BASE_RENDER]`}),(0,A.jsx)(`p`,{style:{marginTop:`10px`,color:`#94a3b8`,fontSize:`13px`},children:this.state.error?.message}),(0,A.jsx)(`button`,{onClick:()=>window.location.reload(),style:{marginTop:`20px`,padding:`8px 18px`,background:`#06b6d4`,color:`#090d16`,border:`none`,borderRadius:`6px`,cursor:`pointer`,fontWeight:`bold`},children:`RELOAD_SESSION`})]}):this.props.children}};function We(){let[e,t]=(0,w.useState)(`All`),[n,r]=(0,w.useState)(!1),[i,a]=(0,w.useState)(null),[o,s]=(0,w.useState)(()=>localStorage.getItem(`ollawrite_theme`)||`light`);(0,w.useEffect)(()=>{document.documentElement.setAttribute(`data-theme`,o),localStorage.setItem(`ollawrite_theme`,o)},[o]);let c=()=>{s(e=>e===`light`?`dark`:`light`)};(0,w.useEffect)(()=>{let e=e=>{(e.metaKey||e.ctrlKey)&&e.key===`k`&&(e.preventDefault(),r(!0))};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]);let l=e===`All`?Ne:Ne.filter(t=>t.category===e);return(0,A.jsx)(Ue,{children:(0,A.jsxs)(`div`,{className:`min-h-screen bg-white text-slate-900 flex flex-col font-['Lato'] selection:bg-[#e8443a] selection:text-white`,children:[(0,A.jsx)(ke,{activeCategory:e,onSelectCategory:t,onOpenSearch:()=>r(!0),theme:o,onToggleTheme:c}),(0,A.jsx)(`main`,{className:`flex-1`,children:i?(0,A.jsx)(Ve,{article:i,onBack:()=>a(null),onSelectArticle:a,allArticles:Ne}):(0,A.jsx)(ze,{articles:l,allArticles:Ne,activeCategory:e,onSelectCategory:t,onReadArticle:a})}),(0,A.jsx)(He,{isOpen:n,onClose:()=>r(!1),articles:Ne,onSelectArticle:e=>{a(e),r(!1)}})]})})}(0,Oe.createRoot)(document.getElementById(`root`)).render((0,A.jsx)(w.StrictMode,{children:(0,A.jsx)(We,{})}));

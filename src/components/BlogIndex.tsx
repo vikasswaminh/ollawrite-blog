@@ -51,43 +51,43 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
   ];
 
   return (
-    <div className="w-full mx-auto px-[2cm] py-6 font-['Lato'] text-slate-800 bg-white">
+    <div className="w-full max-w-[1560px] mx-auto px-3 sm:px-5 lg:px-8 py-4 font-['Lato'] text-slate-800 bg-white">
       
       {/* 📱 MOBILE: Horizontal scroll cards for both categories 📱 */}
-      <div className="lg:hidden space-y-6 mb-8">
+      <div className="lg:hidden space-y-4 mb-5">
         <div>
-          <div className="flex items-center gap-2 mb-3">
-            <span className="px-3.5 py-1.5 text-xs sm:text-sm font-bold rounded-full font-mono" style={{ backgroundColor: '#003db3', color: '#ffffff' }}>
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-3 py-1 text-xs sm:text-sm font-bold rounded-full font-mono" style={{ backgroundColor: '#003db3', color: '#ffffff' }}>
               Essential Guide
             </span>
           </div>
-          <div className="flex gap-3.5 overflow-x-auto pb-2 -mx-4 px-4 snap-x">
+          <div className="flex gap-2.5 overflow-x-auto pb-2 -mx-3 px-3 snap-x">
             {OLLAWRITE_LEFT_GUIDES.slice(0, 5).map((title, i) => (
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer transition-colors group"
+                className="snap-start shrink-0 w-64 p-3 bg-white border border-slate-200 rounded-lg text-left cursor-pointer transition-colors group"
               >
-                <h3 className="font-bold text-[15px] sm:text-base text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']">{title}</h3>
+                <h3 className="font-bold text-sm text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
             ))}
           </div>
         </div>
 
         <div>
-          <div className="flex items-center gap-2 mb-3">
-            <span className="px-3.5 py-1.5 text-xs sm:text-sm font-bold text-white rounded-full font-mono" style={{ backgroundColor: '#e8443a' }}>
+          <div className="flex items-center gap-2 mb-2">
+            <span className="px-3 py-1 text-xs sm:text-sm font-bold text-white rounded-full font-mono" style={{ backgroundColor: '#e8443a' }}>
               Agent Workflow
             </span>
           </div>
-          <div className="flex gap-3.5 overflow-x-auto pb-2 -mx-4 px-4 snap-x">
+          <div className="flex gap-2.5 overflow-x-auto pb-2 -mx-3 px-3 snap-x">
             {OLLAWRITE_RIGHT_TOP_READS.slice(0, 5).map((title, i) => (
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-72 p-4 bg-white border border-slate-200 rounded-xl text-left cursor-pointer transition-colors group"
+                className="snap-start shrink-0 w-64 p-3 bg-white border border-slate-200 rounded-lg text-left cursor-pointer transition-colors group"
               >
-                <h3 className="font-bold text-[15px] sm:text-base text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']">{title}</h3>
+                <h3 className="font-bold text-sm text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']">{title}</h3>
               </button>
             ))}
           </div>
@@ -95,35 +95,35 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
       </div>
 
       {/* 🖥️ DESKTOP: 3-COLUMN LAYOUT WITH EXACT SIDEBARS 🖥️ */}
-      <div className="flex gap-6 xl:gap-8">
+      <div className="flex gap-4 xl:gap-5">
 
         {/* 📚 LEFT SIDEBAR: CORE INDEX (w-[240px]) 📚 */}
         <aside className="hidden lg:block w-[240px] shrink-0">
-          <div className="sticky top-20 rounded-2xl border border-[#f1f5f9] bg-white/60 p-3.5">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="px-2.5 py-1 text-xs font-bold rounded-full font-mono" style={{ backgroundColor: '#003db3', color: '#ffffff' }}>
+          <div className="sticky top-16 rounded-xl border border-[#f1f5f9] bg-white/60 p-2.5">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="px-2.5 py-0.5 text-xs font-bold rounded-full font-mono" style={{ backgroundColor: '#003db3', color: '#ffffff' }}>
                 Essential Guide
               </span>
             </div>
-            <nav className="space-y-2">
+            <nav className="space-y-1.5">
               {OLLAWRITE_LEFT_GUIDES.map((title, idx) => (
                 <button
                   key={idx}
                   onClick={() => handleTitleClick(title)}
                   tabIndex={0}
-                  className="w-full text-left block p-2.5 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-[13px] font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
+                  className="w-full text-left block p-2 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
                 >
                   <span>{title}</span>
                 </button>
               ))}
             </nav>
             {/* Website backlinks */}
-            <div className="pt-3 mt-3 border-t border-slate-200 flex flex-col gap-1.5">
+            <div className="pt-2 mt-2 border-t border-slate-200 flex flex-col gap-1">
               <a
                 href="https://www.ollawrite.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
+                className="os-toc-link block w-full text-left px-2 py-1 text-xs font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
               >
                 OllaWrite AI Platform ↗
               </a>
@@ -131,7 +131,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 href="https://www.ollawrite.com/#features"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
+                className="os-toc-link block w-full text-left px-2 py-1 text-xs font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
               >
                 Site-First Writing Engine ↗
               </a>
@@ -139,17 +139,17 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 href="https://www.ollawrite.com/#pricing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="os-toc-link block w-full text-left px-2.5 py-1.5 text-[13px] font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
+                className="os-toc-link block w-full text-left px-2 py-1 text-xs font-bold text-slate-800 hover:text-[#e8443a] hover:bg-[#fff1f0] hover:border-[#e8443a] focus:text-[#e8443a] rounded-lg transition-colors leading-snug"
               >
                 Plans & Pricing Overview ↗
               </a>
             </div>
             <button
               onClick={() => handleTitleClick("Humanize")}
-              className="inline-flex items-center mt-3 px-2 text-xs font-mono font-bold text-slate-700 hover:text-[#e8443a] cursor-pointer gap-1.5 hover:underline"
+              className="inline-flex items-center mt-2 px-1.5 text-xs font-mono font-bold text-slate-700 hover:text-[#e8443a] cursor-pointer gap-1.5 hover:underline"
             >
               <span>EXPLORE_FULL_INDEX</span>
-              <ArrowRight size={14} />
+              <ArrowRight size={13} />
             </button>
           </div>
         </aside>
@@ -158,42 +158,41 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
         <div className="flex-1 min-w-0">
           
           {/* Header Title & Subtitle */}
-          <div className="mb-5">
-            <h1 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-tight font-['Lato']">
+          <div className="mb-3.5">
+            <h1 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight leading-tight font-['Lato']">
               OllaWrite Insights: Grounded AI Research & Editorial Guides
             </h1>
-            <p className="text-sm sm:text-base text-slate-600 mt-2 font-normal leading-relaxed font-['Lato']">
+            <p className="text-xs sm:text-sm text-slate-600 mt-1 font-normal leading-relaxed font-['Lato']">
               Expert-led guides on AI content optimization, search strategy, and the future of grounded intelligence.
             </p>
           </div>
 
           {/* ════ SECTION 1: VERIFIED RESEARCH ARTICLES ════ */}
-          <section className="mb-10">
+          <section className="mb-6">
             
             {/* Pill Header */}
-            <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center gap-2 px-3 py-1 rounded-full" style={{ backgroundColor: '#ede9fe', color: '#7c3aed' }}>
-                <Flame className="w-4 h-4 text-[#7c3aed]" />
-                <h2 className="text-xs sm:text-sm font-bold uppercase tracking-wide font-['Lato']">Newest Article</h2>
+            <div className="flex items-center gap-2.5 mb-2.5">
+              <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full" style={{ backgroundColor: '#ede9fe', color: '#7c3aed' }}>
+                <Flame className="w-3.5 h-3.5 text-[#7c3aed]" />
+                <h2 className="text-xs font-bold uppercase tracking-wide font-['Lato']">Newest Article</h2>
               </div>
-              <span className="text-xs sm:text-sm text-slate-500 font-medium">Live telemetry from 10 autonomous engines</span>
+              <span className="text-xs text-slate-500 font-medium">Live telemetry from 10 autonomous engines</span>
             </div>
 
             {/* Featured Hero Card (Newest Article) */}
             {heroNewest && (
               <div
                 onClick={() => onReadArticle(heroNewest)}
-                tabIndex={0} role="button" aria-label={heroNewest.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(heroNewest); }} className="block mb-6 group cursor-pointer focus:outline-none"
+                tabIndex={0} role="button" aria-label={heroNewest.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(heroNewest); }} className="block mb-4 group cursor-pointer focus:outline-none"
               >
                 {(() => {
                   const heroStyle = getCategoryStyle(heroNewest.category);
                   return (
                     <div 
                       className="relative overflow-hidden rounded-xl border border-slate-200 hover:border-[#f87171] hover:shadow-xs transition-all flex flex-col md:flex-row bg-white active:border-[#f87171]"
-                      
                     >
                       {/* Left Hero Image */}
-                      <div className="md:w-[36%] aspect-[16/10] md:aspect-auto overflow-hidden bg-slate-100 min-h-[190px]">
+                      <div className="md:w-[36%] aspect-[16/10] md:aspect-auto overflow-hidden bg-slate-100 min-h-[160px]">
                         <img
                           src={heroNewest.imageUrl}
                           alt={heroNewest.title}
@@ -203,13 +202,13 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                       </div>
 
                       {/* Right Hero Content */}
-                      <div className="md:w-[64%] p-4 sm:p-6 bg-slate-50/50 flex flex-col justify-between">
+                      <div className="md:w-[64%] p-3 sm:p-4 bg-slate-50/50 flex flex-col justify-between">
                         <div>
                           {/* Top Badges Row with Category Color Segregation */}
-                          <div className="flex items-center justify-between gap-2 mb-2.5">
+                          <div className="flex items-center justify-between gap-2 mb-1.5">
                             <div className="flex items-center gap-2">
                               <span
-                                className="inline-flex items-center gap-1.5 text-xs font-mono px-2.5 py-0.5 rounded-full font-bold border"
+                                className="inline-flex items-center gap-1.5 text-xs font-mono px-2 py-0.5 rounded-full font-bold border"
                                 style={{
                                   backgroundColor: heroStyle.bg,
                                   color: heroStyle.text,
@@ -223,18 +222,18 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                           </div>
 
                           {/* Title */}
-                          <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors mb-2 font-['Lato']">
+                          <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors mb-1 font-['Lato']">
                             {heroNewest.title}
                           </h3>
 
                           {/* Subtitle */}
-                          <p className="text-xs sm:text-sm text-slate-600 hover:text-[#e8443a] line-clamp-2 mb-3 font-normal leading-relaxed font-['Lato'] transition-colors">
+                          <p className="text-xs sm:text-sm text-slate-600 hover:text-[#e8443a] line-clamp-2 mb-2 font-normal leading-relaxed font-['Lato'] transition-colors">
                             {heroNewest.subtitle}
                           </p>
                         </div>
 
                         {/* Meta info at the end of the box */}
-                        <div className="flex items-center justify-between text-xs text-slate-500 pt-2.5 border-t border-slate-200 group-hover:border-[#f87171] transition-colors font-mono font-medium">
+                        <div className="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-200 group-hover:border-[#f87171] transition-colors font-mono font-medium">
                           <div className="flex items-center gap-2">
                             <span>{heroNewest.readTime}</span>
                           </div>
@@ -250,7 +249,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
             )}
 
             {/* 🏷️ CATEGORY SEGREGATION PILLS BAR (Placed directly below Newest Article) */}
-            <div className="flex flex-wrap items-center gap-2 mb-6 select-none">
+            <div className="flex flex-wrap items-center gap-1.5 mb-4 select-none">
               {categoryFilters.map((cat) => {
                 const style = getCategoryStyle(cat.name);
                 const isActive = activeCategory === cat.name;
@@ -259,7 +258,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   <button
                     key={cat.name}
                     onClick={() => onSelectCategory && onSelectCategory(cat.name)}
-                    className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs sm:text-[13px] font-bold transition-all cursor-pointer hover:scale-[1.03] active:scale-[0.98] font-['Lato']"
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold transition-all cursor-pointer hover:scale-[1.03] active:scale-[0.98] font-['Lato']"
                     style={{
                       backgroundColor: isActive && cat.name === 'All' ? '#0f172a' : style.bg,
                       color: isActive && cat.name === 'All' ? '#ffffff' : style.text,
@@ -269,12 +268,12 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                     title={`Filter by ${cat.name} (${cat.count} articles)`}
                   >
                     <span
-                      className="w-2 h-2 rounded-full shrink-0"
+                      className="w-1.5 h-1.5 rounded-full shrink-0"
                       style={{ backgroundColor: isActive && cat.name === 'All' ? '#ffffff' : style.dot }}
                     />
                     <span>{cat.name}</span>
                     <span
-                      className="text-[11px] font-bold px-2 py-0.5 rounded-full font-mono leading-none"
+                      className="text-[10px] font-bold px-1.5 py-0.5 rounded-full font-mono leading-none"
                       style={{
                         backgroundColor: isActive && cat.name === 'All' ? '#334155' : style.badgeBg,
                         color: isActive && cat.name === 'All' ? '#f8fafc' : style.badgeText,
@@ -288,20 +287,18 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
             </div>
 
             {/* Secondary 3-Column Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
               {secondaryNewest.map((post) => {
                 const cardStyle = getCategoryStyle(post.category);
                 return (
                   <article
                     key={post.id}
                     onClick={() => onReadArticle(post)}
-                    tabIndex={0} role="button" aria-label={post.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(post); }} className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:border-[#f87171] hover:shadow-xs cursor-pointer flex flex-col p-3.5 active:border-[#f87171]"
-                    
-                    
+                    tabIndex={0} role="button" aria-label={post.title} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onReadArticle(post); }} className="border border-slate-200 bg-white rounded-lg transition-all group relative overflow-hidden hover:border-[#f87171] hover:shadow-xs cursor-pointer flex flex-col p-3 active:border-[#f87171]"
                   >
-                    <div className="flex items-center gap-2 mb-2 font-mono">
+                    <div className="flex items-center gap-1.5 mb-1.5 font-mono">
                       <span
-                        className="inline-flex items-center gap-1.5 text-xs px-2.5 py-0.5 rounded-full font-bold border"
+                        className="inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full font-bold border"
                         style={{
                           backgroundColor: cardStyle.bg,
                           color: cardStyle.text,
@@ -312,14 +309,14 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                         <span>{post.category}</span>
                       </span>
                     </div>
-                    <h3 className="text-sm font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 flex-1 font-['Lato'] mb-1.5">
+                    <h3 className="text-xs sm:text-sm font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 flex-1 font-['Lato'] mb-1">
                       {post.title}
                     </h3>
-                    <p className="text-xs text-slate-600 hover:text-[#e8443a] line-clamp-2 mb-2.5 leading-relaxed font-normal font-['Lato'] transition-colors">
+                    <p className="text-xs text-slate-600 hover:text-[#e8443a] line-clamp-2 mb-2 leading-relaxed font-normal font-['Lato'] transition-colors">
                       {post.subtitle}
                     </p>
-                    <div className="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100 group-hover:border-[#f87171] transition-colors font-mono font-medium">
-                      <div className="flex items-center gap-2">
+                    <div className="flex items-center justify-between text-xs text-slate-500 pt-1.5 border-t border-slate-100 group-hover:border-[#f87171] transition-colors font-mono font-medium">
+                      <div className="flex items-center gap-1.5">
                         <span>{post.readTime}</span>
                       </div>
                       <span className="text-slate-600 font-semibold">{post.publishedDate}</span>
@@ -335,19 +332,19 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
 
         {/* 🏷️ RIGHT SIDEBAR: CITATION INDEX & CTAS (w-[240px]) 🏷️ */}
         <aside className="hidden lg:block w-[240px] shrink-0">
-          <div className="sticky top-20 rounded-2xl border border-[#f1f5f9] bg-white/60 p-3.5">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="px-2.5 py-1 text-xs font-bold rounded-full font-mono" style={{ backgroundColor: '#ede9fe', color: '#7c3aed' }}>
+          <div className="sticky top-16 rounded-xl border border-[#f1f5f9] bg-white/60 p-2.5">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="px-2.5 py-0.5 text-xs font-bold rounded-full font-mono" style={{ backgroundColor: '#ede9fe', color: '#7c3aed' }}>
                 Agent Workflow
               </span>
             </div>
-            <nav className="space-y-2">
+            <nav className="space-y-1.5">
               {OLLAWRITE_RIGHT_TOP_READS.map((title, idx) => (
                 <button
                   key={idx}
                   onClick={() => handleTitleClick(title)}
                   tabIndex={0}
-                  className="w-full text-left block p-2.5 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-[13px] font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
+                  className="w-full text-left block p-2 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
                 >
                   <span>{title}</span>
                 </button>
@@ -355,11 +352,11 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
             </nav>
             <button
               onClick={() => handleTitleClick("Site-First")}
-              className="inline-flex items-center mt-3 px-2 text-xs font-mono font-bold hover:underline cursor-pointer gap-1.5"
+              className="inline-flex items-center mt-2 px-1.5 text-xs font-mono font-bold hover:underline cursor-pointer gap-1.5"
               style={{ color: '#e8443a' }}
             >
               <span>EXPLORE_CITATION_INDEX</span>
-              <ArrowRight size={14} />
+              <ArrowRight size={13} />
             </button>
 
           </div>
