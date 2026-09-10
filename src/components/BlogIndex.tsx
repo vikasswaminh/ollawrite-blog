@@ -312,7 +312,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                     <h3 className="text-xs sm:text-sm font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 flex-1 font-['Lato'] mb-1">
                       {post.title}
                     </h3>
-                    <p className="text-xs text-slate-600 hover:text-[#e8443a] line-clamp-2 mb-1.5 leading-relaxed font-normal font-['Lato'] transition-colors">
+                    <p className="text-xs text-slate-600 hover:text-[#e8443a] line-clamp-1 mb-1.5 leading-relaxed font-normal font-['Lato'] transition-colors">
                       {post.subtitle}
                     </p>
                     <div className="flex items-center justify-between text-xs text-slate-500 mt-auto font-mono font-medium">
