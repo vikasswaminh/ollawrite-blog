@@ -963,3 +963,16 @@ article:hover .border-t,
 [data-theme="dark"] table.prose-table td:hover {
   color: #cbd5e1 !important;
 }
+
+
+/* Enforce single-line clamping for all blog card sub-content (subtitles) */
+.blog-card-subcontent {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: normal !important;
+  line-clamp: 1 !important;
+  max-height: 1.5em !important;
+}
