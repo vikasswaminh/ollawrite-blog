@@ -113,7 +113,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   tabIndex={0}
                   className="w-full text-left block px-1 py-2.5 border-b border-slate-100 hover:text-[#e8443a] focus:text-[#e8443a] focus:outline-none transition-colors text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato']"
                 >
-                  <span className="line-clamp-2">{title}</span>
+                  <span className="line-clamp-3">{title}</span>
                 </button>
               ))}
             </nav>
@@ -202,7 +202,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                       </div>
 
                       {/* Right Hero Content */}
-                      <div className="md:w-[64%] p-3 sm:p-4 bg-slate-50/50 flex flex-col justify-between">
+                      <div className="md:w-[64%] p-3 sm:p-4 bg-slate-50/50 flex flex-col justify-center gap-2">
                         <div>
                           {/* Top Badges Row with Category Color Segregation */}
                           <div className="flex items-center justify-between gap-2 mb-1.5">
@@ -346,7 +346,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   tabIndex={0}
                   className="w-full text-left block px-1 py-2.5 border-b border-slate-100 hover:text-[#e8443a] focus:text-[#e8443a] focus:outline-none transition-colors text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato']"
                 >
-                  <span className="line-clamp-2">{title}</span>
+                  <span className="line-clamp-3">{title}</span>
                 </button>
               ))}
             </nav>
