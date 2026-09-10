@@ -55,7 +55,7 @@ function parseArticleContentToHtml(content: string): string {
   // Blockquotes & Lists
   html = html.replace(/^> (.*$)/gim, '<blockquote class="pl-3 border-l-4 border-[#003db3] my-2.5 italic text-slate-700 bg-[#eef4ff]/60 py-2 px-3 rounded-r text-sm sm:text-base">$1</blockquote>');
   html = html.replace(/^-\s+(.*$)/gim, '<li class="ml-4 list-disc text-slate-800 my-0.5 text-sm sm:text-base">$1</li>');
-  html = html.replace(/^(\d+)\.\s+(.*$)/gim, '<li class="ml-4 list-decimal text-slate-800 my-0.5 text-sm sm:text-base"><strong>$1.</strong> $2</li>');
+  html = html.replace(/^(\d+)\.\s+(.*$)/gim, '<div class="ml-4 text-slate-800 my-1.5 text-sm sm:text-base flex items-start"><span class="font-bold text-slate-900 mr-2 flex-shrink-0">$1.</span><div>$2</div></div>');
 
   const blocks = html.split(/\n\n+/);
   const processed = blocks.map(block => {
