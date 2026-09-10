@@ -851,6 +851,26 @@ button[class*="snap-start"] {
   border-color: #e2e8f0 !important;
   box-shadow: none !important;
   transition: color 0.15s ease !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  text-overflow: clip !important;
+  line-clamp: none !important;
+  -webkit-line-clamp: unset !important;
+  max-height: none !important;
+  height: auto !important;
+}
+
+aside nav button span,
+.os-toc-link,
+.os-toc-link span,
+button[class*="snap-start"] h3 {
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  line-clamp: none !important;
+  -webkit-line-clamp: unset !important;
+  text-overflow: clip !important;
 }
 
 aside nav button:hover,

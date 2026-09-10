@@ -66,9 +66,9 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-64 p-3 bg-white border border-slate-200 rounded-lg text-left cursor-pointer transition-colors group"
+                className="snap-start shrink-0 w-72 sm:w-80 p-3.5 bg-white border border-slate-200 rounded-lg text-left cursor-pointer transition-colors group flex flex-col justify-between"
               >
-                <h3 className="font-bold text-sm text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']">{title}</h3>
+                <h3 className="font-bold text-sm text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors whitespace-normal break-words leading-snug font-['Lato']">{title}</h3>
               </button>
             ))}
           </div>
@@ -85,9 +85,9 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
               <button
                 key={i}
                 onClick={() => handleTitleClick(title)}
-                className="snap-start shrink-0 w-64 p-3 bg-white border border-slate-200 rounded-lg text-left cursor-pointer transition-colors group"
+                className="snap-start shrink-0 w-72 sm:w-80 p-3.5 bg-white border border-slate-200 rounded-lg text-left cursor-pointer transition-colors group flex flex-col justify-between"
               >
-                <h3 className="font-bold text-sm text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors line-clamp-2 leading-snug font-['Lato']">{title}</h3>
+                <h3 className="font-bold text-sm text-slate-900 hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors whitespace-normal break-words leading-snug font-['Lato']">{title}</h3>
               </button>
             ))}
           </div>
@@ -98,8 +98,8 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
       <div className="flex gap-4 xl:gap-5">
 
         {/* 📚 LEFT SIDEBAR: CORE INDEX (w-[240px]) 📚 */}
-        <aside className="hidden lg:block w-[240px] shrink-0">
-          <div className="sticky top-16 rounded-xl border border-[#f1f5f9] bg-white/60 p-2.5">
+        <aside className="hidden lg:block w-[260px] xl:w-[280px] shrink-0">
+          <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto pr-1 rounded-xl border border-[#f1f5f9] bg-white/60 p-2.5">
             <div className="flex items-center gap-2 mb-2">
               <span className="px-2.5 py-0.5 text-xs font-bold rounded-full font-mono" style={{ backgroundColor: '#003db3', color: '#ffffff' }}>
                 Essential Guide
@@ -111,7 +111,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   key={idx}
                   onClick={() => handleTitleClick(title)}
                   tabIndex={0}
-                  className="w-full text-left block p-2 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
+                  className="w-full text-left block p-2.5 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs whitespace-normal break-words"
                 >
                   <span>{title}</span>
                 </button>
@@ -331,8 +331,8 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
         </div>
 
         {/* 🏷️ RIGHT SIDEBAR: CITATION INDEX & CTAS (w-[240px]) 🏷️ */}
-        <aside className="hidden lg:block w-[240px] shrink-0">
-          <div className="sticky top-16 rounded-xl border border-[#f1f5f9] bg-white/60 p-2.5">
+        <aside className="hidden lg:block w-[260px] xl:w-[280px] shrink-0">
+          <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto pr-1 rounded-xl border border-[#f1f5f9] bg-white/60 p-2.5">
             <div className="flex items-center gap-2 mb-2">
               <span className="px-2.5 py-0.5 text-xs font-bold rounded-full font-mono" style={{ backgroundColor: '#ede9fe', color: '#7c3aed' }}>
                 Agent Workflow
@@ -344,7 +344,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   key={idx}
                   onClick={() => handleTitleClick(title)}
                   tabIndex={0}
-                  className="w-full text-left block p-2 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
+                  className="w-full text-left block p-2.5 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs whitespace-normal break-words"
                 >
                   <span>{title}</span>
                 </button>

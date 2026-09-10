@@ -173,10 +173,10 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
         </header>
 
         {/* 3-Column Grid Layout */}
-        <div className="blog-layout-grid grid grid-cols-1 lg:grid-cols-[240px_1fr_240px] gap-4 xl:gap-5 items-start">
+        <div className="blog-layout-grid grid grid-cols-1 lg:grid-cols-[260px_1fr_260px] xl:grid-cols-[280px_1fr_280px] gap-4 xl:gap-6 items-start">
           
           {/* Left Sidebar: Essential Guides */}
-          <aside className="blog-sidebar sticky top-16 space-y-2.5">
+          <aside className="blog-sidebar sticky top-16 space-y-2.5 max-h-[calc(100vh-5rem)] overflow-y-auto pr-1">
             <span className="sidebar-title blue block text-xs font-bold uppercase tracking-wider text-white px-2.5 py-1 rounded-full w-max mb-2" style={{ backgroundColor: '#003db3' }}>
               Essential Guides
             </span>
@@ -185,7 +185,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={g.id}
                   onClick={() => onSelectArticle(g)}
-                  className="os-toc-link text-left w-full p-2.5 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-[13px] transition-colors cursor-pointer line-clamp-2"
+                  className="os-toc-link text-left w-full p-2.5 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-[13px] transition-colors cursor-pointer whitespace-normal break-words leading-snug"
                 >
                   {g.title}
                 </button>
@@ -216,7 +216,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
           </main>
 
           {/* Right Sidebar: Agent Workflows */}
-          <aside className="blog-sidebar sticky top-16 space-y-2.5">
+          <aside className="blog-sidebar sticky top-16 space-y-2.5 max-h-[calc(100vh-5rem)] overflow-y-auto pr-1">
             <span className="sidebar-title purple block text-xs font-bold uppercase tracking-wider text-white px-2.5 py-1 rounded-full w-max mb-2" style={{ backgroundColor: '#e8443a' }}>
               Agent Workflows
             </span>
@@ -225,7 +225,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={w.id}
                   onClick={() => onSelectArticle(w)}
-                  className="os-toc-link text-left w-full p-2.5 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-[13px] transition-colors cursor-pointer line-clamp-2"
+                  className="os-toc-link text-left w-full p-2.5 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-[13px] transition-colors cursor-pointer whitespace-normal break-words leading-snug"
                 >
                   {w.title}
                 </button>
