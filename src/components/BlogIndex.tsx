@@ -113,7 +113,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   tabIndex={0}
                   className="w-full text-left block px-1 py-1.5 border-b border-slate-100 hover:text-[#e8443a] focus:text-[#e8443a] focus:outline-none transition-colors text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato']"
                 >
-                  <span className="line-clamp-1">{title}</span>
+                  <span className="line-clamp-2">{title}</span>
                 </button>
               ))}
             </nav>
@@ -346,7 +346,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   tabIndex={0}
                   className="w-full text-left block px-1 py-1.5 border-b border-slate-100 hover:text-[#e8443a] focus:text-[#e8443a] focus:outline-none transition-colors text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato']"
                 >
-                  <span className="line-clamp-1">{title}</span>
+                  <span className="line-clamp-2">{title}</span>
                 </button>
               ))}
             </nav>
