@@ -105,13 +105,13 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 Essential Guide
               </span>
             </div>
-            <nav className="space-y-1.5">
+            <nav className="space-y-0">
               {OLLAWRITE_LEFT_GUIDES.map((title, idx) => (
                 <button
                   key={idx}
                   onClick={() => handleTitleClick(title)}
                   tabIndex={0}
-                  className="w-full text-left block px-1 py-1 hover:text-[#e8443a] focus:text-[#e8443a] focus:outline-none transition-colors text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato']"
+                  className="w-full text-left block px-1 py-1.5 border-b border-slate-100 hover:text-[#e8443a] focus:text-[#e8443a] focus:outline-none transition-colors text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato']"
                 >
                   <span>{title}</span>
                 </button>
@@ -338,13 +338,13 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                 Agent Workflow
               </span>
             </div>
-            <nav className="space-y-1.5">
+            <nav className="space-y-0">
               {OLLAWRITE_RIGHT_TOP_READS.map((title, idx) => (
                 <button
                   key={idx}
                   onClick={() => handleTitleClick(title)}
                   tabIndex={0}
-                  className="w-full text-left block px-1 py-1 hover:text-[#e8443a] focus:text-[#e8443a] focus:outline-none transition-colors text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato']"
+                  className="w-full text-left block px-1 py-1.5 border-b border-slate-100 hover:text-[#e8443a] focus:text-[#e8443a] focus:outline-none transition-colors text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato']"
                 >
                   <span>{title}</span>
                 </button>
