@@ -67,7 +67,7 @@ export const ARTICLES_DATA: Article[] = [
           "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200",
           "bio": "Specialist in autonomous search indexing, multi-surface AI citation graphs, and zero-hallucination editorial architectures."
       },
-      "publishedDate": "Sep 10, 2026",
+      "publishedDate": "sep10,2026",
       "readTime": "24 min read",
       "featured": true,
       "cardType": "featured",
