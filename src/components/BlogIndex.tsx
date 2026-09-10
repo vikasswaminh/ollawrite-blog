@@ -202,10 +202,10 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                       </div>
 
                       {/* Right Hero Content */}
-                      <div className="md:w-[65%] p-3.5 sm:p-4 bg-slate-50/50 flex flex-col justify-between gap-2.5">
-                        <div className="space-y-1.5">
+                      <div className="md:w-[65%] p-3.5 sm:p-4 bg-slate-50/50 flex flex-col justify-between">
+                        <div>
                           {/* Top Badges Row with Category Color Segregation */}
-                          <div className="flex items-center justify-between gap-2">
+                          <div className="flex items-center justify-between gap-2 mb-2">
                             <div className="flex items-center gap-2">
                               <span
                                 className="inline-flex items-center gap-1.5 text-xs font-mono px-2 py-0.5 rounded-full font-bold border"
@@ -218,37 +218,22 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                                 <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: heroStyle.dot }} />
                                 <span>{heroNewest.category}</span>
                               </span>
-                              <span className="text-[11px] font-mono font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
-                                LATEST_FEATURED
-                              </span>
                             </div>
                           </div>
 
                           {/* Title */}
-                          <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors font-['Lato']">
+                          <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors mb-1.5 font-['Lato']">
                             {heroNewest.title}
                           </h3>
 
-                          {/* Subtitle - covers space evenly without leaving an awkward gap */}
-                          <p className="text-xs sm:text-sm text-slate-600 hover:text-[#e8443a] leading-relaxed font-normal font-['Lato'] transition-colors line-clamp-2 sm:line-clamp-3">
+                          {/* Subtitle */}
+                          <p className="text-xs sm:text-sm text-slate-600 hover:text-[#e8443a] leading-relaxed font-normal font-['Lato'] transition-colors line-clamp-2">
                             {heroNewest.subtitle}
                           </p>
-
-                          {/* Author Byline to cover space */}
-                          <div className="flex items-center gap-2 pt-0.5 text-xs text-slate-600">
-                            <img
-                              src={heroNewest.author.avatar}
-                              alt={heroNewest.author.name}
-                              className="w-5 h-5 rounded-full object-cover border border-slate-200"
-                            />
-                            <span className="font-semibold text-slate-800 font-['Lato']">{heroNewest.author.name}</span>
-                            <span className="text-slate-300">•</span>
-                            <span className="text-slate-500 font-['Lato'] truncate">{heroNewest.author.role}</span>
-                          </div>
                         </div>
 
-                        {/* Meta info at the end of the box */}
-                        <div className="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-200 group-hover:border-[#f87171] transition-colors font-mono font-medium">
+                        {/* Meta info at the end of the box (without middle line) */}
+                        <div className="flex items-center justify-between text-xs text-slate-500 pt-2 font-mono font-medium">
                           <div className="flex items-center gap-2">
                             <span>{heroNewest.readTime}</span>
                           </div>
