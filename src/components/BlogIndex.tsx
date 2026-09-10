@@ -111,7 +111,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   key={idx}
                   onClick={() => handleTitleClick(title)}
                   tabIndex={0}
-                  className="w-full text-left block p-2 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
+                  className="w-full text-left block px-1 py-1 hover:text-[#e8443a] focus:text-[#e8443a] focus:outline-none transition-colors text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato']"
                 >
                   <span>{title}</span>
                 </button>
@@ -344,7 +344,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                   key={idx}
                   onClick={() => handleTitleClick(title)}
                   tabIndex={0}
-                  className="w-full text-left block p-2 bg-white border border-slate-200 hover:border-[#e8443a] hover:bg-[#fff1f0] hover:text-[#e8443a] hover:shadow-[0_2px_10px_rgba(232,68,58,0.14)] focus:border-[#e8443a] focus:text-[#e8443a] focus:bg-[#fff5f5] focus:outline-none focus:ring-2 focus:ring-[#e8443a]/35 active:bg-[#fee2e2] active:border-[#e8443a] rounded-lg transition-all text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato'] shadow-2xs"
+                  className="w-full text-left block px-1 py-1 hover:text-[#e8443a] focus:text-[#e8443a] focus:outline-none transition-colors text-xs font-bold text-slate-800 leading-snug cursor-pointer font-['Lato']"
                 >
                   <span>{title}</span>
                 </button>
