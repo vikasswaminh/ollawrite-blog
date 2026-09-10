@@ -851,26 +851,6 @@ button[class*="snap-start"] {
   border-color: #e2e8f0 !important;
   box-shadow: none !important;
   transition: color 0.15s ease !important;
-  white-space: normal !important;
-  word-break: break-word !important;
-  overflow-wrap: break-word !important;
-  text-overflow: clip !important;
-  line-clamp: none !important;
-  -webkit-line-clamp: unset !important;
-  max-height: none !important;
-  height: auto !important;
-}
-
-aside nav button span,
-.os-toc-link,
-.os-toc-link span,
-button[class*="snap-start"] h3 {
-  white-space: normal !important;
-  word-break: break-word !important;
-  overflow-wrap: break-word !important;
-  line-clamp: none !important;
-  -webkit-line-clamp: unset !important;
-  text-overflow: clip !important;
 }
 
 aside nav button:hover,
@@ -964,15 +944,24 @@ article:hover .border-t,
   color: #cbd5e1 !important;
 }
 
+/* ── Mistake-line highlight ── */
+li.mistake-line {
+  background-color: #fff8e1 !important;
+  border-left: 3px solid #f59e0b !important;
+  border-radius: 4px !important;
+  padding: 4px 8px 4px 10px !important;
+  margin-left: 0.5rem !important;
+  list-style-position: inside !important;
+}
 
-/* Enforce single-line clamping for all blog card sub-content (subtitles) */
-.blog-card-subcontent {
-  display: -webkit-box !important;
-  -webkit-line-clamp: 1 !important;
-  -webkit-box-orient: vertical !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: normal !important;
-  line-clamp: 1 !important;
-  max-height: 1.5em !important;
+[data-theme="dark"] li.mistake-line {
+  background-color: rgba(245, 158, 11, 0.12) !important;
+  border-left-color: #f59e0b !important;
+  color: #fde68a !important;
+}
+
+/* ── Remove divider line above date/read-time in all blog cards ── */
+article .blog-card-meta,
+.blog-hero-meta {
+  border-top: none !important;
 }

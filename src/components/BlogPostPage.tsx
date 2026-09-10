@@ -54,8 +54,12 @@ function parseArticleContentToHtml(content: string): string {
 
   // Blockquotes & Lists
   html = html.replace(/^> (.*$)/gim, '<blockquote class="pl-3 border-l-4 border-[#003db3] my-2.5 italic text-slate-700 bg-[#eef4ff]/60 py-2 px-3 rounded-r text-sm sm:text-base">$1</blockquote>');
-  html = html.replace(/^-\s+(.*$)/gim, '<li class="ml-4 list-disc text-slate-800 my-0.5 text-sm sm:text-base">$1</li>');
-  html = html.replace(/^(\d+)\.\s+(.*$)/gim, '<div class="ml-4 text-slate-800 my-1.5 text-sm sm:text-base flex items-start"><span class="font-bold text-slate-900 mr-2 flex-shrink-0">$1.</span><div>$2</div></div>');
+  html = html.replace(/^-\s+(.*$)/gim, (match, content) => {
+    const isMistake = /^<strong>Mistake\s*\d+/.test(content.trim());
+    const extraClass = isMistake ? ' mistake-line' : '';
+    return `<li class="ml-4 list-disc text-slate-800 my-0.5 text-sm sm:text-base${extraClass}">${content}</li>`;
+  });
+  html = html.replace(/^(\d+)\.\s+(.*$)/gim, '<li class="ml-4 list-decimal text-slate-800 my-0.5 text-sm sm:text-base"><strong>$1.</strong> $2</li>');
 
   const blocks = html.split(/\n\n+/);
   const processed = blocks.map(block => {
@@ -173,10 +177,10 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
         </header>
 
         {/* 3-Column Grid Layout */}
-        <div className="blog-layout-grid grid grid-cols-1 lg:grid-cols-[260px_1fr_260px] xl:grid-cols-[280px_1fr_280px] gap-4 xl:gap-6 items-start">
+        <div className="blog-layout-grid grid grid-cols-1 lg:grid-cols-[240px_1fr_240px] gap-4 xl:gap-5 items-start">
           
           {/* Left Sidebar: Essential Guides */}
-          <aside className="blog-sidebar sticky top-16 space-y-2.5 max-h-[calc(100vh-5rem)] overflow-y-auto pr-1">
+          <aside className="blog-sidebar sticky top-16 space-y-2.5">
             <span className="sidebar-title blue block text-xs font-bold uppercase tracking-wider text-white px-2.5 py-1 rounded-full w-max mb-2" style={{ backgroundColor: '#003db3' }}>
               Essential Guides
             </span>
@@ -185,7 +189,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={g.id}
                   onClick={() => onSelectArticle(g)}
-                  className="os-toc-link text-left w-full p-2.5 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-[13px] transition-colors cursor-pointer whitespace-normal break-words leading-snug"
+                  className="os-toc-link text-left w-full p-2.5 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-[13px] transition-colors cursor-pointer line-clamp-2"
                 >
                   {g.title}
                 </button>
@@ -216,7 +220,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
           </main>
 
           {/* Right Sidebar: Agent Workflows */}
-          <aside className="blog-sidebar sticky top-16 space-y-2.5 max-h-[calc(100vh-5rem)] overflow-y-auto pr-1">
+          <aside className="blog-sidebar sticky top-16 space-y-2.5">
             <span className="sidebar-title purple block text-xs font-bold uppercase tracking-wider text-white px-2.5 py-1 rounded-full w-max mb-2" style={{ backgroundColor: '#e8443a' }}>
               Agent Workflows
             </span>
@@ -225,7 +229,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <button
                   key={w.id}
                   onClick={() => onSelectArticle(w)}
-                  className="os-toc-link text-left w-full p-2.5 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-[13px] transition-colors cursor-pointer whitespace-normal break-words leading-snug"
+                  className="os-toc-link text-left w-full p-2.5 bg-white border border-slate-200 rounded-lg text-slate-800 hover:text-[#e8443a] font-bold text-xs sm:text-[13px] transition-colors cursor-pointer line-clamp-2"
                 >
                   {w.title}
                 </button>

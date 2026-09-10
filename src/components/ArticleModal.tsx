@@ -55,8 +55,12 @@ function parseArticleContentToHtml(content: string): string {
   html = html.replace(/^> (.*$)/gim, '<blockquote class="pl-4 border-l-4 border-blue-500 my-4 italic text-slate-700 bg-blue-50/50 py-2.5 px-4 rounded-r">$1</blockquote>');
 
   // Lists
-  html = html.replace(/^-\s+(.*$)/gim, '<li class="ml-4 list-disc text-slate-800 my-1">$1</li>');
-  html = html.replace(/^(\d+)\.\s+(.*$)/gim, '<div class="ml-4 text-slate-800 my-1.5 text-sm sm:text-base flex items-start"><span class="font-bold text-slate-900 mr-2 flex-shrink-0">$1.</span><div>$2</div></div>');
+  html = html.replace(/^-\s+(.*$)/gim, (match, content) => {
+    const isMistake = /^<strong>Mistake\s*\d+/.test(content.trim());
+    const extraClass = isMistake ? ' mistake-line' : '';
+    return `<li class="ml-4 list-disc text-slate-800 my-1${extraClass}">${content}</li>`;
+  });
+  html = html.replace(/^(\d+)\.\s+(.*$)/gim, '<li class="ml-4 list-decimal text-slate-800 my-1"><strong>$1.</strong> $2</li>');
 
   // Paragraph wrapping for text blocks not inside HTML containers
   const blocks = html.split(/\n\n+/);
