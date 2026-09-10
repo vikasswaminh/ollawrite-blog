@@ -192,20 +192,20 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                       className="relative overflow-hidden rounded-xl border border-slate-200 hover:border-[#f87171] hover:shadow-xs transition-all flex flex-col md:flex-row bg-white active:border-[#f87171]"
                     >
                       {/* Left Hero Image */}
-                      <div className="md:w-[36%] aspect-[16/10] md:aspect-auto overflow-hidden bg-slate-100 min-h-[160px]">
+                      <div className="md:w-[35%] aspect-[16/10] md:aspect-auto overflow-hidden bg-slate-100 relative min-h-[140px] md:min-h-0">
                         <img
                           src={heroNewest.imageUrl}
                           alt={heroNewest.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 md:absolute md:inset-0"
                           loading="eager"
                         />
                       </div>
 
                       {/* Right Hero Content */}
-                      <div className="md:w-[64%] p-3 sm:p-4 bg-slate-50/50 flex flex-col justify-between">
-                        <div>
+                      <div className="md:w-[65%] p-3.5 sm:p-4 bg-slate-50/50 flex flex-col justify-between gap-2.5">
+                        <div className="space-y-1.5">
                           {/* Top Badges Row with Category Color Segregation */}
-                          <div className="flex items-center justify-between gap-2 mb-1.5">
+                          <div className="flex items-center justify-between gap-2">
                             <div className="flex items-center gap-2">
                               <span
                                 className="inline-flex items-center gap-1.5 text-xs font-mono px-2 py-0.5 rounded-full font-bold border"
@@ -218,18 +218,33 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                                 <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: heroStyle.dot }} />
                                 <span>{heroNewest.category}</span>
                               </span>
+                              <span className="text-[11px] font-mono font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                                LATEST_FEATURED
+                              </span>
                             </div>
                           </div>
 
                           {/* Title */}
-                          <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors mb-1 font-['Lato']">
+                          <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors font-['Lato']">
                             {heroNewest.title}
                           </h3>
 
-                          {/* Subtitle */}
-                          <p className="blog-card-subcontent text-xs sm:text-sm text-slate-600 hover:text-[#e8443a] line-clamp-1 mb-2 font-normal leading-relaxed font-['Lato'] transition-colors">
+                          {/* Subtitle - covers space evenly without leaving an awkward gap */}
+                          <p className="text-xs sm:text-sm text-slate-600 hover:text-[#e8443a] leading-relaxed font-normal font-['Lato'] transition-colors line-clamp-2 sm:line-clamp-3">
                             {heroNewest.subtitle}
                           </p>
+
+                          {/* Author Byline to cover space */}
+                          <div className="flex items-center gap-2 pt-0.5 text-xs text-slate-600">
+                            <img
+                              src={heroNewest.author.avatar}
+                              alt={heroNewest.author.name}
+                              className="w-5 h-5 rounded-full object-cover border border-slate-200"
+                            />
+                            <span className="font-semibold text-slate-800 font-['Lato']">{heroNewest.author.name}</span>
+                            <span className="text-slate-300">•</span>
+                            <span className="text-slate-500 font-['Lato'] truncate">{heroNewest.author.role}</span>
+                          </div>
                         </div>
 
                         {/* Meta info at the end of the box */}
