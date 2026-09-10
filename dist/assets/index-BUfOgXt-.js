@@ -57,15 +57,6 @@ Measurement gets harder, not easier, as you add AEO and GEO: Rank tracking tells
 
 <div class="main-content-card">
 
-| Dimension | Classic SEO | Answer Engine Optimization (AEO) | Generative Engine Optimization (GEO) |
-| :--- | :--- | :--- | :--- |
-| **Primary Target** | Ranked SERP 10 blue links | Featured snippets, PAA, voice queries | AI Overviews, Perplexity, ChatGPT, Claude |
-| **Winning Metric** | Organic clicks & SERP rank (#1-#3) | Answer box extraction & voice placement | Brand mention & source citation frequency |
-| **Content Structure** | In-depth, comprehensive topical coverage | Self-contained, concise direct answers | Factual entities, structured data & verification |
-| **Attribution Model** | Direct hyperlink backlink | Often linked in snippet / read aloud | Synthesized summary, occasional citation links |
-| **Measurement Tooling** | Mature (Ahrefs, Semrush, Search Console) | Snippet trackers & voice audit samples | AI prompt testing & citation graph telemetry |
-| **Commercial Intent** | High human browsing & transaction intent | Rapid informational lookup | Pre-purchase vendor discovery & comparison |
-
 ## Let's Untangle Three Acronyms Everyone's Throwing Around
 
 Open any marketing newsletter published in the last year and there's a decent chance you've run into SEO, AEO, and GEO mentioned in the same breath, often with a slightly panicked tone suggesting you need an entirely new strategy for each one or you'll be left behind. That panic is mostly noise. The substance underneath it is real, though, and worth taking seriously without the hype.
