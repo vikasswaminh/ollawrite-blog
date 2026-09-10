@@ -202,7 +202,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                       </div>
 
                       {/* Right Hero Content */}
-                      <div className="md:w-[64%] p-3 sm:p-4 bg-slate-50/50 flex flex-col justify-between">
+                      <div className="md:w-[64%] p-3 sm:p-4 bg-slate-50/50 flex flex-col">
                         <div>
                           {/* Top Badges Row with Category Color Segregation */}
                           <div className="flex items-center justify-between gap-2 mb-1.5">
@@ -233,7 +233,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                         </div>
 
                         {/* Meta info at the end of the box */}
-                        <div className="flex items-center justify-between text-xs text-slate-500 pt-2 font-mono font-medium">
+                        <div className="flex items-center justify-between text-xs text-slate-500 pt-2 mt-auto font-mono font-medium">
                           <div className="flex items-center gap-2">
                             <span>{heroNewest.readTime}</span>
                           </div>
