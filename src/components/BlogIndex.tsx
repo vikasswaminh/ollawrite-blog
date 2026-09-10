@@ -202,7 +202,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                       </div>
 
                       {/* Right Hero Content */}
-                      <div className="md:w-[64%] p-3 sm:p-4 bg-slate-50/50 flex flex-col">
+                      <div className="md:w-[64%] p-3 sm:p-4 bg-slate-50/50 flex flex-col justify-between">
                         <div>
                           {/* Top Badges Row with Category Color Segregation */}
                           <div className="flex items-center justify-between gap-2 mb-1.5">
@@ -222,12 +222,12 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                           </div>
 
                           {/* Title */}
-                          <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors mb-1 font-['Lato']">
+                          <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug hover:text-[#e8443a] group-hover:text-[#e8443a] transition-colors mb-1.5 font-['Lato']">
                             {heroNewest.title}
                           </h3>
 
                           {/* Subtitle */}
-                          <p className="text-xs sm:text-sm text-slate-600 hover:text-[#e8443a] line-clamp-2 mb-2 font-normal leading-relaxed font-['Lato'] transition-colors">
+                          <p className="text-xs sm:text-sm text-slate-600 hover:text-[#e8443a] line-clamp-3 mb-2 font-normal leading-relaxed font-['Lato'] transition-colors">
                             {heroNewest.subtitle}
                           </p>
                         </div>
