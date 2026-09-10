@@ -233,7 +233,7 @@ export const BlogIndex: React.FC<BlogIndexProps> = ({
                         </div>
 
                         {/* Meta info at the end of the box */}
-                        <div className="flex items-center justify-between text-xs text-slate-500 pt-2 mt-auto font-mono font-medium">
+                        <div className="flex items-center justify-between text-xs text-slate-500 pt-1 font-mono font-medium">
                           <div className="flex items-center gap-2">
                             <span>{heroNewest.readTime}</span>
                           </div>
